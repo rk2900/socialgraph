@@ -1,7 +1,5 @@
 package haohao.example;
 
-import java.util.Scanner;
-
 import org.openrdf.query.BindingSet;
 import org.openrdf.query.MalformedQueryException;
 import org.openrdf.query.QueryEvaluationException;
@@ -48,8 +46,6 @@ public class weibo{
 			cm.client.setToken(access_token);
 			
 			FileOutputManager manager = new FileOutputManager("d:\\test\\newweibo.txt","UTF-8");
-			
-			StringBuilder spo = new StringBuilder();
 			
 			String NS = "http://test/com/";
 			repo.setNameSpace(NS);

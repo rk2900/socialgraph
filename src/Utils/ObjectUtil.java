@@ -3,7 +3,6 @@ package Utils;
 import org.openrdf.model.Literal;
 import org.openrdf.model.URI;
 import org.openrdf.model.ValueFactory;
-import org.openrdf.model.impl.ValueFactoryImpl;
 
 public class ObjectUtil extends UriUtil {
 	

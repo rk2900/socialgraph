@@ -285,12 +285,7 @@ public class RepoUtil {
 		
 	}
 	
-	/*
-	 * To save the triples in RDF turtle format
-	 * directly from the Sesame database. 
-	 */
 	public void saveRDFTurtle(String filePath, RDFFormat rdfFormat) {
-		//TODO 
 		try {
 			FileOutputStream out = new FileOutputStream(filePath);
 			RDFWriter writer = null;
@@ -306,5 +301,14 @@ public class RepoUtil {
 			e.printStackTrace();
 		}
 	}
+	
+	/*
+	 * To save the triples in RDF turtle format
+	 * directly from the Sesame database. 
+	 */
+	public void saveRDFTurtle() {
+		//TODO
+	}
+	
 	
 }
