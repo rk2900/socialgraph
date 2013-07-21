@@ -17,24 +17,25 @@ public class SparqlUtil {
 		query = new StringBuilder();
 	}
 	
-	public TupleQueryResult query(String[] prefix, String select, 
+	public TupleQueryResult Query(String[] prefix, String select, 
 									String where, String orderBy, String limit) 
 									throws QueryEvaluationException, RepositoryException, 
 									MalformedQueryException {
 		//PREFIX
 		if(prefix != null) { 
-			query.append("PREFIX ");
 			for(int i=0; i<prefix.length/2; i++) {
+				query.append("PREFIX ");
 				query.append(prefix[2*i]);
 				query.append(":");
 				query.append("<");
 				query.append(prefix[2*i+1]);
-				query.append(">");
+				query.append("> ");
 			}
 		}
 		//SELECT
 		query.append("SELECT ");
 		query.append(select);
+		query.append(" ");
 		
 		//WHERE
 		if(where != null) {
@@ -53,7 +54,7 @@ public class SparqlUtil {
 			query.append("LIMIT ");
 			query.append(limit);
 		}
-		
+		System.out.println(query.toString());
 		return repoConn.prepareTupleQuery(QueryLanguage.SPARQL, query.toString()).evaluate();
 		
 	}

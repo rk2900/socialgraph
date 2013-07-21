@@ -86,7 +86,6 @@ public class UriUtil {
 		} else {
 			try {
 				url = URLEncoder.encode(iden,"utf-8");
-				System.out.println(url);
 			} catch (UnsupportedEncodingException e) {
 				e.printStackTrace();
 			}
