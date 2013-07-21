@@ -23,11 +23,17 @@ public class PredicateUtil extends UriUtil {
 	 */
 	private void initialize() {
 		//TODO
-		defaultUri.put("LEBAL", RDFS.LABEL);
-		defaultUri.put("DATATYPE", RDFS.DATATYPE);
+		defaultUri.put("name", RDFS.LABEL);
+		defaultUri.put("weiboText", RDFS.LITERAL);
+		defaultUri.put("commentContext", RDFS.COMMENT);
+		
 		//TODO
-		propertyPred.add("NAME");
-		propertyPred.add("AGE");
+		propertyPred.add("name");
+		propertyPred.add("friend");
+		propertyPred.add("follower");
+		propertyPred.add("createWeibo");
+		propertyPred.add("createComment");
+		propertyPred.add("commentTo");
 	}
 	
 	/*
@@ -43,12 +49,15 @@ public class PredicateUtil extends UriUtil {
 		propertyPred.add(uri.toString());
 	}
 	
+	public URI getUri(String predStr) {
+		return getPredUri(predStr);
+	}
+	
 	public URI getPredUri(String predStr) {
-		if(predStr.matches("^(rdf:)")) {
-			predStr = predStr.substring(4);
+		if(defaultUri.containsKey(predStr)) {
 			return defaultUri.get(predStr);
 		} else {
-			return super.getUri(predStr);
+			return getUri(predStr);
 		}
 	}
 	

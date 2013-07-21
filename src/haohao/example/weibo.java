@@ -34,6 +34,7 @@ public class weibo{
 		
 		FileOutputManager manager = new FileOutputManager("d:\\test\\new.txt","UTF-8");
 		RepoUtil repo = new RepoUtil();
+//		SubjectUtil subj = new
 		
 		StringBuilder spo = new StringBuilder();
 		
