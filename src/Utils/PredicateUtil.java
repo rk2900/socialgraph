@@ -49,13 +49,10 @@ public class PredicateUtil extends UriUtil {
 		propertyPred.add(uri.toString());
 	}
 	
-	public URI getUri(String predStr) {
-		return getPredUri(predStr);
-	}
-	
 	public URI getPredUri(String predStr) {
 		if(defaultUri.containsKey(predStr)) {
-			return defaultUri.get(predStr);
+			URI rtn = defaultUri.get(predStr);
+			return rtn;
 		} else {
 			return getUri(predStr);
 		}

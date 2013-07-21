@@ -83,6 +83,20 @@ public class RepoUtil {
 		subjUtil.setType(type);
 	}
 	
+	public void setNameSpace(String ns) {
+		setNameSpace(ns,ns,ns);
+	}
+	
+	public void setNameSpace(String subjNs, String predNs, String objNs) {
+		subjUtil.setNameSpace(subjNs);
+		predUtil.setNameSpace(predNs);
+		objUtil.setNameSpace(objNs);
+	}
+	
+	public void setSubjType(String type) {
+		subjUtil.setType(type);
+	}
+	
 	/*
 	 * To set the predicate namespace
 	 * and type.
@@ -92,12 +106,20 @@ public class RepoUtil {
 		predUtil.setType(type);
 	}
 	
+	public void setPredType(String type) {
+		predUtil.setType(type);
+	}
+	
 	/*
 	 * To set the object namespace
 	 * and type.
 	 */
 	public void setObjNsAndType(String ns, String type) {
 		objUtil.setNameSpace(ns);
+		objUtil.setType(type);
+	}
+	
+	public void setObjType(String type) {
 		objUtil.setType(type);
 	}
 	
@@ -137,6 +159,7 @@ public class RepoUtil {
 		Literal objLit;
 		try {
 			repoConn = repo.getConnection();
+//			repoConn.isActive()
 			subj = subjUtil.getUri(subjStr);
 			pred = predUtil.getPredUri(predStr);
 //			if(predUtil.isObjUri(predStr)) {

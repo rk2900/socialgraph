@@ -1,6 +1,6 @@
 package haohao.example;
 
-import Utils.RepoUtil;
+import Utils.*;
 import haohao.FileOutputManager;
 import weibo4j.Comments;
 import weibo4j.Friendships;
@@ -32,287 +32,97 @@ public class weibo{
 		Comments cm = new Comments();
 		cm.client.setToken(access_token);
 		
-		FileOutputManager manager = new FileOutputManager("d:\\test\\new.txt","UTF-8");
-		RepoUtil repo = new RepoUtil();
-//		SubjectUtil subj = new
+		FileOutputManager manager = new FileOutputManager("d:\\test\\newweibo.txt","UTF-8");
 		
 		StringBuilder spo = new StringBuilder();
 		
+		RepoUtil repo = new RepoUtil();
+		String NS = "http://test/com/";
+		repo.setNameSpace(NS);
+		repo.setPredType("property");
+		
 		try {
 			User user = um.showUserById(uid);
-			spo.append(uid);
-			spo.append("\t");
-			spo.append("rdf:label");
-			spo.append("\t");
-			spo.append(user.getScreenName());
-			spo.append("\n");
-			manager.write(spo.toString());
-			spo.setLength(0);
+			repo.setSubjType("userID");
 			
-			spo.append(uid);
-			spo.append("\t");
-			spo.append("rdf:description");
-			spo.append("\t");
-			spo.append(user.getDescription());
-			spo.append("\n");
-			manager.write(spo.toString());
-			spo.setLength(0);
+			repo.addRecord(uid, "name", user.getScreenName(), false);
+			repo.addRecord(uid, "description", user.getDescription(), false);
 			
 			UserWapper users = fm.getFollowersById(uid);
 			for(User u : users.getUsers()){
-				spo.append(uid);
-				spo.append("\t");
-				spo.append("rdf:follower");
-				spo.append("\t");
-				spo.append(u.getId());
-				spo.append("\n");
-				manager.write(spo.toString());
-				spo.setLength(0);
+				repo.setSubjType("userID");
+				repo.setObjType("userID");
 				
-				spo.append(u.getId());
-				spo.append("\t");
-				spo.append("rdf:label");
-				spo.append("\t");
-				spo.append(u.getScreenName());
-				spo.append("\n");
-				manager.write(spo.toString());
-				spo.setLength(0);
-				
-				spo.append(u.getId());
-				spo.append("\t");
-				spo.append("rdf:description");
-				spo.append("\t");
-				spo.append(u.getDescription());
-				spo.append("\n");
-				manager.write(spo.toString());
-				spo.setLength(0);
+				repo.addRecord(uid, "follower", u.getId(), true);
+				repo.addRecord(u.getId(), "name", u.getScreenName(), false);
+				repo.addRecord(u.getId(), "description", u.getDescription(), false);
 			}
 			
 			users = fm.getFriendsByID(uid);
 			for(User u : users.getUsers()){
-				spo.append(uid);
-				spo.append("\t");
-				spo.append("rdf:friend");
-				spo.append("\t");
-				spo.append(u.getId());
-				spo.append("\n");
-				manager.write(spo.toString());
-				spo.setLength(0);
-				
-				spo.append(u.getId());
-				spo.append("\t");
-				spo.append("rdf:label");
-				spo.append("\t");
-				spo.append(u.getScreenName());
-				spo.append("\n");
-				manager.write(spo.toString());
-				spo.setLength(0);
-				
-				spo.append(u.getId());
-				spo.append("\t");
-				spo.append("rdf:description");
-				spo.append("\t");
-				spo.append(u.getDescription());
-				spo.append("\n");
-				manager.write(spo.toString());
-				spo.setLength(0);
-//				manager.write(uid + "\t" + "rdf:friend" + "\t" + u.getId() + "\n");
-//				manager.write(u.getId() + "\t" + "rdf:label" + "\t" + u.getScreenName() + "\n");
-//				manager.write(u.getId() + "\t" + "rdf:description" + "\t" + u.getDescription() + "\n");
+				repo.addRecord(uid, "friend", u.getId(), true);
+				repo.addRecord(u.getId(), "name", u.getScreenName(), false);
+				repo.addRecord(u.getId(), "description", u.getDescription(), false);
 			}
 			
 			StatusWapper status = tm.getUserTimeline();
 			for(Status s : status.getStatuses()){
-				spo.append(s.getUser().getId());
-				spo.append("\t");
-				spo.append("rdf:createWeibo");
-				spo.append("\t");
-				spo.append(s.getId());
-				spo.append("\n");
-				manager.write(spo.toString());
-				spo.setLength(0);
+				repo.setObjType("weiboID");
+				repo.addRecord(s.getUser().getId(), "createWeibo", s.getId(), true);
 				
-				spo.append(s.getId());
-				spo.append("\t");
-				spo.append("rdf:weiboText");
-				spo.append("\t");
-				spo.append(s.getText());
-				spo.append("\n");
-				manager.write(spo.toString());
-				spo.setLength(0);
-				
-				spo.append(s.getId());
-				spo.append("\t");
-				spo.append("rdf:weiboDate");
-				spo.append("\t");
-				spo.append(s.getCreatedAt());
-				spo.append("\n");
-				manager.write(spo.toString());
-				spo.setLength(0);
-//				manager.write(s.getUser().getId() + "\t" + "rdf:createWeibo" + "\t" + s.getId() + "\n");
-//				manager.write(s.getId() + "\t" + "rdf:weiboText" + "\t" + s.getText() + "\n");
-//				manager.write(s.getId() + "\t" + "rdf:weiboDate" + "\t" + s.getCreatedAt() + "\n");
-//				Log.logInfo(s.toString());
+				repo.setSubjType("weiboID");
+				repo.addRecord(s.getId(), "weiboText", s.getText(),false);
+				repo.addRecord(s.getId(), "weiboData", s.getCreatedAt().toString(), false);
 			}
 			
 			StatusWapper statusFriend = tm.getFriendsTimeline();
 			for(Status s : statusFriend.getStatuses()){
-				spo.append(s.getUser().getId());
-				spo.append("\t");
-				spo.append("rdf:createWeibo");
-				spo.append("\t");
-				spo.append(s.getId());
-				spo.append("\n");
-				manager.write(spo.toString());
-				spo.setLength(0);
+				repo.setSubjType("userID");
+				repo.setObjType("weiboID");
+				repo.addRecord(s.getUser().getId(), "createWeibo", s.getId(), true);
 				
-				spo.append(s.getId());
-				spo.append("\t");
-				spo.append("rdf:weiboText");
-				spo.append("\t");
-				spo.append(s.getText());
-				spo.append("\n");
-				manager.write(spo.toString());
-				spo.setLength(0);
-				
-				spo.append(s.getId());
-				spo.append("\t");
-				spo.append("rdf:weiboDate");
-				spo.append("\t");
-				spo.append(s.getCreatedAt());
-				spo.append("\n");
-				manager.write(spo.toString());
-				spo.setLength(0);
-//				manager.write(s.getUser().getId() + "\t" + "rdf:createWeibo" + "\t" + s.getId() + "\n");
-//				manager.write(s.getId() + "\t" + "rdf:weiboText" + "\t" + s.getText() + "\n");
-//				manager.write(s.getId() + "\t" + "rdf:weiboDate" + "\t" + s.getCreatedAt() + "\n");
-//				Log.logInfo(s.toString());
+				repo.addRecord(s.getId(), "weiboText", s.getText(),false);
+				repo.addRecord(s.getId(), "weiboData", s.getCreatedAt().toString(), false);
 			}
 			
 			StatusWapper statusBilateral = tm.getBilateralTimeline();
 			for(Status s : statusBilateral.getStatuses()){
-				spo.append(s.getUser().getId());
-				spo.append("\t");
-				spo.append("rdf:createWeibo");
-				spo.append("\t");
-				spo.append(s.getId());
-				spo.append("\n");
-				manager.write(spo.toString());
-				spo.setLength(0);
+				repo.setSubjType("userID");
+				repo.setObjType("weiboID");
+				repo.addRecord(s.getUser().getId(), "createWeibo", s.getId(), true);
 				
-				spo.append(s.getId());
-				spo.append("\t");
-				spo.append("rdf:weiboText");
-				spo.append("\t");
-				spo.append(s.getText());
-				spo.append("\n");
-				manager.write(spo.toString());
-				spo.setLength(0);
-				
-				spo.append(s.getId());
-				spo.append("\t");
-				spo.append("rdf:weiboDate");
-				spo.append("\t");
-				spo.append(s.getCreatedAt());
-				spo.append("\n");
-				manager.write(spo.toString());
-				spo.setLength(0);
-//				manager.write(s.getUser().getId() + "\t" + "rdf:createWeibo" + "\t" + s.getId() + "\n");
-//				manager.write(s.getId() + "\t" + "rdf:weiboText" + "\t" + s.getText() + "\n");
-//				manager.write(s.getId() + "\t" + "rdf:weiboDate" + "\t" + s.getCreatedAt() + "\n");
-//				Log.logInfo(s.toString());
+				repo.setSubjType("weiboID");
+				repo.addRecord(s.getId(), "weiboText", s.getText(),false);
+				repo.addRecord(s.getId(), "weiboData", s.getCreatedAt().toString(), false);
 			}
 			
 			CommentWapper commentByMe = cm.getCommentByMe();
 			for(Comment c : commentByMe.getComments()){
-				spo.append(c.getUser().getId());
-				spo.append("\t");
-				spo.append("rdf:createComment");
-				spo.append("\t");
-				spo.append(c.getId());
-				spo.append("\n");
-				manager.write(spo.toString());
-				spo.setLength(0);
-				
-				spo.append(c.getId());
-				spo.append("\t");
-				spo.append("rdf:commentTo");
-				spo.append("\t");
-				spo.append(c.getStatus().getId());
-				spo.append("\n");
-				manager.write(spo.toString());
-				spo.setLength(0);
-				
-				spo.append(c.getId());
-				spo.append("\t");
-				spo.append("rdf:commentContext");
-				spo.append("\t");
-				spo.append(c.getText());
-				spo.append("\n");
-				manager.write(spo.toString());
-				spo.setLength(0);
-				
-				spo.append(c.getId());
-				spo.append("\t");
-				spo.append("rdf:commentData");
-				spo.append("\t");
-				spo.append(c.getCreatedAt());
-				spo.append("\n");
-				manager.write(spo.toString());
-				spo.setLength(0);
-//				manager.write(c.getUser().getId() + "\t" + "rdf:createComment" + "\t" + c.getId() + "\n");
-//				manager.write(c.getId() + "\t" + "rdf:commentTo" + "\t" + c.getStatus().getId() + "\n");
-//				manager.write(c.getId() + "\t" + "rdf:commentContext" + "\t" + c.getText() + "\n");
-//				manager.write(c.getId() + "\t" + "rdf:commentDate" + "\t" + c.getCreatedAt() + "\n");
-//				Log.logInfo(c.toString());
+				repo.setSubjType("userID");
+				repo.setObjType("weiboID");
+				repo.addRecord(c.getUser().getId(), "createComment", c.getIdstr(), true);
+	
+				repo.setSubjType("weiboID");
+				repo.addRecord(c.getIdstr(), "commentTo", c.getStatus().getId(), true);
+				repo.addRecord(c.getIdstr(), "commentContext", c.getText(), false);
+				repo.addRecord(c.getIdstr(), "commentData", c.getCreatedAt().toString(), false);
 			}
 			
 			CommentWapper commentToMe = cm.getCommentToMe();
 			for(Comment c :commentToMe.getComments()){
-				spo.append(c.getUser().getId());
-				spo.append("\t");
-				spo.append("rdf:createComment");
-				spo.append("\t");
-				spo.append(c.getId());
-				spo.append("\n");
-				manager.write(spo.toString());
-				spo.setLength(0);
-				
-				spo.append(c.getId());
-				spo.append("\t");
-				spo.append("rdf:commentTo");
-				spo.append("\t");
-				spo.append(c.getStatus().getId());
-				spo.append("\n");
-				manager.write(spo.toString());
-				spo.setLength(0);
-				
-				spo.append(c.getId());
-				spo.append("\t");
-				spo.append("rdf:commentContext");
-				spo.append("\t");
-				spo.append(c.getText());
-				spo.append("\n");
-				manager.write(spo.toString());
-				spo.setLength(0);
-				
-				spo.append(c.getId());
-				spo.append("\t");
-				spo.append("rdf:commentData");
-				spo.append("\t");
-				spo.append(c.getCreatedAt());
-				spo.append("\n");
-				manager.write(spo.toString());
-				spo.setLength(0);
-//				manager.write(c.getUser().getId() + "\t" + "rdf:createComment" + "\t" + c.getId() + "\n");
-//				manager.write(c.getId() + "\t" + "rdf:commentTo" + "\t" + c.getStatus().getId() + "\n");
-//				manager.write(c.getId() + "\t" + "rdf:commentContext" + "\t" + c.getText() + "\n");
-//				manager.write(c.getId() + "\t" + "rdf:commentDate" + "\t" + c.getCreatedAt() + "\n");
-////				Log.logInfo(c.toString());
+				repo.setSubjType("userID");
+				repo.setObjType("weiboID");
+				repo.addRecord(c.getUser().getId(), "createComment", c.getIdstr(), true);
+	
+				repo.setSubjType("weiboID");
+				repo.addRecord(c.getIdstr(), "commentTo", c.getStatus().getId(), true);
+				repo.addRecord(c.getIdstr(), "commentContext", c.getText(), false);
+				repo.addRecord(c.getIdstr(), "commentData", c.getCreatedAt().toString(), false);
 			}
 		} catch (WeiboException e) {
 			e.printStackTrace();
 		}
 		manager.close();
+		System.out.println("----------output ends-------------");
 	}
 }

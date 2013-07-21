@@ -90,6 +90,7 @@ public class UriUtil {
 		String url = null;
 		
 		if(isUri(iden)) {
+			System.out.println("isUri");
 			return valueFactory.createURI(iden);
 		} else {
 			try {
@@ -107,7 +108,8 @@ public class UriUtil {
 	 * in the format of URI.
 	 */
 	public boolean isUri(String obj) {
-		return obj.matches("(([a-zA-Z][0-9a-zA-Z+\\\\-\\\\.]*:)?/{0,2}[0-9a-zA-Z;/?:@&=+$\\\\.\\\\-_!~*'()%]+)?(#[0-9a-zA-Z;/?:@&=+$\\\\.\\\\-_!~*'()%]+)?");
+//		return obj.matches("(([a-zA-Z][0-9a-zA-Z+\\\\-\\\\.]*:)?/{0,2}[0-9a-zA-Z;/?:@&=+$\\\\.\\\\-_!~*'()%]+)?(#[0-9a-zA-Z;/?:@&=+$\\\\.\\\\-_!~*'()%]+)?");
+		return false;
 	}
 	
 }
