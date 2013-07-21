@@ -6,16 +6,13 @@ import org.openrdf.model.ValueFactory;
 import org.openrdf.model.impl.ValueFactoryImpl;
 
 public class ObjectUtil extends UriUtil {
-	private ValueFactory valueFactory;
 	
 	public ObjectUtil() {
 		super();
-		valueFactory = new ValueFactoryImpl();
 	}
 	
 	public ObjectUtil(String namespace) {
 		super(namespace);
-		valueFactory = new ValueFactoryImpl();
 	}
 	
 	public void setValueFactory(ValueFactory vf) {

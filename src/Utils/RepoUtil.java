@@ -13,6 +13,7 @@ import org.openrdf.model.Statement;
 import org.openrdf.model.URI;
 import org.openrdf.model.ValueFactory;
 import org.openrdf.model.impl.LinkedHashModel;
+import org.openrdf.model.impl.ValueFactoryImpl;
 import org.openrdf.repository.Repository;
 import org.openrdf.repository.RepositoryConnection;
 import org.openrdf.repository.RepositoryException;
@@ -29,13 +30,15 @@ import Const.Const;
 
 public class RepoUtil {
 	private Repository repo;
-//	private MemoryStore memStore;
 	private NativeStore natStore;
 	private File repoFile;
 	private RepositoryConnection repoConn;
 	private SubjectUtil subjUtil;
 	private PredicateUtil predUtil;
 	private ObjectUtil objUtil;
+	
+	private ValueFactory valueFactory;
+	private LinkedHashModel model;
 	
 	public RepoUtil() {
 		repoFile = new File(Const.repoPath);
@@ -44,6 +47,8 @@ public class RepoUtil {
 		subjUtil = new SubjectUtil();
 		predUtil = new PredicateUtil();
 		objUtil = new ObjectUtil();
+		valueFactory = new ValueFactoryImpl();
+		model = new LinkedHashModel();
 		repoInitialize();
 	}
 	
@@ -54,6 +59,8 @@ public class RepoUtil {
 		subjUtil = new SubjectUtil();
 		predUtil = new PredicateUtil();
 		objUtil = new ObjectUtil();
+		valueFactory = new ValueFactoryImpl();
+		model = new LinkedHashModel();
 		repoInitialize();
 	}
 	
@@ -162,15 +169,16 @@ public class RepoUtil {
 //			repoConn.isActive()
 			subj = subjUtil.getUri(subjStr);
 			pred = predUtil.getPredUri(predStr);
-//			if(predUtil.isObjUri(predStr)) {
 			if(uriFlag) {
 				objUri = objUtil.getObjUri(objStr);
 				objLit = null;
 				repoConn.add(subj,pred,objUri);
+				model.add(valueFactory.createStatement(subj, pred, objUri));
 			} else {
 				objUri = null;
 				objLit = objUtil.getLiteral(objStr);
 				repoConn.add(subj, pred,objLit);
+				model.add(valueFactory.createStatement(subj, pred, objLit));
 			}
 			repoConn.close();
 		} catch (RepositoryException e) {
@@ -281,8 +289,22 @@ public class RepoUtil {
 	 * To save the triples in RDF turtle format
 	 * directly from the Sesame database. 
 	 */
-	public void saveRDFTurtle() {
+	public void saveRDFTurtle(String filePath, RDFFormat rdfFormat) {
 		//TODO 
+		try {
+			FileOutputStream out = new FileOutputStream(filePath);
+			RDFWriter writer = null;
+			writer = Rio.createWriter(rdfFormat, out);
+			writer.startRDF();
+			for(Statement stat: model) {
+				writer.handleStatement(stat);
+			}
+			writer.endRDF();
+		} catch (FileNotFoundException e) {
+			e.printStackTrace();
+		} catch (RDFHandlerException e) {
+			e.printStackTrace();
+		}
 	}
 	
 }

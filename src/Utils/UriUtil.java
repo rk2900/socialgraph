@@ -19,7 +19,7 @@ public class UriUtil {
 	}
 	
 	public UriUtil(String ns) {
-		namespace = new StringBuilder(ns);
+		namespace = new StringBuilder();
 		uriBuilder = new StringBuilder();
 		valueFactory = new ValueFactoryImpl();
 	}
@@ -35,12 +35,15 @@ public class UriUtil {
 	}
 	
 	public void setNameSpace(String ns) {
-		this.namespace = new StringBuilder(ns);
+		this.namespace.setLength(0);
+		this.namespace.append(ns);
 	}
 	
 	public void setType(String type) {
-		uriBuilder = new StringBuilder(namespace.toString());
-		uriBuilder.append(type+'/');
+		uriBuilder.setLength(0);
+		uriBuilder.append(namespace.toString());
+		uriBuilder.append(type);
+		uriBuilder.append("/");
 	}
 	
 	/*
@@ -56,18 +59,6 @@ public class UriUtil {
 	
 	public String getNameSpace() {
 		return namespace.toString();
-	}
-	
-	public URI getUri(String type, String iden) {
-		uriBuilder = new StringBuilder(namespace.toString());
-		uriBuilder = namespace.append(type);
-		try {
-			uriBuilder.append(URLEncoder.encode(iden,"utf-8"));
-		} catch (UnsupportedEncodingException e) {
-			e.printStackTrace();
-		}
-		return valueFactory.createURI(uriBuilder.toString());
-		
 	}
 	
 	public URI getUri() {
@@ -88,19 +79,33 @@ public class UriUtil {
 	public URI getUri(String iden) {
 		URI rtn = null;
 		String url = null;
-		
+		StringBuilder strRtn = new StringBuilder(uriBuilder);
 		if(isUri(iden)) {
 			System.out.println("isUri");
 			return valueFactory.createURI(iden);
 		} else {
 			try {
 				url = URLEncoder.encode(iden,"utf-8");
+				System.out.println(url);
 			} catch (UnsupportedEncodingException e) {
 				e.printStackTrace();
 			}
-			rtn = valueFactory.createURI(uriBuilder.append(url).toString());
+			strRtn.append(url);
+			rtn = valueFactory.createURI(strRtn.toString());
 			return rtn;
 		}
+	}
+	
+	public URI getUri(String type, String iden) {
+		uriBuilder = new StringBuilder(namespace.toString());
+		uriBuilder = namespace.append(type);
+		try {
+			uriBuilder.append(URLEncoder.encode(iden,"utf-8"));
+		} catch (UnsupportedEncodingException e) {
+			e.printStackTrace();
+		}
+		return valueFactory.createURI(uriBuilder.toString());
+		
 	}
 	
 	/*
