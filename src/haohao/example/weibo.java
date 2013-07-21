@@ -1,5 +1,6 @@
 package haohao.example;
 
+import Utils.RepoUtil;
 import haohao.FileOutputManager;
 import weibo4j.Comments;
 import weibo4j.Friendships;
@@ -32,7 +33,7 @@ public class weibo{
 		cm.client.setToken(access_token);
 		
 		FileOutputManager manager = new FileOutputManager("d:\\test\\new.txt","UTF-8");
-		
+		RepoUtil repo = new RepoUtil();
 		
 		StringBuilder spo = new StringBuilder();
 		

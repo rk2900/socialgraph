@@ -130,7 +130,7 @@ public class RepoUtil {
 	/*
 	 * The Str-Str-Str format SPO record.
 	 */
-	public void addRecord(String subjStr, String predStr, String objStr) {
+	public void addRecord(String subjStr, String predStr, String objStr, boolean uriFlag) {
 		URI subj;
 		URI pred;
 		URI objUri;
@@ -139,7 +139,8 @@ public class RepoUtil {
 			repoConn = repo.getConnection();
 			subj = subjUtil.getUri(subjStr);
 			pred = predUtil.getPredUri(predStr);
-			if(predUtil.isObjUri(predStr)) {
+//			if(predUtil.isObjUri(predStr)) {
+			if(uriFlag) {
 				objUri = objUtil.getObjUri(objStr);
 				objLit = null;
 				repoConn.add(subj,pred,objUri);
