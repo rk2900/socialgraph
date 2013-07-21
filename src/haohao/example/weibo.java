@@ -25,8 +25,8 @@ import weibo4j.model.WeiboException;
 public class weibo{
 	public static void main(String[] args) throws QueryEvaluationException, RepositoryException, MalformedQueryException {
 		RepoUtil repo = new RepoUtil();
-//		repo.addRecords("./result.n3", "", RDFFormat.N3);
 		String NS = "http://weibo.com/";
+//		repo.addRecords("./result.n3", "", RDFFormat.N3);
 		///////////////////////////////////////////////
 		String access_token = "2.00vDGzJC0OM2YC4ffc0d56f70hPqLU";
 		String uid = "1979814003";
@@ -55,7 +55,9 @@ public class weibo{
 			repo.setSubjType("userID");
 			
 			repo.addRecord(uid, "name", user.getScreenName(), false);
-			repo.addRecord(uid, "description", user.getDescription(), false);
+			if(user.getDescription().length() != 0){
+				repo.addRecord(uid, "description", user.getDescription(), false);
+			}
 			
 			UserWapper users = fm.getFollowersById(uid);
 			for(User u : users.getUsers()){
@@ -64,7 +66,9 @@ public class weibo{
 				
 				repo.addRecord(uid, "follower", u.getId(), true);
 				repo.addRecord(u.getId(), "name", u.getScreenName(), false);
-				repo.addRecord(u.getId(), "description", u.getDescription(), false);
+				if(u.getDescription().length() != 0){
+					repo.addRecord(u.getId(), "description", u.getDescription(), false);
+				}
 			}
 			
 			users = fm.getFriendsByID(uid);
@@ -72,6 +76,9 @@ public class weibo{
 				repo.addRecord(uid, "friend", u.getId(), true);
 				repo.addRecord(u.getId(), "name", u.getScreenName(), false);
 				repo.addRecord(u.getId(), "description", u.getDescription(), false);
+				if(u.getDescription().length() != 0){
+					repo.addRecord(u.getId(), "description", u.getDescription(), false);
+				}
 			}
 			
 			StatusWapper status = tm.getUserTimeline();
@@ -115,7 +122,7 @@ public class weibo{
 				repo.setSubjType("weiboID");
 				repo.addRecord(c.getIdstr(), "commentTo", c.getStatus().getId(), true);
 				repo.addRecord(c.getIdstr(), "commentContext", c.getText(), false);
-				repo.addRecord(c.getIdstr(), "commentData", c.getCreatedAt().toLocaleString(), false);
+				repo.addRecord(c.getIdstr(), "commentDate", c.getCreatedAt().toLocaleString(), false);
 			}
 			
 			CommentWapper commentToMe = cm.getCommentToMe();
@@ -127,27 +134,28 @@ public class weibo{
 				repo.setSubjType("weiboID");
 				repo.addRecord(c.getIdstr(), "commentTo", c.getStatus().getId(), true);
 				repo.addRecord(c.getIdstr(), "commentContext", c.getText(), false);
-				repo.addRecord(c.getIdstr(), "commentData", c.getCreatedAt().toLocaleString(), false);
+				repo.addRecord(c.getIdstr(), "commentDate", c.getCreatedAt().toLocaleString(), false);
 			}
 		} catch (WeiboException e) {
 			e.printStackTrace();
 		}
 		manager.close();
-			System.out.println("----------output ends-------------");
-			repo.saveRDFTurtle("./result.n3", RDFFormat.N3);
+		System.out.println("----------output ends-------------");
+		repo.saveRDFTurtle("./result.n3", RDFFormat.N3);
 			//////////////////////////////////////////////////////////
 			
-//			String queryTemp = "PREFIX uid:<http://weibo.com/userID/> PREFIX prop:<http://weibo.com/property/> select ?y WHERE {uid:1979814003 prop:friend ?y . uid:1979814003 prop:follower ?y} ";
-//		
-//			SparqlUtil sparql = new SparqlUtil(repo);
-//			String[] prefix = {"uid", "http://weibo.com/userID/",
-//								"prop", "http://weibo.com/property/"};
-//			TupleQueryResult itr = sparql.Query(prefix, "?y" ,"uid:1979814003 prop:friend ?y . uid:1979814003 prop:follower ?y", null, null);
-//			while (itr.hasNext()) {
-//				BindingSet bf = itr.next();
-//				System.out.println(bf.getValue("y"));
-//			}
-//			itr.close();
+			String queryTemp = "PREFIX uid:<http://weibo.com/userID/> PREFIX prop:<http://weibo.com/property/> SELECT ?y ?date WHERE { uid:1979814003 prop:createWeibo ?y . ?y prop:weiboDate ?date } ORDER BY ?date";
+		
+			SparqlUtil sparql = new SparqlUtil(repo);
+			String[] prefix = {"uid", "http://weibo.com/userID/",
+								"prop", "http://weibo.com/property/"};
+			TupleQueryResult itr = sparql.Query(prefix, "?y ?date" ,"uid:1979814003 prop:createWeibo ?y . ?y prop:weiboDate ?date", null, null);
+			while (itr.hasNext()) {
+				BindingSet bf = itr.next();
+				System.out.println(bf.getValue("y"));
+				System.out.println(bf.getValue("date"));
+			}
+			itr.close();
 //		}
 		System.out.println("Program exit.");
 	}

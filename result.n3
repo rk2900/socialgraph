@@ -13,13 +13,11 @@
 
 <http://weibo.com/userID/1979814003> <http://weibo.com/property/follower> <http://weibo.com/userID/3493528170> .
 
-<http://weibo.com/userID/3493528170> <http://www.w3.org/2000/01/rdf-schema#label> "手机用户3493528170" ;
-	<http://weibo.com/property/description> "" .
+<http://weibo.com/userID/3493528170> <http://www.w3.org/2000/01/rdf-schema#label> "手机用户3493528170" .
 
 <http://weibo.com/userID/1979814003> <http://weibo.com/property/follower> <http://weibo.com/userID/3044031960> .
 
-<http://weibo.com/userID/3044031960> <http://www.w3.org/2000/01/rdf-schema#label> "脆弱的林桂香" ;
-	<http://weibo.com/property/description> "" .
+<http://weibo.com/userID/3044031960> <http://www.w3.org/2000/01/rdf-schema#label> "脆弱的林桂香" .
 
 <http://weibo.com/userID/1979814003> <http://weibo.com/property/follower> <http://weibo.com/userID/2450038992> .
 
@@ -33,18 +31,15 @@
 
 <http://weibo.com/userID/1979814003> <http://weibo.com/property/follower> <http://weibo.com/userID/2346918585> .
 
-<http://weibo.com/userID/2346918585> <http://www.w3.org/2000/01/rdf-schema#label> "刘jiafa" ;
-	<http://weibo.com/property/description> "" .
+<http://weibo.com/userID/2346918585> <http://www.w3.org/2000/01/rdf-schema#label> "刘jiafa" .
 
 <http://weibo.com/userID/1979814003> <http://weibo.com/property/follower> <http://weibo.com/userID/3257482882> .
 
-<http://weibo.com/userID/3257482882> <http://www.w3.org/2000/01/rdf-schema#label> "手机用户3257482882" ;
-	<http://weibo.com/property/description> "" .
+<http://weibo.com/userID/3257482882> <http://www.w3.org/2000/01/rdf-schema#label> "手机用户3257482882" .
 
 <http://weibo.com/userID/1979814003> <http://weibo.com/property/follower> <http://weibo.com/userID/2714672657> .
 
-<http://weibo.com/userID/2714672657> <http://www.w3.org/2000/01/rdf-schema#label> "卢大豆豆" ;
-	<http://weibo.com/property/description> "" .
+<http://weibo.com/userID/2714672657> <http://www.w3.org/2000/01/rdf-schema#label> "卢大豆豆" .
 
 <http://weibo.com/userID/1979814003> <http://weibo.com/property/follower> <http://weibo.com/userID/1955174322> .
 
@@ -53,13 +48,11 @@
 
 <http://weibo.com/userID/1979814003> <http://weibo.com/property/follower> <http://weibo.com/userID/3165876735> .
 
-<http://weibo.com/userID/3165876735> <http://www.w3.org/2000/01/rdf-schema#label> "郑纯洁说她想像个蘑菇一样活_261" ;
-	<http://weibo.com/property/description> "" .
+<http://weibo.com/userID/3165876735> <http://www.w3.org/2000/01/rdf-schema#label> "郑纯洁说她想像个蘑菇一样活_261" .
 
 <http://weibo.com/userID/1979814003> <http://weibo.com/property/follower> <http://weibo.com/userID/2111312341> .
 
-<http://weibo.com/userID/2111312341> <http://www.w3.org/2000/01/rdf-schema#label> "行走逆鳞X" ;
-	<http://weibo.com/property/description> "" .
+<http://weibo.com/userID/2111312341> <http://www.w3.org/2000/01/rdf-schema#label> "行走逆鳞X" .
 
 <http://weibo.com/userID/1979814003> <http://weibo.com/property/follower> <http://weibo.com/userID/2124407871> .
 
@@ -78,13 +71,11 @@
 
 <http://weibo.com/userID/1979814003> <http://weibo.com/property/follower> <http://weibo.com/userID/2929030571> .
 
-<http://weibo.com/userID/2929030571> <http://www.w3.org/2000/01/rdf-schema#label> "手机用户2929030571" ;
-	<http://weibo.com/property/description> "" .
+<http://weibo.com/userID/2929030571> <http://www.w3.org/2000/01/rdf-schema#label> "手机用户2929030571" .
 
 <http://weibo.com/userID/1979814003> <http://weibo.com/property/follower> <http://weibo.com/userID/2802160303> .
 
-<http://weibo.com/userID/2802160303> <http://www.w3.org/2000/01/rdf-schema#label> "手机用户2802160303" ;
-	<http://weibo.com/property/description> "" .
+<http://weibo.com/userID/2802160303> <http://www.w3.org/2000/01/rdf-schema#label> "手机用户2802160303" .
 
 <http://weibo.com/userID/1979814003> <http://weibo.com/property/follower> <http://weibo.com/userID/1645713370> .
 
@@ -196,7 +187,19 @@
 <http://weibo.com/userID/2309457710> <http://www.w3.org/2000/01/rdf-schema#label> "李武军sjtu" ;
 	<http://weibo.com/property/description> "上海交通大学计算机科学与工程系教师，研究机器学习、数据挖掘、社交网络分析、大数据与云计算。   http://www.cs.sjtu.edu.cn/~liwujun" .
 
-<http://weibo.com/userID/1979814003> <http://weibo.com/property/friend> <http://weibo.com/userID/2346918585> , <http://weibo.com/userID/2111312341> , <http://weibo.com/userID/2714672657> , <http://weibo.com/userID/1955174322> , <http://weibo.com/userID/1400515175> .
+<http://weibo.com/userID/1979814003> <http://weibo.com/property/friend> <http://weibo.com/userID/2346918585> .
+
+<http://weibo.com/userID/2346918585> <http://weibo.com/property/description> "" .
+
+<http://weibo.com/userID/1979814003> <http://weibo.com/property/friend> <http://weibo.com/userID/2111312341> .
+
+<http://weibo.com/userID/2111312341> <http://weibo.com/property/description> "" .
+
+<http://weibo.com/userID/1979814003> <http://weibo.com/property/friend> <http://weibo.com/userID/2714672657> .
+
+<http://weibo.com/userID/2714672657> <http://weibo.com/property/description> "" .
+
+<http://weibo.com/userID/1979814003> <http://weibo.com/property/friend> <http://weibo.com/userID/1955174322> , <http://weibo.com/userID/1400515175> .
 
 <http://weibo.com/userID/1400515175> <http://www.w3.org/2000/01/rdf-schema#label> "朱浩瑾_SJTU" ;
 	<http://weibo.com/property/description> "上海交通大学计算机科学与工程系 副教授，研究方向：无线安全，分布式系统安全，隐私保护等" .
@@ -411,6 +414,81 @@
 <http://weibo.com/weiboID/3595747028919563> <http://www.w3.org/2000/01/rdf-schema#Literal> "Love SJTU//@李武军sjtu: //@陈程jack://@上海交通大学微博: //@易灿明: 就当我是杰哥的脑残粉好了，看来杰哥已经基本上打入我们内部，就连英语“第六感”水平考试这个词汇都被他掌控了哈哈[哈哈]！选择交大，选择责任！I love #SJTU#" ;
 	<http://weibo.com/property/weiboDate> "Jul 2, 2013 10:45:58 PM" .
 
+<http://weibo.com/userID/1640494672> <http://weibo.com/property/createWeibo> <http://weibo.com/weiboID/3602621082460992> .
+
+<http://weibo.com/userID/3602621082460992> <http://www.w3.org/2000/01/rdf-schema#Literal> "卧槽！！！以后妈妈再也不担心我出门会吓死人了！！！" ;
+	<http://weibo.com/property/weiboDate> "Jul 21, 2013 10:01:03 PM" .
+
+<http://weibo.com/userID/1850988623> <http://weibo.com/property/createWeibo> <http://weibo.com/weiboID/3602620910786395> .
+
+<http://weibo.com/userID/3602620910786395> <http://www.w3.org/2000/01/rdf-schema#Literal> "最近，一种听到掌声就落下的文胸火遍了网络。本AI才不会告诉你果壳网内早就有DIY教程了呢~http://t.cn/hq1wDN" ;
+	<http://weibo.com/property/weiboDate> "Jul 21, 2013 10:00:20 PM" .
+
+<http://weibo.com/userID/1197161814> <http://weibo.com/property/createWeibo> <http://weibo.com/weiboID/3602620852044704> .
+
+<http://weibo.com/userID/3602620852044704> <http://www.w3.org/2000/01/rdf-schema#Literal> "【自动纠错笔】还在为单词拼写烦恼？德国人最近发明了一款能自动纠错的笔，内置感应系统和震动装置，发现写错字就会震动。很酷啊！期待识别汉字的版本出现！英文原文：http://t.cn/zQcLBGf" ;
+	<http://weibo.com/property/weiboDate> "Jul 21, 2013 10:00:07 PM" .
+
+<http://weibo.com/userID/1993350880> <http://weibo.com/property/createWeibo> <http://weibo.com/weiboID/3602620847498229> .
+
+<http://weibo.com/userID/3602620847498229> <http://www.w3.org/2000/01/rdf-schema#Literal> "夜读∣让孤独减少排放，让它最终减少到不成为神经里的毒品——一不努力，孤独就发作。《不努力，孤独就发作》" ;
+	<http://weibo.com/property/weiboDate> "Jul 21, 2013 10:00:06 PM" .
+
+<http://weibo.com/userID/1645713370> <http://weibo.com/property/createWeibo> <http://weibo.com/weiboID/3602620608687946> .
+
+<http://weibo.com/userID/3602620608687946> <http://www.w3.org/2000/01/rdf-schema#Literal> "转发微博" ;
+	<http://weibo.com/property/weiboDate> "Jul 21, 2013 9:59:09 PM" .
+
+<http://weibo.com/userID/1643971635> <http://weibo.com/property/createWeibo> <http://weibo.com/weiboID/3602619962141306> .
+
+<http://weibo.com/userID/3602619962141306> <http://www.w3.org/2000/01/rdf-schema#Literal> "【凤凰夜读】人要是不那么死心眼，不那么执著地去追忆往昔的不幸，会更多的考虑如何对现时处境泰然处之，那么人的苦楚就会小的多。——歌德《少年维特之烦恼》" ;
+	<http://weibo.com/property/weiboDate> "Jul 21, 2013 9:56:33 PM" .
+
+<http://weibo.com/userID/1955174322> <http://weibo.com/property/createWeibo> <http://weibo.com/weiboID/3602619707103497> .
+
+<http://weibo.com/userID/3602619707103497> <http://www.w3.org/2000/01/rdf-schema#Literal> "不抛弃不放弃[威武][威武]要落泪了[泪][泪]" ;
+	<http://weibo.com/property/weiboDate> "Jul 21, 2013 9:55:35 PM" .
+
+<http://weibo.com/userID/2803301701> <http://weibo.com/property/createWeibo> <http://weibo.com/weiboID/3602619577032727> .
+
+<http://weibo.com/userID/3602619577032727> <http://www.w3.org/2000/01/rdf-schema#Literal> "【比赛结束：3：3平局】这样的比分能让中国球迷满意吗？这样的比赛能让日本队记住吗？中国足球需要用行动重新赢得尊重，还有很长的路要走。" ;
+	<http://weibo.com/property/weiboDate> "Jul 21, 2013 9:55:03 PM" .
+
+<http://weibo.com/userID/1644395354> <http://weibo.com/property/createWeibo> <http://weibo.com/weiboID/3602618087779036> .
+
+<http://weibo.com/userID/3602618087779036> <http://www.w3.org/2000/01/rdf-schema#Literal> "最佳男女身高搭配表。。。 「转」" ;
+	<http://weibo.com/property/weiboDate> "Jul 21, 2013 9:49:08 PM" .
+
+<http://weibo.com/userID/2803301701> <http://weibo.com/property/createWeibo> <http://weibo.com/weiboID/3602617056139602> .
+
+<http://weibo.com/userID/3602617056139602> <http://www.w3.org/2000/01/rdf-schema#Literal> "扳平了！3：3！//@人民日报: 中国队靠点球扳回一球，比分2:3落后日本队，还有机会！不要放弃！" ;
+	<http://weibo.com/property/weiboDate> "Jul 21, 2013 9:45:00 PM" .
+
+<http://weibo.com/userID/1644395354> <http://weibo.com/property/createWeibo> <http://weibo.com/weiboID/3602616049461356> .
+
+<http://weibo.com/userID/3602616049461356> <http://www.w3.org/2000/01/rdf-schema#Literal> "世界公认最顶级抗衰老食物！" ;
+	<http://weibo.com/property/weiboDate> "Jul 21, 2013 9:41:02 PM" .
+
+<http://weibo.com/userID/1640494672> <http://weibo.com/property/createWeibo> <http://weibo.com/weiboID/3602615814505395> .
+
+<http://weibo.com/userID/3602615814505395> <http://www.w3.org/2000/01/rdf-schema#Literal> "吃货的幸福就是这么简单，哈哈" ;
+	<http://weibo.com/property/weiboDate> "Jul 21, 2013 9:40:06 PM" .
+
+<http://weibo.com/userID/2803301701> <http://weibo.com/property/createWeibo> <http://weibo.com/weiboID/3602615709225029> .
+
+<http://weibo.com/userID/3602615709225029> <http://www.w3.org/2000/01/rdf-schema#Literal> "中国队靠点球扳回一球，比分2:3落后日本队，还有机会！不要放弃！" ;
+	<http://weibo.com/property/weiboDate> "Jul 21, 2013 9:39:41 PM" .
+
+<http://weibo.com/userID/1644395354> <http://weibo.com/property/createWeibo> <http://weibo.com/weiboID/3602614036270368> .
+
+<http://weibo.com/userID/3602614036270368> <http://www.w3.org/2000/01/rdf-schema#Literal> "我们有个同事，对羊肉过敏，一吃羊肉脸就肿，所以大家每次吃烤串都带上他，脸肿的越厉害，那家的羊肉越真。。。(转)" ;
+	<http://weibo.com/property/weiboDate> "Jul 21, 2013 9:33:02 PM" .
+
+<http://weibo.com/userID/1197161814> <http://weibo.com/property/createWeibo> <http://weibo.com/weiboID/3602613402819666> .
+
+<http://weibo.com/userID/3602613402819666> <http://www.w3.org/2000/01/rdf-schema#Literal> "【电子蝴蝶网】分享一个红点设计奖获奖作品，想抓蝴蝶，又不愿意伤害它？这款捕蝶神器，是一个模拟捕网设计的高科技圆环，圆环由一部360度的立体扫描仪构成，拿着它只用让蝴蝶从圆环中穿过，即完成了全部的扫描工作。回家把数据导到电脑，就可以打印出一模一样的蝴蝶剪纸模型啦。http://t.cn/zQc2jig" ;
+	<http://weibo.com/property/weiboDate> "Jul 21, 2013 9:30:28 PM" .
+
 <http://weibo.com/userID/1236380405> <http://weibo.com/property/createWeibo> <http://weibo.com/weiboID/3602610802338903> .
 
 <http://weibo.com/userID/3602610802338903> <http://www.w3.org/2000/01/rdf-schema#Literal> "猫和猪是好朋友。一天猫掉进大坑，猪拿来绳子，猫叫猪把绳子扔下来，结果它整捆扔了下去。猫很郁闷的说：这样扔下来，怎么拉我上去？猪说：不然怎么做？猫说：你应该拉住一头绳子啊！猪就跳下去，拿了绳子的一头，说：现在可以了！猫哭了，哭得很幸福。—— 有种朋友不是很聪明，却值得你终生拥有。 " ;
@@ -436,80 +514,11 @@
 <http://weibo.com/userID/3602610365641938> <http://www.w3.org/2000/01/rdf-schema#Literal> "下半场开始不久，日本队又进一球，2：1领先中国队。" ;
 	<http://weibo.com/property/weiboDate> "Jul 21, 2013 9:18:28 PM" .
 
-<http://weibo.com/userID/1645578093> <http://weibo.com/property/createWeibo> <http://weibo.com/weiboID/3602610328591376> .
+<http://weibo.com/weiboID/3602620608687946> <http://www.w3.org/2000/01/rdf-schema#Literal> "转发微博" ;
+	<http://weibo.com/property/weiboDate> "Jul 21, 2013 9:59:09 PM" .
 
-<http://weibo.com/userID/3602610328591376> <http://www.w3.org/2000/01/rdf-schema#Literal> "【反贪硕士班创办者：学生里出现贪官不奇怪】对反贪硕士班最尖锐的批评是：在未来，这个班的学生里会不会出现贪官？“如果我培养的学生里面出现贪官，这个不奇怪。”何家弘说，“我只能管到学校里的时间，社会的大环境不是我个人能决定的。” （中国青年报） http://t.cn/zQbFZ3O" ;
-	<http://weibo.com/property/weiboDate> "Jul 21, 2013 9:18:18 PM" .
-
-<http://weibo.com/userID/1644395354> <http://weibo.com/property/createWeibo> <http://weibo.com/weiboID/3602610030696972> .
-
-<http://weibo.com/userID/3602610030696972> <http://www.w3.org/2000/01/rdf-schema#Literal> "10个聊天时让人最不爽的词语，你常说哪个？ （转）" ;
-	<http://weibo.com/property/weiboDate> "Jul 21, 2013 9:17:07 PM" .
-
-<http://weibo.com/userID/2803301701> <http://weibo.com/property/createWeibo> <http://weibo.com/weiboID/3602609770483902> .
-
-<http://weibo.com/userID/3602609770483902> <http://www.w3.org/2000/01/rdf-schema#Literal> "【芬兰推出全球首个“刷脸”支付系统】芬兰一家企业推出全球首个“刷脸”支付系统。结账时，消费者只需扫描面部，等身份信息显示出后，在触摸显示屏上点击确认完成交易。无需信用卡、钱包或手机。整个交易过程不超5秒钟。不过，也有人认为，“这点时间，通常也就够你拿出钱包”。你说呢？（新华社）" ;
-	<http://weibo.com/property/weiboDate> "Jul 21, 2013 9:16:04 PM" .
-
-<http://weibo.com/userID/1640494672> <http://weibo.com/property/createWeibo> <http://weibo.com/weiboID/3602608344518174> .
-
-<http://weibo.com/userID/3602608344518174> <http://www.w3.org/2000/01/rdf-schema#Literal> "记得最本真的自己" ;
-	<http://weibo.com/property/weiboDate> "Jul 21, 2013 9:10:25 PM" .
-
-<http://weibo.com/userID/1883881851> <http://weibo.com/property/createWeibo> <http://weibo.com/weiboID/3602608294214192> .
-
-<http://weibo.com/userID/3602608294214192> <http://www.w3.org/2000/01/rdf-schema#Literal> "【加盟森林狼 凯文-马丁渴望与勒夫、卢比奥打出火花】“与杜兰特和威斯布鲁克搭档过之后，我不会再加盟一直没有球星的球队，球星让你的比赛得到提升，也容易许多。”周六马丁表示。更多详情：http://t.cn/zQtdhei" ;
-	<http://weibo.com/property/weiboDate> "Jul 21, 2013 9:10:13 PM" .
-
-<http://weibo.com/userID/1644395354> <http://weibo.com/property/createWeibo> <http://weibo.com/weiboID/3602605995488757> .
-
-<http://weibo.com/userID/3602605995488757> <http://www.w3.org/2000/01/rdf-schema#Literal> "头，要抬得起来，低得下去。" ;
-	<http://weibo.com/property/weiboDate> "Jul 21, 2013 9:01:05 PM" .
-
-<http://weibo.com/userID/1644395354> <http://weibo.com/property/createWeibo> <http://weibo.com/weiboID/3602605982902536> .
-
-<http://weibo.com/userID/3602605982902536> <http://www.w3.org/2000/01/rdf-schema#Literal> "不管你买了多少，這些混蛋都会神秘地消失……有木有？「转」" ;
-	<http://weibo.com/property/weiboDate> "Jul 21, 2013 9:01:02 PM" .
-
-<http://weibo.com/userID/1850988623> <http://weibo.com/property/createWeibo> <http://weibo.com/weiboID/3602605953787575> .
-
-<http://weibo.com/userID/3602605953787575> <http://www.w3.org/2000/01/rdf-schema#Literal> "#万有青年养成计划#入围梦想：如果恋爱一定比失恋多一次，那么如何快速、健康地走出失恋低谷就成为了人生必须解决的一大问题。北师大心理系学生@Joey学习不依赖 计划通过科学的理论研究“不科学”的失恋，并制作出一份失恋手册，如果你也对爱情心理学感兴趣，那么快来支持她→http://t.cn/zj6G70C" ;
-	<http://weibo.com/property/weiboDate> "Jul 21, 2013 9:00:53 PM" .
-
-<http://weibo.com/userID/1197161814> <http://weibo.com/property/createWeibo> <http://weibo.com/weiboID/3602605764986664> .
-
-<http://weibo.com/userID/3602605764986664> <http://www.w3.org/2000/01/rdf-schema#Literal> "这篇文章比较了“人大附中”模式和“学霸”模式。前者能从“特区”慢慢普及吗？" ;
-	<http://weibo.com/property/weiboDate> "Jul 21, 2013 9:00:11 PM" .
-
-<http://weibo.com/userID/2803301701> <http://weibo.com/property/createWeibo> <http://weibo.com/weiboID/3602603202073475> .
-
-<http://weibo.com/userID/3602603202073475> <http://www.w3.org/2000/01/rdf-schema#Literal> "【H7N9又来了！ 廊坊一活禽市场检测出H7N9禽流感病毒】昨天，一名来自河北省廊坊市的患者在北京确诊为人感染H7N9禽流感病例。目前，廊坊已启动突发公共卫生事件四级应急响应。在对全市活禽交易点采样化验后，一处环境标本H7N9禽流感病毒检测为阳性。下一步，廊坊将关闭活禽市场，严密监控。" ;
-	<http://weibo.com/property/weiboDate> "Jul 21, 2013 8:49:59 PM" .
-
-<http://weibo.com/userID/1644395354> <http://weibo.com/property/createWeibo> <http://weibo.com/weiboID/3602601956538795> .
-
-<http://weibo.com/userID/3602601956538795> <http://www.w3.org/2000/01/rdf-schema#Literal> "不要玩食物好嘛！小图吓死人好嘛！！！你这熊孩子！！！[转]" ;
-	<http://weibo.com/property/weiboDate> "Jul 21, 2013 8:45:03 PM" .
-
-<http://weibo.com/userID/1189729754> <http://weibo.com/property/createWeibo> <http://weibo.com/weiboID/3602601780499336> .
-
-<http://weibo.com/userID/3602601780499336> <http://www.w3.org/2000/01/rdf-schema#Literal> "欢迎大家通过微信语音留言参与节目，微信搜索quanminxiangduilun，即可留言。谢谢!" ;
-	<http://weibo.com/property/weiboDate> "Jul 21, 2013 8:44:18 PM" .
-
-<http://weibo.com/userID/1640494672> <http://weibo.com/property/createWeibo> <http://weibo.com/weiboID/3602600702514322> .
-
-<http://weibo.com/userID/3602600702514322> <http://www.w3.org/2000/01/rdf-schema#Literal> "喜欢这个版本！" ;
-	<http://weibo.com/property/weiboDate> "Jul 21, 2013 8:40:03 PM" .
-
-<http://weibo.com/userID/2024966602> <http://weibo.com/property/createWeibo> <http://weibo.com/weiboID/3602600190922418> .
-
-<http://weibo.com/userID/3602600190922418> <http://www.w3.org/2000/01/rdf-schema#Literal> "撒花[鲜花][鲜花]" ;
-	<http://weibo.com/property/weiboDate> "Jul 21, 2013 8:37:58 PM" .
-
-<http://weibo.com/userID/2803301701> <http://weibo.com/property/createWeibo> <http://weibo.com/weiboID/3602599418371159> .
-
-<http://weibo.com/userID/3602599418371159> <http://www.w3.org/2000/01/rdf-schema#Literal> "比赛进行到32分钟，日本队把比分追平了。。。" ;
-	<http://weibo.com/property/weiboDate> "Jul 21, 2013 8:34:57 PM" .
+<http://weibo.com/weiboID/3602619707103497> <http://www.w3.org/2000/01/rdf-schema#Literal> "不抛弃不放弃[威武][威武]要落泪了[泪][泪]" ;
+	<http://weibo.com/property/weiboDate> "Jul 21, 2013 9:55:35 PM" .
 
 <http://weibo.com/userID/2028886402> <http://weibo.com/property/createWeibo> <http://weibo.com/weiboID/3602573850707778> .
 
@@ -601,588 +610,578 @@
 <http://weibo.com/weiboID/3601916204309896> <http://www.w3.org/2000/01/rdf-schema#Literal> "@余小嘿_ (双手献上)//@瓜皮的id酱: 啊哈哈啊哈哈哈哈哈//@杉田优姬: 别这样救命 //@-阿V-: 哈哈哈哈毫无违和o(*≧▽≦)ツ┏━┓//@麻斯特夜: @我是叫小明 @Darwin_Z海洋 [哈哈][哈哈][哈哈] //@墨西哥草帽星系: 盯上瘾了....//@猫耳叔_毅先生_张太太泥嚎: //@大葵爷Girasole: 违和感哪去了" ;
 	<http://weibo.com/property/weiboDate> "Jul 19, 2013 11:20:05 PM" .
 
-<http://weibo.com/userID/2278851592> <http://weibo.com/property/createWeibo> <http://weibo.com/weiboID/3601856062667559> .
-
-<http://weibo.com/weiboID/3601856062667559> <http://www.w3.org/2000/01/rdf-schema#Literal> "小伙伴们又都惊呆了//@360云盘:恭喜@张怡明Alien 幸运中彩云盘100G永久空间，抽奖公示：http://t.cn/zQ5fd04 。 //@360云盘: 为了让更多人知道百度没有抄袭360搜索，此微博转发过2000次，小编抽送1个100G永久空间~" ;
-	<http://weibo.com/property/weiboDate> "Jul 19, 2013 7:21:07 PM" .
-
-<http://weibo.com/userID/1884228747> <http://weibo.com/property/createWeibo> <http://weibo.com/weiboID/3601821857318606> .
-
-<http://weibo.com/weiboID/3601821857318606> <http://www.w3.org/2000/01/rdf-schema#Literal> "@豆沙包sss [bm可爱][bm可爱][bm可爱][bm可爱][bm可爱][bm可爱][bm可爱][bm可爱][bm可爱][bm可爱][bm可爱][bm可爱][bm可爱][bm可爱][bm可爱][bm可爱][bm可爱][bm可爱][bm可爱][bm可爱][bm可爱][bm可爱][bm可爱][bm可爱][bm可爱][bm可爱][bm可爱][bm可爱]" ;
-	<http://weibo.com/property/weiboDate> "Jul 19, 2013 5:05:12 PM" .
-
 <http://weibo.com/userID/1979814003> <http://weibo.com/property/createComment> <http://weibo.com/weiboID/3599381448481504> .
 
 <http://weibo.com/weiboID/3599381448481504> <http://weibo.com/property/commentTo> <http://weibo.com/weiboID/3599381078771268> ;
 	<http://www.w3.org/2000/01/rdf-schema#comment> "回复@John_强蝈蝈:酱油党睡觉去啦 强哥哥好生活" ;
-	<http://weibo.com/property/commentData> "Jul 12, 2013 11:27:53 PM" .
+	<http://weibo.com/property/commentDate> "Jul 12, 2013 11:27:53 PM" .
 
 <http://weibo.com/userID/1979814003> <http://weibo.com/property/createComment> <http://weibo.com/weiboID/3599381251149386> .
 
 <http://weibo.com/weiboID/3599381251149386> <http://weibo.com/property/commentTo> <http://weibo.com/weiboID/3599381078771268> ;
 	<http://www.w3.org/2000/01/rdf-schema#comment> "还少一个@尾灯 [xkl转圈]" ;
-	<http://weibo.com/property/commentData> "Jul 12, 2013 11:27:06 PM" .
+	<http://weibo.com/property/commentDate> "Jul 12, 2013 11:27:06 PM" .
 
 <http://weibo.com/userID/1979814003> <http://weibo.com/property/createComment> <http://weibo.com/weiboID/3599335268942914> .
 
 <http://weibo.com/weiboID/3599335268942914> <http://weibo.com/property/commentTo> <http://weibo.com/weiboID/3599318416557137> ;
 	<http://www.w3.org/2000/01/rdf-schema#comment> "[围观]" ;
-	<http://weibo.com/property/commentData> "Jul 12, 2013 8:24:23 PM" .
+	<http://weibo.com/property/commentDate> "Jul 12, 2013 8:24:23 PM" .
 
 <http://weibo.com/userID/1979814003> <http://weibo.com/property/createComment> <http://weibo.com/weiboID/3599164866946201> .
 
 <http://weibo.com/weiboID/3599164866946201> <http://weibo.com/property/commentTo> <http://weibo.com/weiboID/3598988298855252> ;
 	<http://www.w3.org/2000/01/rdf-schema#comment> "回复@卢大豆豆:没事 过几天过来玩呗 我暂时不会回家" ;
-	<http://weibo.com/property/commentData> "Jul 12, 2013 9:07:16 AM" .
+	<http://weibo.com/property/commentDate> "Jul 12, 2013 9:07:16 AM" .
 
 <http://weibo.com/userID/1979814003> <http://weibo.com/property/createComment> <http://weibo.com/weiboID/3599163923332329> .
 
 <http://weibo.com/weiboID/3599163923332329> <http://weibo.com/property/commentTo> <http://weibo.com/weiboID/3598988298855252> ;
 	<http://www.w3.org/2000/01/rdf-schema#comment> "回复@卢大豆豆:放假了 在实验室实习呢 你现在跑哪了" ;
-	<http://weibo.com/property/commentData> "Jul 12, 2013 9:03:31 AM" .
+	<http://weibo.com/property/commentDate> "Jul 12, 2013 9:03:31 AM" .
 
 <http://weibo.com/userID/1979814003> <http://weibo.com/property/createComment> <http://weibo.com/weiboID/3598992183196223> .
 
 <http://weibo.com/weiboID/3598992183196223> <http://weibo.com/property/commentTo> <http://weibo.com/weiboID/3598988298855252> ;
 	<http://www.w3.org/2000/01/rdf-schema#comment> "回复@卢大豆豆:怎么着我也比你大半岁" ;
-	<http://weibo.com/property/commentData> "Jul 11, 2013 9:41:05 PM" .
+	<http://weibo.com/property/commentDate> "Jul 11, 2013 9:41:05 PM" .
 
 <http://weibo.com/userID/1979814003> <http://weibo.com/property/createComment> <http://weibo.com/weiboID/3598989352145440> .
 
 <http://weibo.com/weiboID/3598989352145440> <http://weibo.com/property/commentTo> <http://weibo.com/weiboID/3598988298855252> ;
 	<http://www.w3.org/2000/01/rdf-schema#comment> "回复@卢大豆豆:小豆豆有空就过来呗" ;
-	<http://weibo.com/property/commentData> "Jul 11, 2013 9:29:50 PM" .
+	<http://weibo.com/property/commentDate> "Jul 11, 2013 9:29:50 PM" .
 
 <http://weibo.com/userID/1979814003> <http://weibo.com/property/createComment> <http://weibo.com/weiboID/3596385805025434> .
 
 <http://weibo.com/weiboID/3596385805025434> <http://weibo.com/property/commentTo> <http://weibo.com/weiboID/3596308859917995> ;
 	<http://www.w3.org/2000/01/rdf-schema#comment> "回复@John_强蝈蝈:你问问良子去" ;
-	<http://weibo.com/property/commentData> "Jul 4, 2013 5:04:16 PM" .
+	<http://weibo.com/property/commentDate> "Jul 4, 2013 5:04:16 PM" .
 
 <http://weibo.com/userID/1979814003> <http://weibo.com/property/createComment> <http://weibo.com/weiboID/3594453518474662> .
 
 <http://weibo.com/weiboID/3594453518474662> <http://weibo.com/property/commentTo> <http://weibo.com/weiboID/3594301914981257> ;
 	<http://www.w3.org/2000/01/rdf-schema#comment> "回复@刘jiafa:可以给你打掩护[嘻嘻]" ;
-	<http://weibo.com/property/commentData> "Jun 29, 2013 9:06:03 AM" .
+	<http://weibo.com/property/commentDate> "Jun 29, 2013 9:06:03 AM" .
 
 <http://weibo.com/userID/1979814003> <http://weibo.com/property/createComment> <http://weibo.com/weiboID/3594330415830737> .
 
 <http://weibo.com/weiboID/3594330415830737> <http://weibo.com/property/commentTo> <http://weibo.com/weiboID/3594301914981257> ;
 	<http://www.w3.org/2000/01/rdf-schema#comment> "回复@znVincent:一语道破佳法目的" ;
-	<http://weibo.com/property/commentData> "Jun 29, 2013 12:56:52 AM" .
+	<http://weibo.com/property/commentDate> "Jun 29, 2013 12:56:52 AM" .
 
 <http://weibo.com/userID/1979814003> <http://weibo.com/property/createComment> <http://weibo.com/weiboID/3593194321447575> .
 
 <http://weibo.com/weiboID/3593194321447575> <http://weibo.com/property/commentTo> <http://weibo.com/weiboID/3593148200420808> ;
 	<http://www.w3.org/2000/01/rdf-schema#comment> "回复@John_强蝈蝈:氧化钙。。。" ;
-	<http://weibo.com/property/commentData> "Jun 25, 2013 9:42:27 PM" .
+	<http://weibo.com/property/commentDate> "Jun 25, 2013 9:42:27 PM" .
 
 <http://weibo.com/userID/1979814003> <http://weibo.com/property/createComment> <http://weibo.com/weiboID/3592054548846765> .
 
 <http://weibo.com/weiboID/3592054548846765> <http://weibo.com/property/commentTo> <http://weibo.com/weiboID/3591959329454090> ;
 	<http://www.w3.org/2000/01/rdf-schema#comment> "骑自行车带人。。。" ;
-	<http://weibo.com/property/commentData> "Jun 22, 2013 6:13:24 PM" .
+	<http://weibo.com/property/commentDate> "Jun 22, 2013 6:13:24 PM" .
 
 <http://weibo.com/userID/1979814003> <http://weibo.com/property/createComment> <http://weibo.com/weiboID/3590598575861910> .
 
 <http://weibo.com/weiboID/3590598575861910> <http://weibo.com/property/commentTo> <http://weibo.com/weiboID/3590586495859407> ;
 	<http://www.w3.org/2000/01/rdf-schema#comment> "中巴友谊，这么有深度" ;
-	<http://weibo.com/property/commentData> "Jun 18, 2013 5:47:53 PM" .
+	<http://weibo.com/property/commentDate> "Jun 18, 2013 5:47:53 PM" .
 
 <http://weibo.com/userID/1979814003> <http://weibo.com/property/createComment> <http://weibo.com/weiboID/3590283813826347> .
 
 <http://weibo.com/weiboID/3590283813826347> <http://weibo.com/property/commentTo> <http://weibo.com/weiboID/3590190481991999> ;
 	<http://www.w3.org/2000/01/rdf-schema#comment> "回复@Fred腓特烈大叔:你木有海量，过了明天你一身轻松" ;
-	<http://weibo.com/property/commentData> "Jun 17, 2013 8:57:07 PM" .
+	<http://weibo.com/property/commentDate> "Jun 17, 2013 8:57:07 PM" .
 
 <http://weibo.com/userID/1979814003> <http://weibo.com/property/createComment> <http://weibo.com/weiboID/3586564900998832> .
 
 <http://weibo.com/weiboID/3586564900998832> <http://weibo.com/property/commentTo> <http://weibo.com/weiboID/3586555341458561> ;
 	<http://www.w3.org/2000/01/rdf-schema#comment> "..." ;
-	<http://weibo.com/property/commentData> "Jun 7, 2013 2:39:30 PM" .
+	<http://weibo.com/property/commentDate> "Jun 7, 2013 2:39:30 PM" .
 
 <http://weibo.com/userID/1979814003> <http://weibo.com/property/createComment> <http://weibo.com/weiboID/3583773709227766> .
 
 <http://weibo.com/weiboID/3583773709227766> <http://weibo.com/property/commentTo> <http://weibo.com/weiboID/3583756847430194> ;
 	<http://www.w3.org/2000/01/rdf-schema#comment> "回复@John_强蝈蝈:断句由@Rosalind14 完成" ;
-	<http://weibo.com/property/commentData> "May 30, 2013 9:48:18 PM" .
+	<http://weibo.com/property/commentDate> "May 30, 2013 9:48:18 PM" .
 
 <http://weibo.com/userID/1979814003> <http://weibo.com/property/createComment> <http://weibo.com/weiboID/3583771565782882> .
 
 <http://weibo.com/weiboID/3583771565782882> <http://weibo.com/property/commentTo> <http://weibo.com/weiboID/3583756847430194> ;
 	<http://www.w3.org/2000/01/rdf-schema#comment> "读了好几遍" ;
-	<http://weibo.com/property/commentData> "May 30, 2013 9:39:43 PM" .
+	<http://weibo.com/property/commentDate> "May 30, 2013 9:39:43 PM" .
 
 <http://weibo.com/userID/1979814003> <http://weibo.com/property/createComment> <http://weibo.com/weiboID/3576095238916996> .
 
 <http://weibo.com/weiboID/3576095238916996> <http://weibo.com/property/commentTo> <http://weibo.com/weiboID/3576090561397560> ;
 	<http://www.w3.org/2000/01/rdf-schema#comment> "Orz" ;
-	<http://weibo.com/property/commentData> "May 9, 2013 5:16:47 PM" .
+	<http://weibo.com/property/commentDate> "May 9, 2013 5:16:47 PM" .
 
 <http://weibo.com/userID/1979814003> <http://weibo.com/property/createComment> <http://weibo.com/weiboID/3573629512436534> .
 
 <http://weibo.com/weiboID/3573629512436534> <http://weibo.com/property/commentTo> <http://weibo.com/weiboID/3573625443376480> ;
 	<http://www.w3.org/2000/01/rdf-schema#comment> "收到的居然不是传票，改成奖券了！！！" ;
-	<http://weibo.com/property/commentData> "May 2, 2013 9:58:53 PM" .
+	<http://weibo.com/property/commentDate> "May 2, 2013 9:58:53 PM" .
 
 <http://weibo.com/userID/1979814003> <http://weibo.com/property/createComment> <http://weibo.com/weiboID/3573590962352085> .
 
 <http://weibo.com/weiboID/3573590962352085> <http://weibo.com/property/commentTo> <http://weibo.com/weiboID/3573582149510755> ;
 	<http://www.w3.org/2000/01/rdf-schema#comment> "回复@Rosalind14:氧化钙。。。" ;
-	<http://weibo.com/property/commentData> "May 2, 2013 7:25:39 PM" .
+	<http://weibo.com/property/commentDate> "May 2, 2013 7:25:39 PM" .
 
 <http://weibo.com/userID/1979814003> <http://weibo.com/property/createComment> <http://weibo.com/weiboID/3573148345676395> .
 
 <http://weibo.com/weiboID/3573148345676395> <http://weibo.com/property/commentTo> <http://weibo.com/weiboID/3573147833923356> ;
 	<http://www.w3.org/2000/01/rdf-schema#comment> "回复@Rosalind14:你这么快就读完了。。。" ;
-	<http://weibo.com/property/commentData> "May 1, 2013 2:06:54 PM" .
+	<http://weibo.com/property/commentDate> "May 1, 2013 2:06:54 PM" .
 
 <http://weibo.com/userID/1979814003> <http://weibo.com/property/createComment> <http://weibo.com/weiboID/3573148148525336> .
 
 <http://weibo.com/weiboID/3573148148525336> <http://weibo.com/property/commentTo> <http://weibo.com/weiboID/3573140116735050> ;
 	<http://www.w3.org/2000/01/rdf-schema#comment> "回复@挥挥君:他说这是小辉哥开的，大辉哥不算" ;
-	<http://weibo.com/property/commentData> "May 1, 2013 2:06:07 PM" .
+	<http://weibo.com/property/commentDate> "May 1, 2013 2:06:07 PM" .
 
 <http://weibo.com/userID/1979814003> <http://weibo.com/property/createComment> <http://weibo.com/weiboID/3571466262071181> .
 
 <http://weibo.com/weiboID/3571466262071181> <http://weibo.com/property/commentTo> <http://weibo.com/weiboID/3571433415983085> ;
 	<http://www.w3.org/2000/01/rdf-schema#comment> "回复@John_强蝈蝈_未停佛游:interesting" ;
-	<http://weibo.com/property/commentData> "Apr 26, 2013 10:42:52 PM" .
+	<http://weibo.com/property/commentDate> "Apr 26, 2013 10:42:52 PM" .
 
 <http://weibo.com/userID/1979814003> <http://weibo.com/property/createComment> <http://weibo.com/weiboID/3571443314601382> .
 
 <http://weibo.com/weiboID/3571443314601382> <http://weibo.com/property/commentTo> <http://weibo.com/weiboID/3571433415983085> ;
 	<http://www.w3.org/2000/01/rdf-schema#comment> "这是呵呵的意思吗[奥特曼]" ;
-	<http://weibo.com/property/commentData> "Apr 26, 2013 9:11:41 PM" .
+	<http://weibo.com/property/commentDate> "Apr 26, 2013 9:11:41 PM" .
 
 <http://weibo.com/userID/1979814003> <http://weibo.com/property/createComment> <http://weibo.com/weiboID/3570999079693463> .
 
 <http://weibo.com/weiboID/3570999079693463> <http://weibo.com/property/commentTo> <http://weibo.com/weiboID/3570912509313731> ;
 	<http://www.w3.org/2000/01/rdf-schema#comment> "此刻我在火星哎" ;
-	<http://weibo.com/property/commentData> "Apr 25, 2013 3:46:27 PM" .
+	<http://weibo.com/property/commentDate> "Apr 25, 2013 3:46:27 PM" .
 
 <http://weibo.com/userID/1979814003> <http://weibo.com/property/createComment> <http://weibo.com/weiboID/3559806977977153> .
 
 <http://weibo.com/weiboID/3559806977977153> <http://weibo.com/property/commentTo> <http://weibo.com/weiboID/3559740720442699> ;
 	<http://www.w3.org/2000/01/rdf-schema#comment> "有妹子还有心情发什么状态[奥特曼]" ;
-	<http://weibo.com/property/commentData> "Mar 25, 2013 6:33:04 PM" .
+	<http://weibo.com/property/commentDate> "Mar 25, 2013 6:33:04 PM" .
 
 <http://weibo.com/userID/1979814003> <http://weibo.com/property/createComment> <http://weibo.com/weiboID/3554091248996966> .
 
 <http://weibo.com/weiboID/3554091248996966> <http://weibo.com/property/commentTo> <http://weibo.com/weiboID/3554038215658757> ;
 	<http://www.w3.org/2000/01/rdf-schema#comment> "大半夜的让我笑尿了，哈哈" ;
-	<http://weibo.com/property/commentData> "Mar 10, 2013 12:00:48 AM" .
+	<http://weibo.com/property/commentDate> "Mar 10, 2013 12:00:48 AM" .
 
 <http://weibo.com/userID/1979814003> <http://weibo.com/property/createComment> <http://weibo.com/weiboID/3554089822741532> .
 
 <http://weibo.com/weiboID/3554089822741532> <http://weibo.com/property/commentTo> <http://weibo.com/weiboID/3554077755214160> ;
 	<http://www.w3.org/2000/01/rdf-schema#comment> "[奥特曼]" ;
-	<http://weibo.com/property/commentData> "Mar 9, 2013 11:55:08 PM" .
+	<http://weibo.com/property/commentDate> "Mar 9, 2013 11:55:08 PM" .
 
 <http://weibo.com/userID/1979814003> <http://weibo.com/property/createComment> <http://weibo.com/weiboID/3552928890014340> .
 
 <http://weibo.com/weiboID/3552928890014340> <http://weibo.com/property/commentTo> <http://weibo.com/weiboID/3552922501938998> ;
 	<http://www.w3.org/2000/01/rdf-schema#comment> "回复@Rosalind14:闵行公园。。。黑乎乎的一片，不敢进" ;
-	<http://weibo.com/property/commentData> "Mar 6, 2013 7:02:00 PM" .
+	<http://weibo.com/property/commentDate> "Mar 6, 2013 7:02:00 PM" .
 
 <http://weibo.com/userID/1979814003> <http://weibo.com/property/createComment> <http://weibo.com/weiboID/3551531913764230> .
 
 <http://weibo.com/weiboID/3551531913764230> <http://weibo.com/property/commentTo> <http://weibo.com/weiboID/3551481833458726> ;
 	<http://www.w3.org/2000/01/rdf-schema#comment> "回复@John_强蝈蝈_未停佛游:2号&&3号" ;
-	<http://weibo.com/property/commentData> "Mar 2, 2013 10:30:54 PM" .
+	<http://weibo.com/property/commentDate> "Mar 2, 2013 10:30:54 PM" .
 
 <http://weibo.com/userID/1979814003> <http://weibo.com/property/createComment> <http://weibo.com/weiboID/3551528919011914> .
 
 <http://weibo.com/weiboID/3551528919011914> <http://weibo.com/property/commentTo> <http://weibo.com/weiboID/3551481833458726> ;
 	<http://www.w3.org/2000/01/rdf-schema#comment> "隔壁两白羊" ;
-	<http://weibo.com/property/commentData> "Mar 2, 2013 10:18:59 PM" .
+	<http://weibo.com/property/commentDate> "Mar 2, 2013 10:18:59 PM" .
 
 <http://weibo.com/userID/1979814003> <http://weibo.com/property/createComment> <http://weibo.com/weiboID/3547197637444738> .
 
 <http://weibo.com/weiboID/3547197637444738> <http://weibo.com/property/commentTo> <http://weibo.com/weiboID/3547071132553037> ;
 	<http://www.w3.org/2000/01/rdf-schema#comment> "回复@挥挥君:以后记得翻翻老黄历看看@一下" ;
-	<http://weibo.com/property/commentData> "Feb 18, 2013 11:28:01 PM" .
+	<http://weibo.com/property/commentDate> "Feb 18, 2013 11:28:01 PM" .
 
 <http://weibo.com/userID/1979814003> <http://weibo.com/property/createComment> <http://weibo.com/weiboID/3546333031596733> .
 
 <http://weibo.com/weiboID/3546333031596733> <http://weibo.com/property/commentTo> <http://weibo.com/weiboID/3546189553345901> ;
 	<http://www.w3.org/2000/01/rdf-schema#comment> "我收了~~" ;
-	<http://weibo.com/property/commentData> "Feb 16, 2013 2:12:25 PM" .
+	<http://weibo.com/property/commentDate> "Feb 16, 2013 2:12:25 PM" .
 
 <http://weibo.com/userID/1979814003> <http://weibo.com/property/createComment> <http://weibo.com/weiboID/3545887705794339> .
 
 <http://weibo.com/weiboID/3545887705794339> <http://weibo.com/property/commentTo> <http://weibo.com/weiboID/3545348469891977> ;
 	<http://www.w3.org/2000/01/rdf-schema#comment> "红包飞啊飞，飞入我心扉~~~~~~" ;
-	<http://weibo.com/property/commentData> "Feb 15, 2013 8:42:51 AM" .
+	<http://weibo.com/property/commentDate> "Feb 15, 2013 8:42:51 AM" .
 
 <http://weibo.com/userID/1979814003> <http://weibo.com/property/createComment> <http://weibo.com/weiboID/3543801312257689> .
 
 <http://weibo.com/weiboID/3543801312257689> <http://weibo.com/property/commentTo> <http://weibo.com/weiboID/3543700582292693> ;
 	<http://www.w3.org/2000/01/rdf-schema#comment> "拿了红包要淡定，不要得意忘形噢！" ;
-	<http://weibo.com/property/commentData> "Feb 9, 2013 2:32:16 PM" .
+	<http://weibo.com/property/commentDate> "Feb 9, 2013 2:32:16 PM" .
 
 <http://weibo.com/userID/1979814003> <http://weibo.com/property/createComment> <http://weibo.com/weiboID/3543801203195499> .
 
 <http://weibo.com/weiboID/3543801203195499> <http://weibo.com/property/commentTo> <http://weibo.com/weiboID/3543775890788145> ;
 	<http://www.w3.org/2000/01/rdf-schema#comment> "评论一个试试真假" ;
-	<http://weibo.com/property/commentData> "Feb 9, 2013 2:31:49 PM" .
+	<http://weibo.com/property/commentDate> "Feb 9, 2013 2:31:49 PM" .
 
 <http://weibo.com/userID/1979814003> <http://weibo.com/property/createComment> <http://weibo.com/weiboID/3543485237875489> .
 
 <http://weibo.com/weiboID/3543485237875489> <http://weibo.com/property/commentTo> <http://weibo.com/weiboID/3543109708912361> ;
 	<http://www.w3.org/2000/01/rdf-schema#comment> "拿到红包这事儿，你以为我会告诉别人么？" ;
-	<http://weibo.com/property/commentData> "Feb 8, 2013 5:36:17 PM" .
+	<http://weibo.com/property/commentDate> "Feb 8, 2013 5:36:17 PM" .
 
 <http://weibo.com/userID/1979814003> <http://weibo.com/property/createComment> <http://weibo.com/weiboID/3543485170760471> .
 
 <http://weibo.com/weiboID/3543485170760471> <http://weibo.com/property/commentTo> <http://weibo.com/weiboID/3543379570755021> ;
 	<http://www.w3.org/2000/01/rdf-schema#comment> "哈哈哈，我拿了" ;
-	<http://weibo.com/property/commentData> "Feb 8, 2013 5:36:00 PM" .
+	<http://weibo.com/property/commentDate> "Feb 8, 2013 5:36:00 PM" .
 
 <http://weibo.com/userID/1979814003> <http://weibo.com/property/createComment> <http://weibo.com/weiboID/3543444951566324> .
 
 <http://weibo.com/weiboID/3543444951566324> <http://weibo.com/property/commentTo> <http://weibo.com/weiboID/3543204718205786> ;
 	<http://www.w3.org/2000/01/rdf-schema#comment> "回复@挥挥君:极好" ;
-	<http://weibo.com/property/commentData> "Feb 8, 2013 2:56:13 PM" .
+	<http://weibo.com/property/commentDate> "Feb 8, 2013 2:56:13 PM" .
 
 <http://weibo.com/userID/1979814003> <http://weibo.com/property/createComment> <http://weibo.com/weiboID/3542989429101274> .
 
 <http://weibo.com/weiboID/3542989429101274> <http://weibo.com/property/commentTo> <http://weibo.com/weiboID/3542033115012943> ;
 	<http://www.w3.org/2000/01/rdf-schema#comment> "哈哈哈，我拿了" ;
-	<http://weibo.com/property/commentData> "Feb 7, 2013 8:46:08 AM" .
+	<http://weibo.com/property/commentDate> "Feb 7, 2013 8:46:08 AM" .
 
 <http://weibo.com/userID/1979814003> <http://weibo.com/property/createComment> <http://weibo.com/weiboID/3542989361738192> .
 
 <http://weibo.com/weiboID/3542989361738192> <http://weibo.com/property/commentTo> <http://weibo.com/weiboID/3542005970239999> ;
 	<http://www.w3.org/2000/01/rdf-schema#comment> "我要红包，不要切糕~~" ;
-	<http://weibo.com/property/commentData> "Feb 7, 2013 8:45:51 AM" .
+	<http://weibo.com/property/commentDate> "Feb 7, 2013 8:45:51 AM" .
 
 <http://weibo.com/userID/1979814003> <http://weibo.com/property/createComment> <http://weibo.com/weiboID/3542989231951519> .
 
 <http://weibo.com/weiboID/3542989231951519> <http://weibo.com/property/commentTo> <http://weibo.com/weiboID/3542623086515527> ;
 	<http://www.w3.org/2000/01/rdf-schema#comment> "那我就不客气了" ;
-	<http://weibo.com/property/commentData> "Feb 7, 2013 8:45:21 AM" .
+	<http://weibo.com/property/commentDate> "Feb 7, 2013 8:45:21 AM" .
 
 <http://weibo.com/userID/1979814003> <http://weibo.com/property/createComment> <http://weibo.com/weiboID/3542989181615337> .
 
 <http://weibo.com/weiboID/3542989181615337> <http://weibo.com/property/commentTo> <http://weibo.com/weiboID/3542346924463799> ;
 	<http://www.w3.org/2000/01/rdf-schema#comment> "红包在手，好运当头！" ;
-	<http://weibo.com/property/commentData> "Feb 7, 2013 8:45:09 AM" .
+	<http://weibo.com/property/commentDate> "Feb 7, 2013 8:45:09 AM" .
 
 <http://weibo.com/userID/1979814003> <http://weibo.com/property/createComment> <http://weibo.com/weiboID/3542988917350918> .
 
 <http://weibo.com/weiboID/3542988917350918> <http://weibo.com/property/commentTo> <http://weibo.com/weiboID/3542796139323819> ;
 	<http://www.w3.org/2000/01/rdf-schema#comment> "这个不错，我也可以给我的粉丝发红包吗" ;
-	<http://weibo.com/property/commentData> "Feb 7, 2013 8:44:06 AM" .
+	<http://weibo.com/property/commentDate> "Feb 7, 2013 8:44:06 AM" .
 
 <http://weibo.com/userID/1979814003> <http://weibo.com/property/createComment> <http://weibo.com/weiboID/3539787031933938> .
 
 <http://weibo.com/weiboID/3539787031933938> <http://weibo.com/property/commentTo> <http://weibo.com/weiboID/3539784620780280> ;
 	<http://www.w3.org/2000/01/rdf-schema#comment> "Orz" ;
-	<http://weibo.com/property/commentData> "Jan 29, 2013 12:40:56 PM" .
+	<http://weibo.com/property/commentDate> "Jan 29, 2013 12:40:56 PM" .
 
 <http://weibo.com/userID/1979814003> <http://weibo.com/property/createComment> <http://weibo.com/weiboID/3536907771902897> .
 
 <http://weibo.com/weiboID/3536907771902897> <http://weibo.com/property/commentTo> <http://weibo.com/weiboID/3536108510153288> ;
 	<http://www.w3.org/2000/01/rdf-schema#comment> "回复@Rosalind14:一个字" ;
-	<http://weibo.com/property/commentData> "Jan 21, 2013 1:59:48 PM" .
+	<http://weibo.com/property/commentDate> "Jan 21, 2013 1:59:48 PM" .
 
 <http://weibo.com/userID/1979814003> <http://weibo.com/property/createComment> <http://weibo.com/weiboID/3533691341042823> .
 
 <http://weibo.com/weiboID/3533691341042823> <http://weibo.com/property/commentTo> <http://weibo.com/weiboID/3533672840117734> ;
 	<http://www.w3.org/2000/01/rdf-schema#comment> "Orz" ;
-	<http://weibo.com/property/commentData> "Jan 12, 2013 4:58:51 PM" .
+	<http://weibo.com/property/commentDate> "Jan 12, 2013 4:58:51 PM" .
 
 <http://weibo.com/userID/1979814003> <http://weibo.com/property/createComment> <http://weibo.com/weiboID/3531953402050508> .
 
 <http://weibo.com/weiboID/3531953402050508> <http://weibo.com/property/commentTo> <http://weibo.com/weiboID/3531952843846059> ;
 	<http://www.w3.org/2000/01/rdf-schema#comment> "[衰]幸好我们那时没有三道杠，要不就全齐了……" ;
-	<http://weibo.com/property/commentData> "Jan 7, 2013 9:52:51 PM" .
+	<http://weibo.com/property/commentDate> "Jan 7, 2013 9:52:51 PM" .
 
 <http://weibo.com/userID/1968712865> <http://weibo.com/property/createComment> <http://weibo.com/weiboID/3599587871091280> .
 
 <http://weibo.com/weiboID/3599587871091280> <http://weibo.com/property/commentTo> <http://weibo.com/weiboID/3599584163363772> ;
 	<http://www.w3.org/2000/01/rdf-schema#comment> "摸摸哒" ;
-	<http://weibo.com/property/commentData> "Jul 13, 2013 1:08:08 PM" .
+	<http://weibo.com/property/commentDate> "Jul 13, 2013 1:08:08 PM" .
 
 <http://weibo.com/userID/1968712865> <http://weibo.com/property/createComment> <http://weibo.com/weiboID/3599382458519390> .
 
 <http://weibo.com/weiboID/3599382458519390> <http://weibo.com/property/commentTo> <http://weibo.com/weiboID/3599381078771268> ;
 	<http://www.w3.org/2000/01/rdf-schema#comment> "回复@smilepig的小小世界:[生病][生病]" ;
-	<http://weibo.com/property/commentData> "Jul 12, 2013 11:31:52 PM" .
+	<http://weibo.com/property/commentDate> "Jul 12, 2013 11:31:52 PM" .
 
 <http://weibo.com/userID/1968712865> <http://weibo.com/property/createComment> <http://weibo.com/weiboID/3599381313560123> .
 
 <http://weibo.com/weiboID/3599381313560123> <http://weibo.com/property/commentTo> <http://weibo.com/weiboID/3599381078771268> ;
 	<http://www.w3.org/2000/01/rdf-schema#comment> "T狗！" ;
-	<http://weibo.com/property/commentData> "Jul 12, 2013 11:27:21 PM" .
+	<http://weibo.com/property/commentDate> "Jul 12, 2013 11:27:21 PM" .
 
 <http://weibo.com/userID/2714672657> <http://weibo.com/property/createComment> <http://weibo.com/weiboID/3599167559321344> .
 
 <http://weibo.com/weiboID/3599167559321344> <http://weibo.com/property/commentTo> <http://weibo.com/weiboID/3598988298855252> ;
 	<http://www.w3.org/2000/01/rdf-schema#comment> "回复@smilepig的小小世界:路途很遥远" ;
-	<http://weibo.com/property/commentData> "Jul 12, 2013 9:17:58 AM" .
+	<http://weibo.com/property/commentDate> "Jul 12, 2013 9:17:58 AM" .
 
 <http://weibo.com/userID/2714672657> <http://weibo.com/property/createComment> <http://weibo.com/weiboID/3599164418078720> .
 
 <http://weibo.com/weiboID/3599164418078720> <http://weibo.com/property/commentTo> <http://weibo.com/weiboID/3598988298855252> ;
 	<http://www.w3.org/2000/01/rdf-schema#comment> "回复@smilepig的小小世界:在家呢呗" ;
-	<http://weibo.com/property/commentData> "Jul 12, 2013 9:05:28 AM" .
+	<http://weibo.com/property/commentDate> "Jul 12, 2013 9:05:28 AM" .
 
 <http://weibo.com/userID/2714672657> <http://weibo.com/property/createComment> <http://weibo.com/weiboID/3599018469167793> .
 
 <http://weibo.com/weiboID/3599018469167793> <http://weibo.com/property/commentTo> <http://weibo.com/weiboID/3598988298855252> ;
 	<http://www.w3.org/2000/01/rdf-schema#comment> "回复@smilepig的小小世界:[哼][抠鼻屎]你没放假吗？" ;
-	<http://weibo.com/property/commentData> "Jul 11, 2013 11:25:32 PM" .
+	<http://weibo.com/property/commentDate> "Jul 11, 2013 11:25:32 PM" .
 
 <http://weibo.com/userID/2714672657> <http://weibo.com/property/createComment> <http://weibo.com/weiboID/3598989784000260> .
 
 <http://weibo.com/weiboID/3598989784000260> <http://weibo.com/property/commentTo> <http://weibo.com/weiboID/3598988298855252> ;
 	<http://www.w3.org/2000/01/rdf-schema#comment> "回复@smilepig的小小世界:我是大豆豆了、我俩一年的、[汗][抓狂][晕][怒骂]" ;
-	<http://weibo.com/property/commentData> "Jul 11, 2013 9:31:33 PM" .
+	<http://weibo.com/property/commentDate> "Jul 11, 2013 9:31:33 PM" .
 
 <http://weibo.com/userID/2714672657> <http://weibo.com/property/createComment> <http://weibo.com/weiboID/3598989146575696> .
 
 <http://weibo.com/weiboID/3598989146575696> <http://weibo.com/property/commentTo> <http://weibo.com/weiboID/3598988298855252> ;
 	<http://www.w3.org/2000/01/rdf-schema#comment> "想去上海" ;
-	<http://weibo.com/property/commentData> "Jul 11, 2013 9:29:01 PM" .
+	<http://weibo.com/property/commentDate> "Jul 11, 2013 9:29:01 PM" .
 
 <http://weibo.com/userID/1968712865> <http://weibo.com/property/createComment> <http://weibo.com/weiboID/3596340137105368> .
 
 <http://weibo.com/weiboID/3596340137105368> <http://weibo.com/property/commentTo> <http://weibo.com/weiboID/3596308859917995> ;
 	<http://www.w3.org/2000/01/rdf-schema#comment> "难道是人见人爱车见车爆胎？" ;
-	<http://weibo.com/property/commentData> "Jul 4, 2013 2:02:47 PM" .
+	<http://weibo.com/property/commentDate> "Jul 4, 2013 2:02:47 PM" .
 
 <http://weibo.com/userID/2346918585> <http://weibo.com/property/createComment> <http://weibo.com/weiboID/3594539468190716> .
 
 <http://weibo.com/weiboID/3594539468190716> <http://weibo.com/property/commentTo> <http://weibo.com/weiboID/3594301914981257> ;
 	<http://www.w3.org/2000/01/rdf-schema#comment> "回复@smilepig的小小世界:[嘻嘻][嘻嘻] 其实我在考虑怎么混到华师图书馆去自习，可以见到特别多美女哦[花心][花心] 浩哥有具体方案或建议否？" ;
-	<http://weibo.com/property/commentData> "Jun 29, 2013 2:47:35 PM" .
+	<http://weibo.com/property/commentDate> "Jun 29, 2013 2:47:35 PM" .
 
 <http://weibo.com/userID/2346918585> <http://weibo.com/property/createComment> <http://weibo.com/weiboID/3594334987365858> .
 
 <http://weibo.com/weiboID/3594334987365858> <http://weibo.com/property/commentTo> <http://weibo.com/weiboID/3594301914981257> ;
 	<http://www.w3.org/2000/01/rdf-schema#comment> "回复@smilepig的小小世界:[哈哈][哈哈] 浩哥 是否有兴趣一起晚上去华师大邂逅妹子？？" ;
-	<http://weibo.com/property/commentData> "Jun 29, 2013 1:15:02 AM" .
+	<http://weibo.com/property/commentDate> "Jun 29, 2013 1:15:02 AM" .
 
 <http://weibo.com/userID/1968712865> <http://weibo.com/property/createComment> <http://weibo.com/weiboID/3593148721246518> .
 
 <http://weibo.com/weiboID/3593148721246518> <http://weibo.com/property/commentTo> <http://weibo.com/weiboID/3593148200420808> ;
 	<http://www.w3.org/2000/01/rdf-schema#comment> "可计算必挂无疑。。" ;
-	<http://weibo.com/property/commentData> "Jun 25, 2013 6:41:15 PM" .
+	<http://weibo.com/property/commentDate> "Jun 25, 2013 6:41:15 PM" .
 
 <http://weibo.com/userID/1649503132> <http://weibo.com/property/createComment> <http://weibo.com/weiboID/3592410888276845> .
 
 <http://weibo.com/weiboID/3592410888276845> <http://weibo.com/property/commentTo> <http://weibo.com/weiboID/3592409168065907> ;
 	<http://www.w3.org/2000/01/rdf-schema#comment> "好爽的雷" ;
-	<http://weibo.com/property/commentData> "Jun 23, 2013 5:49:21 PM" .
+	<http://weibo.com/property/commentDate> "Jun 23, 2013 5:49:21 PM" .
 
 <http://weibo.com/userID/2807295185> <http://weibo.com/property/createComment> <http://weibo.com/weiboID/3592409176454951> .
 
 <http://weibo.com/weiboID/3592409176454951> <http://weibo.com/property/commentTo> <http://weibo.com/weiboID/3592409168065907> ;
 	<http://www.w3.org/2000/01/rdf-schema#comment> "你好，你参与了话题#上海交通大学闵行校区新图书馆#，点击http://t.cn/zToPDPl 查看更多精彩！" ;
-	<http://weibo.com/property/commentData> "Jun 23, 2013 5:42:32 PM" .
+	<http://weibo.com/property/commentDate> "Jun 23, 2013 5:42:32 PM" .
 
 <http://weibo.com/userID/2807295185> <http://weibo.com/property/createComment> <http://weibo.com/weiboID/3591596207471052> .
 
 <http://weibo.com/weiboID/3591596207471052> <http://weibo.com/property/commentTo> <http://weibo.com/weiboID/3591596202951412> ;
 	<http://www.w3.org/2000/01/rdf-schema#comment> "你好，你参与了话题#马刺再见#，点击http://t.cn/zHBXTYF 查看更多精彩！" ;
-	<http://weibo.com/property/commentData> "Jun 21, 2013 11:52:07 AM" .
+	<http://weibo.com/property/commentDate> "Jun 21, 2013 11:52:07 AM" .
 
 <http://weibo.com/userID/2807295185> <http://weibo.com/property/createComment> <http://weibo.com/weiboID/3591207638313055> .
 
 <http://weibo.com/weiboID/3591207638313055> <http://weibo.com/property/commentTo> <http://weibo.com/weiboID/3591207630237750> ;
 	<http://www.w3.org/2000/01/rdf-schema#comment> "你好，你参与了由 谢小跨 主持的话题#太空第一课#，点击http://t.cn/zH1xBax 查看更多精彩！ " ;
-	<http://weibo.com/property/commentData> "Jun 20, 2013 10:08:05 AM" .
+	<http://weibo.com/property/commentDate> "Jun 20, 2013 10:08:05 AM" .
 
 <http://weibo.com/userID/1968712865> <http://weibo.com/property/createComment> <http://weibo.com/weiboID/3590617072689111> .
 
 <http://weibo.com/weiboID/3590617072689111> <http://weibo.com/property/commentTo> <http://weibo.com/weiboID/3590586495859407> ;
 	<http://www.w3.org/2000/01/rdf-schema#comment> "回复@smilepig的小小世界:。。。那是。。。党员同志觉悟都很高！" ;
-	<http://weibo.com/property/commentData> "Jun 18, 2013 7:01:23 PM" .
+	<http://weibo.com/property/commentDate> "Jun 18, 2013 7:01:23 PM" .
 
 <http://weibo.com/userID/2124407871> <http://weibo.com/property/createComment> <http://weibo.com/weiboID/3590254806414941> .
 
 <http://weibo.com/weiboID/3590254806414941> <http://weibo.com/property/commentTo> <http://weibo.com/weiboID/3590190481991999> ;
 	<http://www.w3.org/2000/01/rdf-schema#comment> "让我们这些刚考完AI毫无复习的人情何以堪！" ;
-	<http://weibo.com/property/commentData> "Jun 17, 2013 7:01:52 PM" .
+	<http://weibo.com/property/commentDate> "Jun 17, 2013 7:01:52 PM" .
 
 <http://weibo.com/userID/1649503132> <http://weibo.com/property/createComment> <http://weibo.com/weiboID/3589185577590376> .
 
 <http://weibo.com/weiboID/3589185577590376> <http://weibo.com/property/commentTo> <http://weibo.com/weiboID/3589173409510614> ;
 	<http://www.w3.org/2000/01/rdf-schema#comment> "[囧]" ;
-	<http://weibo.com/property/commentData> "Jun 14, 2013 8:13:07 PM" .
+	<http://weibo.com/property/commentDate> "Jun 14, 2013 8:13:07 PM" .
 
 <http://weibo.com/userID/2807295185> <http://weibo.com/property/createComment> <http://weibo.com/weiboID/3586687982382170> .
 
 <http://weibo.com/weiboID/3586687982382170> <http://weibo.com/property/commentTo> <http://weibo.com/weiboID/3586687973992456> ;
 	<http://www.w3.org/2000/01/rdf-schema#comment> "你好，你参与了由 新浪广东 主持的话题#高考作文#，点击http://t.cn/zTQZ7oD 查看更多精彩！ " ;
-	<http://weibo.com/property/commentData> "Jun 7, 2013 10:48:34 PM" .
+	<http://weibo.com/property/commentDate> "Jun 7, 2013 10:48:34 PM" .
 
 <http://weibo.com/userID/1649503132> <http://weibo.com/property/createComment> <http://weibo.com/weiboID/3586568353090495> .
 
 <http://weibo.com/weiboID/3586568353090495> <http://weibo.com/property/commentTo> <http://weibo.com/weiboID/3586555341458561> ;
 	<http://www.w3.org/2000/01/rdf-schema#comment> "回复@smilepig的小小世界:[不要]" ;
-	<http://weibo.com/property/commentData> "Jun 7, 2013 2:53:13 PM" .
+	<http://weibo.com/property/commentDate> "Jun 7, 2013 2:53:13 PM" .
 
 <http://weibo.com/userID/2807295185> <http://weibo.com/property/createComment> <http://weibo.com/weiboID/3584752156143022> .
 
 <http://weibo.com/weiboID/3584752156143022> <http://weibo.com/property/commentTo> <http://weibo.com/weiboID/3584752152331117> ;
 	<http://www.w3.org/2000/01/rdf-schema#comment> "你好，你参与了话题#东方绿舟#，点击http://t.cn/zTR95UA 查看更多精彩！" ;
-	<http://weibo.com/property/commentData> "Jun 2, 2013 2:36:17 PM" .
+	<http://weibo.com/property/commentDate> "Jun 2, 2013 2:36:17 PM" .
 
 <http://weibo.com/userID/1968712865> <http://weibo.com/property/createComment> <http://weibo.com/weiboID/3583773881236678> .
 
 <http://weibo.com/weiboID/3583773881236678> <http://weibo.com/property/commentTo> <http://weibo.com/weiboID/3583756847430194> ;
 	<http://www.w3.org/2000/01/rdf-schema#comment> "回复@smilepig的小小世界:。。。膜拜涛神。。。。" ;
-	<http://weibo.com/property/commentData> "May 30, 2013 9:48:59 PM" .
+	<http://weibo.com/property/commentDate> "May 30, 2013 9:48:59 PM" .
 
 <http://weibo.com/userID/1968712865> <http://weibo.com/property/createComment> <http://weibo.com/weiboID/3583772815731326> .
 
 <http://weibo.com/weiboID/3583772815731326> <http://weibo.com/property/commentTo> <http://weibo.com/weiboID/3583756847430194> ;
 	<http://www.w3.org/2000/01/rdf-schema#comment> "回复@smilepig的小小世界:。。。。然后懂了么=。=" ;
-	<http://weibo.com/property/commentData> "May 30, 2013 9:44:46 PM" .
+	<http://weibo.com/property/commentDate> "May 30, 2013 9:44:46 PM" .
 
 <http://weibo.com/userID/1955174322> <http://weibo.com/property/createComment> <http://weibo.com/weiboID/3578709145607628> .
 
 <http://weibo.com/weiboID/3578709145607628> <http://weibo.com/property/commentTo> <http://weibo.com/weiboID/3578703432531855> ;
 	<http://www.w3.org/2000/01/rdf-schema#comment> "吃吧！" ;
-	<http://weibo.com/property/commentData> "May 16, 2013 10:23:31 PM" .
+	<http://weibo.com/property/commentDate> "May 16, 2013 10:23:31 PM" .
 
 <http://weibo.com/userID/2346918585> <http://weibo.com/property/createComment> <http://weibo.com/weiboID/3576104826953465> .
 
 <http://weibo.com/weiboID/3576104826953465> <http://weibo.com/property/commentTo> <http://weibo.com/weiboID/3576090561397560> ;
 	<http://www.w3.org/2000/01/rdf-schema#comment> "回复@smilepig的小小世界:[衰]，让大神见笑了" ;
-	<http://weibo.com/property/commentData> "May 9, 2013 5:54:54 PM" .
+	<http://weibo.com/property/commentDate> "May 9, 2013 5:54:54 PM" .
 
 <http://weibo.com/userID/2346918585> <http://weibo.com/property/createComment> <http://weibo.com/weiboID/3575759588930198> .
 
 <http://weibo.com/weiboID/3575759588930198> <http://weibo.com/property/commentTo> <http://weibo.com/weiboID/3575737845745824> ;
 	<http://www.w3.org/2000/01/rdf-schema#comment> "咦？怎么了？" ;
-	<http://weibo.com/property/commentData> "May 8, 2013 7:03:01 PM" .
+	<http://weibo.com/property/commentDate> "May 8, 2013 7:03:01 PM" .
 
 <http://weibo.com/userID/1955174322> <http://weibo.com/property/createComment> <http://weibo.com/weiboID/3575358312172604> .
 
 <http://weibo.com/weiboID/3575358312172604> <http://weibo.com/property/commentTo> <http://weibo.com/weiboID/3575343786985563> ;
 	<http://www.w3.org/2000/01/rdf-schema#comment> "会发拒信的公司都是好公司[泪]" ;
-	<http://weibo.com/property/commentData> "May 7, 2013 4:28:31 PM" .
+	<http://weibo.com/property/commentDate> "May 7, 2013 4:28:31 PM" .
 
 <http://weibo.com/userID/2919303892> <http://weibo.com/property/createComment> <http://weibo.com/weiboID/3574225438567229> .
 
 <http://weibo.com/weiboID/3574225438567229> <http://weibo.com/property/commentTo> <http://weibo.com/weiboID/3573991861925882> ;
 	<http://www.w3.org/2000/01/rdf-schema#comment> "转发微博" ;
-	<http://weibo.com/property/commentData> "May 4, 2013 1:26:52 PM" .
+	<http://weibo.com/property/commentDate> "May 4, 2013 1:26:52 PM" .
 
 <http://weibo.com/userID/2808460534> <http://weibo.com/property/createComment> <http://weibo.com/weiboID/3574225438567071> .
 
 <http://weibo.com/weiboID/3574225438567071> <http://weibo.com/property/commentTo> <http://weibo.com/weiboID/3573991861925882> ;
 	<http://www.w3.org/2000/01/rdf-schema#comment> "转发微博" ;
-	<http://weibo.com/property/commentData> "May 4, 2013 1:26:52 PM" .
+	<http://weibo.com/property/commentDate> "May 4, 2013 1:26:52 PM" .
 
 <http://weibo.com/userID/1968712865> <http://weibo.com/property/createComment> <http://weibo.com/weiboID/3573632288750942> .
 
 <http://weibo.com/weiboID/3573632288750942> <http://weibo.com/property/commentTo> <http://weibo.com/weiboID/3573625443376480> ;
 	<http://www.w3.org/2000/01/rdf-schema#comment> "回复@smilepig的小小世界:吊炸飞。。。" ;
-	<http://weibo.com/property/commentData> "May 2, 2013 10:09:54 PM" .
+	<http://weibo.com/property/commentDate> "May 2, 2013 10:09:54 PM" .
 
 <http://weibo.com/userID/1649503132> <http://weibo.com/property/createComment> <http://weibo.com/weiboID/3573597337565610> .
 
 <http://weibo.com/weiboID/3573597337565610> <http://weibo.com/property/commentTo> <http://weibo.com/weiboID/3573582149510755> ;
 	<http://www.w3.org/2000/01/rdf-schema#comment> "回复@smilepig的小小世界:艹" ;
-	<http://weibo.com/property/commentData> "May 2, 2013 7:51:01 PM" .
+	<http://weibo.com/property/commentDate> "May 2, 2013 7:51:01 PM" .
 
 <http://weibo.com/userID/1649503132> <http://weibo.com/property/createComment> <http://weibo.com/weiboID/3573585870654816> .
 
 <http://weibo.com/weiboID/3573585870654816> <http://weibo.com/property/commentTo> <http://weibo.com/weiboID/3573582149510755> ;
 	<http://www.w3.org/2000/01/rdf-schema#comment> "504评议委员会表示没看懂你说的啥，于是全票通过今晚在梦里继续审议你" ;
-	<http://weibo.com/property/commentData> "May 2, 2013 7:05:25 PM" .
+	<http://weibo.com/property/commentDate> "May 2, 2013 7:05:25 PM" .
 
 <http://weibo.com/userID/1649503132> <http://weibo.com/property/createComment> <http://weibo.com/weiboID/3573148446695138> .
 
 <http://weibo.com/weiboID/3573148446695138> <http://weibo.com/property/commentTo> <http://weibo.com/weiboID/3573147833923356> ;
 	<http://www.w3.org/2000/01/rdf-schema#comment> "回复@smilepig的小小世界:跟着Aboboo读" ;
-	<http://weibo.com/property/commentData> "May 1, 2013 2:07:17 PM" .
+	<http://weibo.com/property/commentDate> "May 1, 2013 2:07:17 PM" .
 
 <http://weibo.com/userID/1649503132> <http://weibo.com/property/createComment> <http://weibo.com/weiboID/3573148182133178> .
 
 <http://weibo.com/weiboID/3573148182133178> <http://weibo.com/property/commentTo> <http://weibo.com/weiboID/3573147833923356> ;
 	<http://www.w3.org/2000/01/rdf-schema#comment> "？？" ;
-	<http://weibo.com/property/commentData> "May 1, 2013 2:06:14 PM" .
+	<http://weibo.com/property/commentDate> "May 1, 2013 2:06:14 PM" .
 
 <http://weibo.com/userID/1649503132> <http://weibo.com/property/createComment> <http://weibo.com/weiboID/3572732912980807> .
 
 <http://weibo.com/weiboID/3572732912980807> <http://weibo.com/property/commentTo> <http://weibo.com/weiboID/3572723911484890> ;
 	<http://www.w3.org/2000/01/rdf-schema#comment> "……" ;
-	<http://weibo.com/property/commentData> "Apr 30, 2013 10:36:07 AM" .
+	<http://weibo.com/property/commentDate> "Apr 30, 2013 10:36:07 AM" .
 
 <http://weibo.com/userID/1968712865> <http://weibo.com/property/createComment> <http://weibo.com/weiboID/3571449299799530> .
 
 <http://weibo.com/weiboID/3571449299799530> <http://weibo.com/property/commentTo> <http://weibo.com/weiboID/3571433415983085> ;
 	<http://www.w3.org/2000/01/rdf-schema#comment> "回复@smilepig的小小世界:呵呵" ;
-	<http://weibo.com/property/commentData> "Apr 26, 2013 9:35:30 PM" .
+	<http://weibo.com/property/commentDate> "Apr 26, 2013 9:35:30 PM" .
 
 <http://weibo.com/userID/2812250701> <http://weibo.com/property/createComment> <http://weibo.com/weiboID/3569160838129169> .
 
 <http://weibo.com/weiboID/3569160838129169> <http://weibo.com/property/commentTo> <http://weibo.com/weiboID/3569105392878173> ;
 	<http://www.w3.org/2000/01/rdf-schema#comment> "您要拼车，只要在微信关注“打的宝拼车”的公众帐号（微信号为97128019）就可以了： 朋友们--添加朋友--搜号码“dadibaokeji”，搜寻和发布全国各地拼车信息，非常方便！" ;
-	<http://weibo.com/property/commentData> "Apr 20, 2013 2:01:57 PM" .
+	<http://weibo.com/property/commentDate> "Apr 20, 2013 2:01:57 PM" .
 
 <http://weibo.com/userID/2346918585> <http://weibo.com/property/createComment> <http://weibo.com/weiboID/3559760219553810> .
 
 <http://weibo.com/weiboID/3559760219553810> <http://weibo.com/property/commentTo> <http://weibo.com/weiboID/3559740720442699> ;
 	<http://www.w3.org/2000/01/rdf-schema#comment> "浩哥莫非在思源湖泡妹子[花心]" ;
-	<http://weibo.com/property/commentData> "Mar 25, 2013 3:27:16 PM" .
+	<http://weibo.com/property/commentDate> "Mar 25, 2013 3:27:16 PM" .
 
 <http://weibo.com/userID/1915375117> <http://weibo.com/property/createComment> <http://weibo.com/weiboID/3559169364018662> .
 
 <http://weibo.com/weiboID/3559169364018662> <http://weibo.com/property/commentTo> <http://weibo.com/weiboID/3559162186852499> ;
 	<http://www.w3.org/2000/01/rdf-schema#comment> "1和14，[太开心]" ;
-	<http://weibo.com/property/commentData> "Mar 24, 2013 12:19:21 AM" .
+	<http://weibo.com/property/commentDate> "Mar 24, 2013 12:19:21 AM" .
 
 <http://weibo.com/userID/1649503132> <http://weibo.com/property/createComment> <http://weibo.com/weiboID/3552927174551074> .
 
 <http://weibo.com/weiboID/3552927174551074> <http://weibo.com/property/commentTo> <http://weibo.com/weiboID/3552922501938998> ;
 	<http://www.w3.org/2000/01/rdf-schema#comment> "哈哈哈！哈哈哈！" ;
-	<http://weibo.com/property/commentData> "Mar 6, 2013 6:55:11 PM" .
+	<http://weibo.com/property/commentDate> "Mar 6, 2013 6:55:11 PM" .
 
 <http://weibo.com/userID/1968712865> <http://weibo.com/property/createComment> <http://weibo.com/weiboID/3551533344470791> .
 
 <http://weibo.com/weiboID/3551533344470791> <http://weibo.com/property/commentTo> <http://weibo.com/weiboID/3551481833458726> ;
 	<http://www.w3.org/2000/01/rdf-schema#comment> "回复@smilepig的小小世界:.....窝巢。。。应该是男的！好恶心~" ;
-	<http://weibo.com/property/commentData> "Mar 2, 2013 10:36:36 PM" .
+	<http://weibo.com/property/commentDate> "Mar 2, 2013 10:36:36 PM" .
 
 <http://weibo.com/userID/1968712865> <http://weibo.com/property/createComment> <http://weibo.com/weiboID/3551530709639050> .
 
 <http://weibo.com/weiboID/3551530709639050> <http://weibo.com/property/commentTo> <http://weibo.com/weiboID/3551481833458726> ;
 	<http://www.w3.org/2000/01/rdf-schema#comment> "回复@smilepig的小小世界:谁啊？？？[衰][衰][衰]" ;
-	<http://weibo.com/property/commentData> "Mar 2, 2013 10:26:07 PM" .
+	<http://weibo.com/property/commentDate> "Mar 2, 2013 10:26:07 PM" .
 
 <http://weibo.com/userID/1929104804> <http://weibo.com/property/createComment> <http://weibo.com/weiboID/3543220334117245> .
 
 <http://weibo.com/weiboID/3543220334117245> <http://weibo.com/property/commentTo> <http://weibo.com/weiboID/3543204718205786> ;
 	<http://www.w3.org/2000/01/rdf-schema#comment> "是病，得治" ;
-	<http://weibo.com/property/commentData> "Feb 8, 2013 12:03:40 AM" .
+	<http://weibo.com/property/commentDate> "Feb 8, 2013 12:03:40 AM" .
 
 <http://weibo.com/userID/1649503132> <http://weibo.com/property/createComment> <http://weibo.com/weiboID/3536131202031821> .
 
 <http://weibo.com/weiboID/3536131202031821> <http://weibo.com/property/commentTo> <http://weibo.com/weiboID/3536108510153288> ;
 	<http://www.w3.org/2000/01/rdf-schema#comment> "[嘻嘻]" ;
-	<http://weibo.com/property/commentData> "Jan 19, 2013 10:33:58 AM" .
+	<http://weibo.com/property/commentDate> "Jan 19, 2013 10:33:58 AM" .
 
 <http://weibo.com/userID/1649503132> <http://weibo.com/property/createComment> <http://weibo.com/weiboID/3532961351997684> .
 
 <http://weibo.com/weiboID/3532961351997684> <http://weibo.com/property/commentTo> <http://weibo.com/weiboID/3532960374046860> ;
 	<http://www.w3.org/2000/01/rdf-schema#comment> "你需要发泄下" ;
-	<http://weibo.com/property/commentData> "Jan 10, 2013 4:38:07 PM" .
+	<http://weibo.com/property/commentDate> "Jan 10, 2013 4:38:07 PM" .
 
 <http://weibo.com/userID/1915375117> <http://weibo.com/property/createComment> <http://weibo.com/weiboID/3530890090977440> .
 
 <http://weibo.com/weiboID/3530890090977440> <http://weibo.com/property/commentTo> <http://weibo.com/weiboID/3530881933137379> ;
 	<http://www.w3.org/2000/01/rdf-schema#comment> "谁这么幸运呢？ " ;
-	<http://weibo.com/property/commentData> "Jan 4, 2013 11:27:41 PM" .
+	<http://weibo.com/property/commentDate> "Jan 4, 2013 11:27:41 PM" .
 
 <http://weibo.com/userID/1915375117> <http://weibo.com/property/createComment> <http://weibo.com/weiboID/3530474406268909> .
 
 <http://weibo.com/weiboID/3530474406268909> <http://weibo.com/property/commentTo> <http://weibo.com/weiboID/3530442088676562> ;
 	<http://www.w3.org/2000/01/rdf-schema#comment> "回复@smilepig的小小世界:呵呵~今天下午我没看到短信~55 " ;
-	<http://weibo.com/property/commentData> "Jan 3, 2013 7:55:54 PM" .
+	<http://weibo.com/property/commentDate> "Jan 3, 2013 7:55:54 PM" .
