@@ -83,10 +83,11 @@ public class weibo{
 			
 			StatusWapper status = tm.getUserTimeline();
 			for(Status s : status.getStatuses()){
+				repo.setSubjType("userID");
 				repo.setObjType("weiboID");
 				repo.addRecord(s.getUser().getId(), "createWeibo", s.getId(), true);
 				
-				repo.setSubjType("weiboID");
+				repo.setSubjType("WeiboID");
 				repo.addRecord(s.getId(), "weiboText", s.getText(),false);
 				repo.addRecord(s.getId(), "weiboDate", s.getCreatedAt().toLocaleString(), false);
 //				System.out.println(s.getCreatedAt().toLocaleString());
@@ -98,6 +99,7 @@ public class weibo{
 				repo.setObjType("weiboID");
 				repo.addRecord(s.getUser().getId(), "createWeibo", s.getId(), true);
 				
+				repo.setSubjType("weiboID");
 				repo.addRecord(s.getId(), "weiboText", s.getText(),false);
 				repo.addRecord(s.getId(), "weiboDate", s.getCreatedAt().toLocaleString(), false);
 			}
@@ -145,11 +147,12 @@ public class weibo{
 			//////////////////////////////////////////////////////////
 			
 			String queryTemp = "PREFIX uid:<http://weibo.com/userID/> PREFIX prop:<http://weibo.com/property/> SELECT ?y ?date WHERE { uid:1979814003 prop:createWeibo ?y . ?y prop:weiboDate ?date } ORDER BY ?date";
-		
+			String query1 = "PREFIX uid:<http://weibo.com/userID/> PREFIX prop:<http://weibo.com/property/> SELECT ?y WHERE { uid:1979814003 prop:createWeibo ?y . } "; 
+			
 			SparqlUtil sparql = new SparqlUtil(repo);
 			String[] prefix = {"uid", "http://weibo.com/userID/",
 								"prop", "http://weibo.com/property/"};
-			TupleQueryResult itr = sparql.Query(prefix, "?y ?date" ,"uid:1979814003 prop:createWeibo ?y . ?y prop:weiboDate ?date", null, null);
+			TupleQueryResult itr = sparql.Query(prefix, "?y" ,"uid:1979814003 prop:createWeibo ?y", null, null);
 			while (itr.hasNext()) {
 				BindingSet bf = itr.next();
 				System.out.println(bf.getValue("y"));

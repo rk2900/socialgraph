@@ -23,6 +23,7 @@ import org.openrdf.rio.RDFHandlerException;
 import org.openrdf.rio.RDFParseException;
 import org.openrdf.rio.RDFWriter;
 import org.openrdf.rio.Rio;
+import org.openrdf.sail.memory.MemoryStore;
 import org.openrdf.sail.nativerdf.NativeStore;
 
 
@@ -31,6 +32,7 @@ import Const.Const;
 public class RepoUtil {
 	private Repository repo;
 	private NativeStore natStore;
+	private MemoryStore memStore;
 	private File repoFile;
 	private RepositoryConnection repoConn;
 	private SubjectUtil subjUtil;
@@ -42,8 +44,10 @@ public class RepoUtil {
 	
 	public RepoUtil() {
 		repoFile = new File(Const.repoPath);
-		natStore = new NativeStore(repoFile);
-		repo = new SailRepository(natStore);
+//		natStore = new NativeStore(repoFile);
+//		repo = new SailRepository(natStore);
+		memStore = new MemoryStore();
+		repo = new SailRepository(memStore);
 		subjUtil = new SubjectUtil();
 		predUtil = new PredicateUtil();
 		objUtil = new ObjectUtil();
