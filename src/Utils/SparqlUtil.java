@@ -69,8 +69,8 @@ public class SparqlUtil {
 		StringBuilder RESULT = new StringBuilder();
 
 		if (PREFIX != null) {
-			RESULT.append("PREFIX ");
 			for (int i = 0; i < PREFIX.length; i++) {
+				RESULT.append("PREFIX ");
 				RESULT.append(PREFIX[i]);
 			}//前缀
 		}
@@ -78,7 +78,7 @@ public class SparqlUtil {
 		if (Args != null) {
 			RESULT.append("SELECT ");
 			for (int i = 0; i < Args.length; i++) {
-				RESULT.append("?" + Args[i] + " ");
+				RESULT.append(Args[i] + " ");
 			}//需要输出的参数
 		}
 
@@ -135,6 +135,7 @@ public class SparqlUtil {
 		}
 
 //		return RESULT.toString();
+//		System.out.println(RESULT.toString());
 		return repoConn.prepareTupleQuery(QueryLanguage.SPARQL, RESULT.toString()).evaluate();
 	}
 
@@ -151,8 +152,8 @@ public class SparqlUtil {
 		StringBuilder RESULT = new StringBuilder();
 
 		if (PREFIX != null) {
-			RESULT.append("PREFIX ");
 			for (int i = 0; i < PREFIX.length; i++) {
+				RESULT.append("PREFIX ");
 				RESULT.append(PREFIX[i]);
 			}//前缀
 		}
@@ -160,7 +161,7 @@ public class SparqlUtil {
 		if (Args != null) {
 			RESULT.append("SELECT ");
 			for (int i = 0; i < Args.length; i++) {
-				RESULT.append("?" + Args[i] + " ");
+				RESULT.append(Args[i] + " ");
 			}//需要输出的参数
 		}
 
@@ -217,6 +218,7 @@ public class SparqlUtil {
 		}
 
 //		return RESULT.toString();
+//		System.out.println(RESULT.toString());
 		return repoConn.prepareTupleQuery(QueryLanguage.SPARQL, RESULT.toString()).evaluate();
 	}
 

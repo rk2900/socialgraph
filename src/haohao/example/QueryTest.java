@@ -33,7 +33,8 @@ public class QueryTest {
 //		weibo test = new weibo("1979814003","2.00vDGzJC0OM2YC4ffc0d56f70hPqLU");
 //		test.getWeiboData();
 		
-//		repo = new RepoUtil();
+		repo = new RepoUtil();
+		
 		
 
 
