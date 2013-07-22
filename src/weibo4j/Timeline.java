@@ -455,6 +455,13 @@ public class Timeline extends Weibo{
 			new PostParameter("feature",feature)
 		}));
 	}
+	public StatusWapper getBilateralTimeline(Paging page,Integer base_app,Integer feature) throws WeiboException{
+		return Status.constructWapperStatus(client.get(WeiboConfig.getValue("baseURL")+"statuses/bilateral_timeline.json",
+				new PostParameter[]{
+			new PostParameter("base_app", base_app),
+			new PostParameter("feature",feature)},
+			page));
+	}
 	/**
 	 * 根据微博ID获取单条微博内容
 	 * 
