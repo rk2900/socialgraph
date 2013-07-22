@@ -224,10 +224,12 @@ public class weibo{
 				commentByMe = cm.getCommentByMe(page, new Integer(0));
 				for(Comment c : commentByMe.getComments()){
 					repo.setSubjType("userID");
-					repo.setObjType("weiboID");
+					repo.setObjType("commentID");
 					repo.addRecord(c.getUser().getId(), "createComment", c.getIdstr(), true);
 
-					repo.setSubjType("weiboID");
+					repo.setSubjType("commentID");
+					repo.setObjType("weiboID");
+					
 					repo.addRecord(c.getIdstr(), "commentTo", c.getStatus().getId(), true);
 					repo.addRecord(c.getIdstr(), "commentContext", c.getText(), false);
 					repo.addRecord(c.getIdstr(), "commentDate", sdf.format(c.getCreatedAt()), false);
@@ -251,10 +253,11 @@ public class weibo{
 				commentToMe = cm.getCommentToMe(page, new Integer(0), new Integer(0));
 				for(Comment c :commentToMe.getComments()){
 					repo.setSubjType("userID");
-					repo.setObjType("weiboID");
+					repo.setObjType("commentID");
 					repo.addRecord(c.getUser().getId(), "createComment", c.getIdstr(), true);
 		
-					repo.setSubjType("weiboID");
+					repo.setSubjType("commentID");
+					repo.setObjType("weiboID");
 					repo.addRecord(c.getIdstr(), "commentTo", c.getStatus().getId(), true);
 					repo.addRecord(c.getIdstr(), "commentContext", c.getText(), false);
 					repo.addRecord(c.getIdstr(), "commentDate", sdf.format(c.getCreatedAt()), false);
