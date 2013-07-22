@@ -1,19 +1,19 @@
-16532 DEBUG [2013-07-22 19:14:33]  Request:
-16532 DEBUG [2013-07-22 19:14:33]  GET:https://api.weibo.com/2/comments/to_me.json
-16533 DEBUG [2013-07-22 19:14:33]  Authorization: OAuth2 2.00vDGzJC0OM2YC4ffc0d56f70hPqLU
-16533 DEBUG [2013-07-22 19:14:33]  API-RemoteIP: 172.16.0.102
-16577 DEBUG [2013-07-22 19:14:33]  Response:
-16577 DEBUG [2013-07-22 19:14:33]  https StatusCode:200
-16578 DEBUG [2013-07-22 19:14:33]  Server:nginx/1.2.0
-16578 DEBUG [2013-07-22 19:14:33]  Date:Mon, 22 Jul 2013 11:14:35 GMT
-16578 DEBUG [2013-07-22 19:14:33]  Content-Type:application/json;charset=UTF-8
-16578 DEBUG [2013-07-22 19:14:33]  Content-Length:88
-16578 DEBUG [2013-07-22 19:14:33]  Connection:keep-alive
-16578 DEBUG [2013-07-22 19:14:33]  Api-Server-IP:10.77.108.36
-16578 DEBUG [2013-07-22 19:14:33]  Vary:Accept-Encoding
-16578 DEBUG [2013-07-22 19:14:33]  X-Varnish:3655239554
-16578 DEBUG [2013-07-22 19:14:33]  Age:0
-16578 DEBUG [2013-07-22 19:14:33]  Via:1.1 varnish
-16578 DEBUG [2013-07-22 19:14:33]  SINA-LB:cWgxMzIuaGEucWgyLmJqLmxvYWRiYWxhbmNlLnNpbg==
-16579 DEBUG [2013-07-22 19:14:33]  {"comments":[],"hasvisible":false,"previous_cursor":0,"next_cursor":0,"total_number":99}
+7158 DEBUG [2013-07-22 19:25:53]  Request:
+7158 DEBUG [2013-07-22 19:25:53]  GET:https://api.weibo.com/2/comments/to_me.json
+7158 DEBUG [2013-07-22 19:25:53]  Authorization: OAuth2 2.00vDGzJC0OM2YC4ffc0d56f70hPqLU
+7158 DEBUG [2013-07-22 19:25:53]  API-RemoteIP: 111.186.1.193
+7205 DEBUG [2013-07-22 19:25:53]  Response:
+7206 DEBUG [2013-07-22 19:25:53]  https StatusCode:200
+7206 DEBUG [2013-07-22 19:25:53]  Server:nginx/1.2.0
+7206 DEBUG [2013-07-22 19:25:53]  Date:Mon, 22 Jul 2013 11:25:53 GMT
+7206 DEBUG [2013-07-22 19:25:53]  Content-Type:application/json;charset=UTF-8
+7206 DEBUG [2013-07-22 19:25:53]  Content-Length:88
+7206 DEBUG [2013-07-22 19:25:53]  Connection:keep-alive
+7206 DEBUG [2013-07-22 19:25:53]  Api-Server-IP:10.77.108.53
+7206 DEBUG [2013-07-22 19:25:53]  Vary:Accept-Encoding
+7206 DEBUG [2013-07-22 19:25:53]  X-Varnish:3262696242
+7206 DEBUG [2013-07-22 19:25:53]  Age:0
+7206 DEBUG [2013-07-22 19:25:53]  Via:1.1 varnish
+7206 DEBUG [2013-07-22 19:25:53]  SINA-LB:cWgxMzIuaGEucWgyLmJqLmxvYWRiYWxhbmNlLnNpbg==
+7207 DEBUG [2013-07-22 19:25:53]  {"comments":[],"hasvisible":false,"previous_cursor":0,"next_cursor":0,"total_number":99}
 
