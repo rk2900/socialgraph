@@ -1,0 +1,65 @@
+/*****************************************所有人的微博id和昵称，并以昵称排序————用到ANDargs，ORDRBY**********************************/	
+		String[] prefix = {"property:<http://weibo.com/property/>", "uid:<http://weibo.com/userID/>", "cid:<http://weibo.com/commentID/>", "wid:<http://weibo.com/weiboID/>"};
+		String[] Args = {"?x", "?y"};
+		String[] ANDargs = {"?x rdfs:label ?y"};
+		String ORDERBY = "?y";
+		SparqlUtil query = new SparqlUtil(repo);
+		TupleQueryResult itr = query.Query(prefix, Args, ANDargs, null, null, null, null, null, null, null, ORDERBY, null);
+/*****************************************所有人的微博id和昵称，并以昵称排序————用到ANDargs，ORDRBY**********************************/	
+
+
+/*****************************************某个用户某段时间内的微博和创建的时间，并以时间排序————用到ANDargs，RANarg， ran1，ran2，ORDERBY**********************************/
+		String[] prefix = {"property:<http://weibo.com/property/>", "uid:<http://weibo.com/userID/>", "cid:<http://weibo.com/commentID/>", "wid:<http://weibo.com/weiboID/>"};
+		String[] Args = {"?date", "?y"};
+		String[] ANDargs = {"uid:1979814003 property:createWeibo ?y", "?y property:weiboDate ?date"};
+		String RANarg = "?date";
+		String ran1 = "2013/07/01 15:15:56";
+		String ran2 = "2013/07/22 12:53:24";
+		String ORDERBY = "?date";
+		SparqlUtil query = new SparqlUtil(repo);
+		TupleQueryResult itr = query.Query(prefix, Args, ANDargs, null, null, RANarg, ran1, ran2, null, null, ORDERBY, null);
+/*****************************************某个用户某段时间内的微博和创建的时间，并以时间排序————用到ANDargs，RANarg， ran1，ran2，ORDERBY**********************************/
+
+
+/*****************************************某人某个时间点发出的所有评论，并以时间排序————用到ANDargs，EXISTarg，EXIST，ORDERBY**********************************/
+		String[] prefix = {"property:<http://weibo.com/property/>", "uid:<http://weibo.com/userID/>", "cid:<http://weibo.com/commentID/>", "wid:<http://weibo.com/weiboID/>"};
+		String[] Args = {"?date", "?y"};
+		String[] ANDargs = {"uid:1979814003 property:createComment ?y", "?y property:commentDate ?date"};
+		String EXISTarg = "?date";
+		String EXIST = "2013/07/18";
+		String ORDERBY = "?date";
+		SparqlUtil query = new SparqlUtil(repo);
+		TupleQueryResult itr = query.Query(prefix, Args, ANDargs, null, null, null, null, null, EXISTarg, EXIST, ORDERBY, null);
+/*****************************************某人某个时间点发出的所有评论，并以时间排序————用到ANDargs，EXISTarg，EXIST，ORDERBY**********************************/
+
+
+/*****************************************与某人有关系的用户，最多列举10个人————用到ORargs，LIMIT**********************************/
+		String[] prefix = {"property:<http://weibo.com/property/>", "uid:<http://weibo.com/userID/>", "cid:<http://weibo.com/commentID/>", "wid:<http://weibo.com/weiboID/>"};
+		String[] Args = {"?y"};
+		String[] ORargs = {"uid:1979814003 property:follower ?y", "uid:1979814003 property:friend ?y"};
+		String LIMIT = 10;
+		SparqlUtil query = new SparqlUtil(repo);
+		TupleQueryResult itr = query.Query(prefix, Args, null, ORargs, null, null, null, null, null, null, null, LIMIT);
+/*****************************************与某人有关系的用户，最多列举10个人————用到ORargs，LIMIT**********************************/
+
+
+/*****************************************所有用户所有的ID和个人说明————用到OPTIONAL**********************************/
+		String[] prefix = {"property:<http://weibo.com/property/>", "uid:<http://weibo.com/userID/>", "cid:<http://weibo.com/commentID/>", "wid:<http://weibo.com/weiboID/>"};
+		String[] Args = {"?id","?y"};
+		String[] OPTIONAL = {"?id property:description ?y"};
+		SparqlUtil query = new SparqlUtil(repo);
+		TupleQueryResult itr = query.Query(prefix, Args, null, null, OPTIONAL, null, null, null, null, null, null, null);
+/*****************************************所有用户所有的ID和个人说明————用到OPTIONAL**********************************/
+
+
+/*****************************************某个用户某段时间内的微博数————用到count，ANDargs，RANarg， ran1，ran2，ORDERBY**********************************/
+		String[] prefix = {"property:<http://weibo.com/property/>", "uid:<http://weibo.com/userID/>", "cid:<http://weibo.com/commentID/>", "wid:<http://weibo.com/weiboID/>"};
+		String[] Args = {"(count(?y) as ?c)"};
+		String[] ANDargs = {"uid:1979814003 property:createWeibo ?y", "?y property:weiboDate ?date"};
+		String RANarg = "?date";
+		String ran1 = "2013/07/01 15:15:56";
+		String ran2 = "2013/07/22 12:53:24";
+		String ORDERBY = "?date";
+		SparqlUtil query = new SparqlUtil(repo);
+		TupleQueryResult itr = query.Query(prefix, Args, ANDargs, null, null, RANarg, ran1, ran2, null, null, ORDERBY, null);
+/*****************************************某个用户某段时间内的微博数————用到count，ANDargs，RANarg， ran1，ran2，ORDERBY**********************************/
