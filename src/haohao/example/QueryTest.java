@@ -27,10 +27,6 @@ public class QueryTest {
 
 	public static void main(String[] args) throws QueryEvaluationException,
 			RepositoryException, MalformedQueryException {
-
-//		weibo test = new weibo("1979814003","2.00vDGzJC0OM2YC4ffc0d56f70hPqLU");
-//		test.getWeiboData();
-		
 		repo = new RepoUtil();
 		
 /*****************************************所有人的微博id和昵称，并以昵称排序————用到ANDargs，ORDRBY**********************************/	
