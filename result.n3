@@ -82,6 +82,10 @@
 <http://weibo.com/userID/1645713370> <http://www.w3.org/2000/01/rdf-schema#label> "Riki0ppa" ;
 	<http://weibo.com/property/description> "I am on my way." .
 
+<http://weibo.com/userID/1979814003> <http://weibo.com/property/follower> <http://weibo.com/userID/2265815874> .
+
+<http://weibo.com/userID/2265815874> <http://www.w3.org/2000/01/rdf-schema#label> "明辉56" .
+
 <http://weibo.com/userID/1979814003> <http://weibo.com/property/follower> <http://weibo.com/userID/1579438083> .
 
 <http://weibo.com/userID/1579438083> <http://www.w3.org/2000/01/rdf-schema#label> "Sad_Sack" ;
@@ -414,110 +418,105 @@
 <http://weibo.com/WeiboID/3595747028919563> <http://www.w3.org/2000/01/rdf-schema#Literal> "Love SJTU//@李武军sjtu: //@陈程jack://@上海交通大学微博: //@易灿明: 就当我是杰哥的脑残粉好了，看来杰哥已经基本上打入我们内部，就连英语“第六感”水平考试这个词汇都被他掌控了哈哈[哈哈]！选择交大，选择责任！I love #SJTU#" ;
 	<http://weibo.com/property/weiboDate> "Jul 2, 2013 10:45:58 PM" .
 
-<http://weibo.com/userID/1640494672> <http://weibo.com/property/createWeibo> <http://weibo.com/weiboID/3602807070904735> .
+<http://weibo.com/userID/1644395354> <http://weibo.com/property/createWeibo> <http://weibo.com/weiboID/3602834237237234> .
 
-<http://weibo.com/weiboID/3602807070904735> <http://www.w3.org/2000/01/rdf-schema#Literal> "温柔总是由坚强守卫，坚强总是由温柔包容。这世上最美妙的搭配，总是一半刚强，一般柔软。#指尖生花#by：@-兰晓陈晓兰" ;
-	<http://weibo.com/property/weiboDate> "Jul 22, 2013 10:20:04 AM" .
+<http://weibo.com/weiboID/3602834237237234> <http://www.w3.org/2000/01/rdf-schema#Literal> "如果在六个女生中选一个当女朋友，你们会选谁？突然很想调查一下，看看男女的审美差异。。。「转」" ;
+	<http://weibo.com/property/weiboDate> "Jul 22, 2013 12:08:02 PM" .
 
-<http://weibo.com/userID/1883881851> <http://weibo.com/property/createWeibo> <http://weibo.com/weiboID/3602806722190555> .
+<http://weibo.com/userID/1645578093> <http://weibo.com/property/createWeibo> <http://weibo.com/weiboID/3602833049659638> .
 
-<http://weibo.com/weiboID/3602806722190555> <http://www.w3.org/2000/01/rdf-schema#Literal> "#寻找张大胆儿# 此张非彼张，泛指姓氏。" ;
-	<http://weibo.com/property/weiboDate> "Jul 22, 2013 10:18:42 AM" .
+<http://weibo.com/weiboID/3602833049659638> <http://www.w3.org/2000/01/rdf-schema#Literal> "【专家：低收入者放弃社保换工资系理性行为】人社部报告披露，部分低收入人群，包括农民工群体、个体工商户等，为了生活稍微宽裕些，宁愿主动放弃社保换工资。资深媒体人撰文称，弃社保换工资是非常理性行为，因为他们感受不到社保收益，而此举也折射出中国社保之弊。（华商报）http://t.cn/zQcI9cm" ;
+	<http://weibo.com/property/weiboDate> "Jul 22, 2013 12:03:18 PM" .
 
-<http://weibo.com/userID/1286528122> <http://weibo.com/property/createWeibo> <http://weibo.com/weiboID/3602806378474265> .
+<http://weibo.com/userID/2803301701> <http://weibo.com/property/createWeibo> <http://weibo.com/weiboID/3602832995646120> .
 
-<http://weibo.com/weiboID/3602806378474265> <http://www.w3.org/2000/01/rdf-schema#Literal> "【SIGGRAPH 40年！】为庆祝国际图形学大会SIGGRAPH举办40周年，主办方在SIGGRAPH 2013的官网上发起了“40年的人（40 Years of PEOPLE）”的活动，号召大家上传自己的照片和个人简介，分享自己与SIGGRAPH或图形学有关的故事，同时预测下一个40年的趋势。>>http://t.cn/zH5kxZO" ;
-	<http://weibo.com/property/weiboDate> "Jul 22, 2013 10:17:20 AM" .
+<http://weibo.com/weiboID/3602832995646120> <http://www.w3.org/2000/01/rdf-schema#Literal> "【人民日报：不让皱纹刻在你心上】有人认为向上流动渠道不畅，奋斗无用；有人认为靠奋斗不如靠关系，有门道是成功捷径……否定奋斗的价值，实际上是在为放弃努力找借口。个人不努力，机会再多也只会白白浪费，平台再好也不会终有所成。奋斗过，至少说明我们没有止步不前，没有随波逐流，没有自暴自弃。" ;
+	<http://weibo.com/property/weiboDate> "Jul 22, 2013 12:03:06 PM" .
 
-<http://weibo.com/userID/1236380405> <http://weibo.com/property/createWeibo> <http://weibo.com/weiboID/3602805892189669> .
+<http://weibo.com/userID/1644395354> <http://weibo.com/property/createWeibo> <http://weibo.com/weiboID/3602832181494952> .
 
-<http://weibo.com/weiboID/3602805892189669> <http://www.w3.org/2000/01/rdf-schema#Literal> "#刘涛车震#车震都有攻略，我和我的小伙伴们都惊呆了。" ;
-	<http://weibo.com/property/weiboDate> "Jul 22, 2013 10:15:24 AM" .
+<http://weibo.com/weiboID/3602832181494952> <http://www.w3.org/2000/01/rdf-schema#Literal> "岁月请别伤害她。。。" ;
+	<http://weibo.com/property/weiboDate> "Jul 22, 2013 11:59:52 AM" .
 
-<http://weibo.com/userID/1197161814> <http://weibo.com/property/createWeibo> <http://weibo.com/weiboID/3602805808138587> .
+<http://weibo.com/userID/1644395354> <http://weibo.com/property/createWeibo> <http://weibo.com/weiboID/3602831900410007> .
 
-<http://weibo.com/weiboID/3602805808138587> <http://www.w3.org/2000/01/rdf-schema#Literal> "这篇标题《中国何以强，缘有共产党》的配画作者为艺术大师丰子恺。丰子恺老师\"文革\"期间饱受摧残。曾有红卫兵把刚出锅的热浆糊浇到他背上,然后贴上大字报,用皮鞭抽打,游街示众。这十年蒙受屈辱,背着莫须有的罪名,遭批斗、迫害,身心摧残,因而积郁成疾,于1975年与世长辞。（@陈宗鹤先生）" ;
-	<http://weibo.com/property/weiboDate> "Jul 22, 2013 10:15:04 AM" .
+<http://weibo.com/weiboID/3602831900410007> <http://www.w3.org/2000/01/rdf-schema#Literal> "音乐就是我的生命！[阴险]" ;
+	<http://weibo.com/property/weiboDate> "Jul 22, 2013 11:58:44 AM" .
 
-<http://weibo.com/userID/2115305592> <http://weibo.com/property/createWeibo> <http://weibo.com/weiboID/3602805435129771> .
+<http://weibo.com/userID/1643971635> <http://weibo.com/property/createWeibo> <http://weibo.com/weiboID/3602830810431257> .
 
-<http://weibo.com/weiboID/3602805435129771> <http://www.w3.org/2000/01/rdf-schema#Literal> "《[90年靠谱热血好男儿，诚征妹纸一枚。愿得一人心，白首不相离]》 175cm，68kg，北京人。不吸烟，偶尔喝酒。现在北邮理学院上研一。    高中和一直徘徊于课本于运动之间，无暇其他。昨天下午在主干道上散步，抬头猛然一看，周围 ...——来自北邮人BBS站 http://t.cn/zQcoVj5" ;
-	<http://weibo.com/property/weiboDate> "Jul 22, 2013 10:13:35 AM" .
+<http://weibo.com/weiboID/3602830810431257> <http://www.w3.org/2000/01/rdf-schema#Literal> "【动态】甘肃省定西市岷县、漳县交界22日发生里氏6.6级地震，岷县大部分乡镇遭受地震灾害。据定西市政府初步统计，灾害已造成22人死亡，多人受伤。本次地震重灾区主要在农村，其中岷县蒲麻镇的农村房屋倒塌严重，而定西市塔子乡太和村房屋几乎全毁。更多新闻请关注凤凰卫视资讯台和@凤凰微新闻 。" ;
+	<http://weibo.com/property/weiboDate> "Jul 22, 2013 11:54:25 AM" .
 
-<http://weibo.com/userID/1640494672> <http://weibo.com/property/createWeibo> <http://weibo.com/weiboID/3602804596269818> .
+<http://weibo.com/userID/2803301701> <http://weibo.com/property/createWeibo> <http://weibo.com/weiboID/3602830478820314> .
 
-<http://weibo.com/weiboID/3602804596269818> <http://www.w3.org/2000/01/rdf-schema#Literal> "时光总是无言，所以来去都匆匆" ;
-	<http://weibo.com/property/weiboDate> "Jul 22, 2013 10:10:15 AM" .
+<http://weibo.com/weiboID/3602830478820314> <http://www.w3.org/2000/01/rdf-schema#Literal> "【[话筒]一图扩散：地震后如何打手机？】甘肃定西6.6级地震已造成13个乡镇通讯全部中断。信息通讯就是生命线。几条地震后拨打电话的技巧，转给身在灾区的你，紧急情况用得着！扩散！@触宝号码助手" ;
+	<http://weibo.com/property/weiboDate> "Jul 22, 2013 11:53:05 AM" .
 
-<http://weibo.com/userID/1993350880> <http://weibo.com/property/createWeibo> <http://weibo.com/weiboID/3602804541726562> .
+<http://weibo.com/userID/2309457710> <http://weibo.com/property/createWeibo> <http://weibo.com/weiboID/3602830244282018> .
 
-<http://weibo.com/weiboID/3602804541726562> <http://www.w3.org/2000/01/rdf-schema#Literal> "你不知道，某些时刻，我有多么难过。你不知道，没有回应的等待，究竟有多累。你不知道，我是鼓起了多大的勇气，才敢念念不忘。或者，你不是不知道，只是假装不知道。你那么自私。我那么傻。我们有过的美好回忆，最终，还是被你耗尽。偶尔想起，记忆犹新，就像当初，我爱你，没有什么目的，只是爱你。转" ;
-	<http://weibo.com/property/weiboDate> "Jul 22, 2013 10:10:02 AM" .
+<http://weibo.com/weiboID/3602830244282018> <http://www.w3.org/2000/01/rdf-schema#Literal> "//@任志强:培养好习惯。 //@袁岳:回复@Stephen-Lsh:一开始就用，容易培养孩子习惯 //@Stephen-Lsh:我家宝贝早早就用上了，第一次坐上就很享受！ //@袁岳:不能这样侥幸！ //@陈家小麦:说服家里老人改变观念不容易啊，他们总觉得安全摇篮小宝宝坐在里面不舒服，对宝宝脊柱不好。现在妥协结果离家不远" ;
+	<http://weibo.com/property/weiboDate> "Jul 22, 2013 11:52:09 AM" .
 
-<http://weibo.com/userID/2803301701> <http://weibo.com/property/createWeibo> <http://weibo.com/weiboID/3602803799353399> .
+<http://weibo.com/userID/1649503132> <http://weibo.com/property/createWeibo> <http://weibo.com/weiboID/3602830185054643> .
 
-<http://weibo.com/weiboID/3602803799353399> <http://www.w3.org/2000/01/rdf-schema#Literal> "【广州：380亿整治黑河涌，为何治出劣Ⅴ类？】投入巨资治污，却换来劣Ⅴ类水质——广州曾在2010年前投入380亿元治理城市河涌，而从公布的50条河涌水质情况来看，39条河涌水质未能达到我国地表水的最低标准。“治理一条河涌要拆一个村”，彻底整治河涌难度确实很大。http://t.cn/zQcauih 人民日报" ;
-	<http://weibo.com/property/weiboDate> "Jul 22, 2013 10:07:05 AM" .
+<http://weibo.com/weiboID/3602830185054643> <http://www.w3.org/2000/01/rdf-schema#Literal> "赶紧补剧场版！配图好棒！//@TetsuRemo: 最喜欢的果然还是红蓝w //@言eilanya:ww不内讧不对比，粉黑各种闪亮，红蓝也很良心。殉情前，能见到杏子的微笑，真是太好了（咦？感觉是在我自己一样……//@理子_100: 好棒啊啊啊啊啊！！！顺手@言eilanya" ;
+	<http://weibo.com/property/weiboDate> "Jul 22, 2013 11:51:55 AM" .
 
-<http://weibo.com/userID/1850988623> <http://weibo.com/property/createWeibo> <http://weibo.com/weiboID/3602802116731511> .
+<http://weibo.com/userID/1644395354> <http://weibo.com/property/createWeibo> <http://weibo.com/weiboID/3602829958976924> .
 
-<http://weibo.com/weiboID/3602802116731511> <http://www.w3.org/2000/01/rdf-schema#Literal> "#果壳科技日历#7月22日，星期一。1888年的今天，微生物学家赛尔曼·瓦克斯曼出生。他研究土壤细菌学，致力于筛选分离杀菌成分，发现了拯救了无数肺结核病患者的链霉素。而他发明的一系列分离抗生素的方法和技术更是造福人类。于是，瓦克斯曼被称作“土壤侠（man of the soil，不许吐槽这个翻译）”。" ;
-	<http://weibo.com/property/weiboDate> "Jul 22, 2013 10:00:23 AM" .
+<http://weibo.com/weiboID/3602829958976924> <http://www.w3.org/2000/01/rdf-schema#Literal> "次奥。摔了一下手机。电池漏了，了。。。「转」" ;
+	<http://weibo.com/property/weiboDate> "Jul 22, 2013 11:51:02 AM" .
 
-<http://weibo.com/userID/1192329374> <http://weibo.com/property/createWeibo> <http://weibo.com/weiboID/3602801173684308> .
+<http://weibo.com/userID/1644395354> <http://weibo.com/property/createWeibo> <http://weibo.com/weiboID/3602828952544311> .
 
-<http://weibo.com/weiboID/3602801173684308> <http://www.w3.org/2000/01/rdf-schema#Literal> "娜式蛋炒饭 [赞]" ;
-	<http://weibo.com/property/weiboDate> "Jul 22, 2013 9:56:38 AM" .
+<http://weibo.com/weiboID/3602828952544311> <http://www.w3.org/2000/01/rdf-schema#Literal> "亚丁，一个去了还想去的地方。" ;
+	<http://weibo.com/property/weiboDate> "Jul 22, 2013 11:47:02 AM" .
 
-<http://weibo.com/userID/1644395354> <http://weibo.com/property/createWeibo> <http://weibo.com/weiboID/3602800913559468> .
+<http://weibo.com/userID/1197161814> <http://weibo.com/property/createWeibo> <http://weibo.com/weiboID/3602828482623822> .
 
-<http://weibo.com/weiboID/3602800913559468> <http://www.w3.org/2000/01/rdf-schema#Literal> "主银太过分了。。。好丢脸。。。[图转]" ;
-	<http://weibo.com/property/weiboDate> "Jul 22, 2013 9:55:36 AM" .
+<http://weibo.com/weiboID/3602828482623822> <http://www.w3.org/2000/01/rdf-schema#Literal> "//@王小山://@谭人玮: 转发微博" ;
+	<http://weibo.com/property/weiboDate> "Jul 22, 2013 11:45:11 AM" .
 
-<http://weibo.com/userID/1640494672> <http://weibo.com/property/createWeibo> <http://weibo.com/weiboID/3602800766716051> .
+<http://weibo.com/userID/1643971635> <http://weibo.com/property/createWeibo> <http://weibo.com/weiboID/3602828478316416> .
 
-<http://weibo.com/weiboID/3602800766716051> <http://www.w3.org/2000/01/rdf-schema#Literal> "请记住，最终你都要过上自己想要的生活。" ;
-	<http://weibo.com/property/weiboDate> "Jul 22, 2013 9:55:02 AM" .
+<http://weibo.com/weiboID/3602828478316416> <http://www.w3.org/2000/01/rdf-schema#Literal> "【感悟】莎拉·布莱曼：我小时候电视上经常有各种才艺表演节目，这些节目也很受欢迎，因为许多人都有音乐方面的天赋，或是其他类型的舞台天赋。但事业的长久才是最重要的。一举成名很美好，在这之后，这个人的作为才是关键，这就涉及到坚持和努力了，他们要追求、享受并热爱自己的天赋。（名人面对面）" ;
+	<http://weibo.com/property/weiboDate> "Jul 22, 2013 11:45:09 AM" .
 
-<http://weibo.com/userID/1883881851> <http://weibo.com/property/createWeibo> <http://weibo.com/weiboID/3602800753448162> .
+<http://weibo.com/userID/1883881851> <http://weibo.com/property/createWeibo> <http://weibo.com/weiboID/3602828351836461> .
 
-<http://weibo.com/weiboID/3602800753448162> <http://www.w3.org/2000/01/rdf-schema#Literal> "勇士75-67山猫，杀入拉斯维加斯夏季联赛决赛，将对阵太阳。谁是最终的冠军呢？技术统计：http://t.cn/zQcXA4o" ;
-	<http://weibo.com/property/weiboDate> "Jul 22, 2013 9:54:59 AM" .
+<http://weibo.com/weiboID/3602828351836461> <http://www.w3.org/2000/01/rdf-schema#Literal> "【视频-科比赛季精彩回顾 斯台普斯不朽之王】片子略悲怆，期待新赛季的科比。 http://t.cn/zQcNHO8" ;
+	<http://weibo.com/property/weiboDate> "Jul 22, 2013 11:44:39 AM" .
 
-<http://weibo.com/userID/2803301701> <http://weibo.com/property/createWeibo> <http://weibo.com/weiboID/3602799890121911> .
+<http://weibo.com/userID/2115305592> <http://weibo.com/property/createWeibo> <http://weibo.com/weiboID/3602828100716669> .
 
-<http://weibo.com/weiboID/3602799890121911> <http://www.w3.org/2000/01/rdf-schema#Literal> "【玩命恢复中……】 @腾讯微信团队 公告：“由于服务器基础网络故障，您的微信暂时可能出现收发问题。我们正在玩命恢复中”，另据@央视新闻，这次故障影响地区包括北京、广东、浙江、山东、黑龙江、河南、天津、四川、重庆、安徽、河北、辽宁、江苏、陕西、湖北、新疆、青海……" ;
-	<http://weibo.com/property/weiboDate> "Jul 22, 2013 9:51:34 AM" .
+<http://weibo.com/weiboID/3602828100716669> <http://www.w3.org/2000/01/rdf-schema#Literal> "《[心得]北邮人不缺知识缺的是匪气》 首先声明，本人也是一个要找工作的年轻人。有点想法写在这里。或许很幼稚，全供参考。     北邮的学生大部分是技术出身，功底自然不差。拿offer不在话下。论坛上自然充满了，各种十几万乃至几十万 ...——来自北邮人BBS站 " ;
+	<http://weibo.com/property/weiboDate> "Jul 22, 2013 11:43:40 AM" .
 
-<http://weibo.com/userID/1643971635> <http://weibo.com/property/createWeibo> <http://weibo.com/weiboID/3602799659370294> .
+<http://weibo.com/userID/1640494672> <http://weibo.com/property/createWeibo> <http://weibo.com/weiboID/3602827216055453> .
 
-<http://weibo.com/weiboID/3602799659370294> <http://www.w3.org/2000/01/rdf-schema#Literal> "【观察】曼德拉身上那种宽容的勇气是非常难得的，人类历史上有太多的斗争、杀戮和报复，他用以德报怨真正地获得了绝大部分民众的支持，这也就是为什么曼德拉不仅是一个南非的政治家，他也是一个有世界影响的政治家。曼德拉是一个正能量，他对于所有追求正义事业的人都有巨大的精神鼓舞。（时事亮亮点）" ;
-	<http://weibo.com/property/weiboDate> "Jul 22, 2013 9:50:38 AM" .
+<http://weibo.com/weiboID/3602827216055453> <http://www.w3.org/2000/01/rdf-schema#Literal> "完了完了，一看到这图口水就止不住地流。。。回头自己做一个~！" ;
+	<http://weibo.com/property/weiboDate> "Jul 22, 2013 11:40:07 AM" .
 
-<http://weibo.com/userID/1645578093> <http://weibo.com/property/createWeibo> <http://weibo.com/weiboID/3602799084852443> .
+<http://weibo.com/userID/1850988623> <http://weibo.com/property/createWeibo> <http://weibo.com/weiboID/3602826230326220> .
 
-<http://weibo.com/weiboID/3602799084852443> <http://www.w3.org/2000/01/rdf-schema#Literal> "【美消防部门：中国女孩被碾是意外 不处分消防员】美国旧金山南郊圣马特奥县法医办公室19号确认，在韩亚航空214航班坠机事故中，一名中国乘客死于车辆碾轧造成的多发性钝伤。旧金山市消防部门表示，并不会对消防员给予纪律处分，因为此事完全是“意外造成的悲剧”。（人民网）http://t.cn/zQt8jxL " ;
-	<http://weibo.com/property/weiboDate> "Jul 22, 2013 9:48:21 AM" .
+<http://weibo.com/weiboID/3602826230326220> <http://www.w3.org/2000/01/rdf-schema#Literal> "浣熊在北美分布得很广，它们和人类有许多交集。这种二起来像哈士奇、狡猾像狐狸、还拥有猴子一样的前爪的天生就蒙着双眼的动物，根本就是当小偷的料呀~" ;
+	<http://weibo.com/property/weiboDate> "Jul 22, 2013 11:36:13 AM" .
 
-<http://weibo.com/userID/1197161814> <http://weibo.com/property/createWeibo> <http://weibo.com/weiboID/3602798262533998> .
+<http://weibo.com/userID/1644395354> <http://weibo.com/property/createWeibo> <http://weibo.com/weiboID/3602825680640021> .
 
-<http://weibo.com/weiboID/3602798262533998> <http://www.w3.org/2000/01/rdf-schema#Literal> "转发微博" ;
-	<http://weibo.com/property/weiboDate> "Jul 22, 2013 9:45:05 AM" .
+<http://weibo.com/weiboID/3602825680640021> <http://www.w3.org/2000/01/rdf-schema#Literal> "看微博上有人说心情不好了就去找小区大妈聊天，十分钟就能知道谁过得比你还惨。我抱着试试看的态度找到了小区大妈，并向她诉说了我的悲惨生活。慈祥的大妈拍拍我的肩膀说：“你这算什么？7号楼的小王比你惨多了。”听完之后我就哭了，因为我就是7号楼的小王。「转」" ;
+	<http://weibo.com/property/weiboDate> "Jul 22, 2013 11:34:02 AM" .
 
-<http://weibo.com/userID/1644395354> <http://weibo.com/property/createWeibo> <http://weibo.com/weiboID/3602797994028860> .
+<http://weibo.com/userID/2803301701> <http://weibo.com/property/createWeibo> <http://weibo.com/weiboID/3602825332406165> .
 
-<http://weibo.com/weiboID/3602797994028860> <http://www.w3.org/2000/01/rdf-schema#Literal> "时光总是无言，所以来去都匆匆！" ;
-	<http://weibo.com/property/weiboDate> "Jul 22, 2013 9:44:02 AM" .
+<http://weibo.com/weiboID/3602825332406165> <http://www.w3.org/2000/01/rdf-schema#Literal> "【地震已造成22人死亡 民政部启动四级救灾应急响应】民政部网站消息，据甘肃省民政厅，截至11时初步统计，地震已造成22人死亡，漳县13个乡镇通讯全部中断，灾区民房倒塌损坏严重。国家减灾委、民政部针已紧急启动国家四级救灾应急响应，派出工作组赶赴灾区指导开展救灾工作。http://t.cn/zQcN2k0" ;
+	<http://weibo.com/property/weiboDate> "Jul 22, 2013 11:32:39 AM" .
 
-<http://weibo.com/userID/2309457710> <http://weibo.com/property/createWeibo> <http://weibo.com/weiboID/3602797947879127> .
+<http://weibo.com/userID/1883881851> <http://weibo.com/property/createWeibo> <http://weibo.com/weiboID/3602824719692616> .
 
-<http://weibo.com/weiboID/3602797947879127> <http://www.w3.org/2000/01/rdf-schema#Literal> "[威武] //@刘铁岩:中国机器学习界人才辈出，后劲十足呀。两年前王立威因为在学习理论方面的成果就曾入选，朱军@THU-ZJ 这次又上榜了，大赞! //@刘铁岩:热烈祝贺! //@马少平THU:祝贺朱军//@沈醉2011:好多mm" ;
-	<http://weibo.com/property/weiboDate> "Jul 22, 2013 9:43:50 AM" .
-
-<http://weibo.com/userID/1884228747> <http://weibo.com/property/createWeibo> <http://weibo.com/weiboID/3602793728187707> .
-
-<http://weibo.com/weiboID/3602793728187707> <http://www.w3.org/2000/01/rdf-schema#Literal> "改不掉错的自己，就永远遇不到对的人。近日观感。" ;
-	<http://weibo.com/property/weiboDate> "Jul 22, 2013 9:27:03 AM" .
+<http://weibo.com/weiboID/3602824719692616> <http://www.w3.org/2000/01/rdf-schema#Literal> "#NBA精彩GIF# 科比用一个细微的假动作过人，然后跳投三分。" ;
+	<http://weibo.com/property/weiboDate> "Jul 22, 2013 11:30:13 AM" .
 
 <http://weibo.com/userID/2278851592> <http://weibo.com/property/createWeibo> <http://weibo.com/weiboID/3602762820626222> .
 

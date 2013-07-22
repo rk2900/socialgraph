@@ -44,10 +44,10 @@ public class RepoUtil {
 	
 	public RepoUtil() {
 		repoFile = new File(Const.repoPath);
-//		natStore = new NativeStore(repoFile);
-//		repo = new SailRepository(natStore);
-		memStore = new MemoryStore();
-		repo = new SailRepository(memStore);
+		natStore = new NativeStore(repoFile);
+		repo = new SailRepository(natStore);
+//		memStore = new MemoryStore();
+//		repo = new SailRepository(memStore);
 		subjUtil = new SubjectUtil();
 		predUtil = new PredicateUtil();
 		objUtil = new ObjectUtil();
@@ -312,6 +312,7 @@ public class RepoUtil {
 	 */
 	public void saveRDFTurtle() {
 		//TODO
+		
 	}
 	
 	
