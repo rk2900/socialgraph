@@ -12,3 +12,18 @@ weibo
 	
 
 记得后边string 和 string builder
+
+URI: 
+name rdfs:label 
+friend  
+follower 
+createWeibo 
+createComment 
+commentTo 
+
+Literal: 
+description 
+weiboText rdfs:Literal 
+weiboDate 
+commentDate 
+commentContext rdfs:Comment
