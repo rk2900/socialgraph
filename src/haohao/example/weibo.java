@@ -5,8 +5,6 @@ import java.text.SimpleDateFormat;
 import org.openrdf.query.MalformedQueryException;
 import org.openrdf.query.QueryEvaluationException;
 import org.openrdf.repository.RepositoryException;
-import org.openrdf.rio.RDFFormat;
-
 import Utils.*;
 import weibo4j.Comments;
 import weibo4j.Friendships;
@@ -243,8 +241,6 @@ public class weibo{
 	
 	public void getCommentTome(int pageNum, int countNum){
 		Paging page = new Paging(1,countNum);
-//		Integer base_app = new Integer(0);
-//		Integer feature = new Integer(0);
 		CommentWapper commentToMe;
 		
 		for(int i=1;i<=pageNum;++i){
@@ -281,8 +277,6 @@ public class weibo{
 		getCommentTome(2,100);
 
 		System.out.println("----------output ends-------------");
-		repo.saveRDFTurtle("./test.n3", RDFFormat.N3);
-//		repo.saveRDFTurtle("./xml.rdf", RDFFormat.RDFXML);
 		System.out.println("----------Program exit------------");
 	}
 }
