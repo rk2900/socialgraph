@@ -37,7 +37,7 @@
 		String[] prefix = {"property:<http://weibo.com/property/>", "uid:<http://weibo.com/userID/>", "cid:<http://weibo.com/commentID/>", "wid:<http://weibo.com/weiboID/>"};
 		String[] Args = {"?y"};
 		String[] ORargs = {"uid:1979814003 property:follower ?y", "uid:1979814003 property:friend ?y"};
-		String LIMIT = 10;
+		String LIMIT = "10";
 		SparqlUtil query = new SparqlUtil(repo);
 		TupleQueryResult itr = query.Query(prefix, Args, null, ORargs, null, null, null, null, null, null, null, LIMIT);
 /*****************************************与某人有关系的用户，最多列举10个人————用到ORargs，LIMIT**********************************/
