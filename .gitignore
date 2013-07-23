@@ -1,0 +1,12 @@
+ache & Temp Files
+*repo/*
+*bin/*
+/Temp/*/*
+~*
+*.bak
+*.cmp
+*.old
+*.tmp
+*sublime*
+*.DS_*
+/bin
