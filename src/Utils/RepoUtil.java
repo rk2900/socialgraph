@@ -145,7 +145,7 @@ public class RepoUtil {
 		predUri.setType(type);
 	}
 	
-	/*
+	/**
 	 * To set the object namespace
 	 * and type.
 	 */
@@ -158,7 +158,7 @@ public class RepoUtil {
 		objUri.setType(type);
 	}
 	
-	/*
+	/**
 	 * The URI-URI-Literal format SPO record.
 	 */
 	public void addRecord(URI subj, URI pred, Literal obj) {
@@ -171,7 +171,7 @@ public class RepoUtil {
 		} 
 	}
 	
-	/*
+	/**
 	 * The URI-URI-URI format SPO record.
 	 */
 	public void addRecord(URI subj, URI pred, URI obj) {
@@ -184,7 +184,7 @@ public class RepoUtil {
 		}
 	}
 	
-	/*
+	/**
 	 * The Str-Str-Str format SPO record.
 	 */
 	public void addRecord(String subjStr, String predStr, String objStr, boolean uriFlag) {
@@ -220,7 +220,7 @@ public class RepoUtil {
 		}
 	}
 	
-	/*
+	/**
 	 * The RDF reader for insert records
 	 * with stream reader.
 	 */
@@ -243,7 +243,7 @@ public class RepoUtil {
 		}
 	}
 	
-	/*
+	/**
 	 * Read the RDF file with SPO format in stream.
 	 */
 	public void addRecords(String spoFilePath) {
