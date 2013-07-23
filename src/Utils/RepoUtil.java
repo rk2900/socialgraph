@@ -11,6 +11,7 @@ import java.io.InputStreamReader;
 import org.openrdf.model.Literal;
 import org.openrdf.model.Statement;
 import org.openrdf.model.URI;
+import org.openrdf.model.Value;
 import org.openrdf.model.ValueFactory;
 import org.openrdf.model.impl.LinkedHashModel;
 import org.openrdf.model.impl.ValueFactoryImpl;
@@ -32,47 +33,53 @@ import Const.Const;
 
 public class RepoUtil {
 	private Repository repo;
+	private MemoryStore memStore;
 	private NativeStore natStore;
 	private File repoFile;
 	private RepositoryConnection repoConn;
-	private SubjectUtil subjUtil;
+	private UriUtil subjUri;
+	private UriUtil predUri;
+	private UriUtil objUri;
+	private Value objLit;
 	private PredicateUtil predUtil;
-	private ObjectUtil objUtil;
-	
 	private ValueFactory valueFactory;
 	private LinkedHashModel model;
 	
+	/*
+	 * To get the repository within memory.
+	 */
 	public RepoUtil() {
 		repoFile = new File(Const.repoPath);
-		natStore = new NativeStore(repoFile);
-		repo = new SailRepository(natStore);
-		subjUtil = new SubjectUtil();
-		predUtil = new PredicateUtil();
-		objUtil = new ObjectUtil();
-		valueFactory = new ValueFactoryImpl();
-		model = new LinkedHashModel();
-		repoInitialize();
+		memStore = new MemoryStore();
+		repo = new SailRepository(memStore);
+		initialize();
 	}
 	
+	/*
+	 * To get the repository on the disk.
+	 */
 	public RepoUtil(String repoPath) {
 		repoFile = new File(repoPath);
 		natStore = new NativeStore(repoFile);
 		repo = new SailRepository(natStore);
-		subjUtil = new SubjectUtil();
-		predUtil = new PredicateUtil();
-		objUtil = new ObjectUtil();
-		valueFactory = new ValueFactoryImpl();
-		model = new LinkedHashModel();
-		repoInitialize();
+		initialize();
 	}
 	
+	/*
+	 * To get the repository on the Http server.
+	 */
 	public RepoUtil(String server, String repoId) {
 		repo = new HTTPRepository(server, repoId);
-		model = new LinkedHashModel();
-		repoInitialize();
+		initialize();
 	}
 	
-	private void repoInitialize() {
+	private void initialize() {
+		subjUri = new UriUtil();
+		predUri = new UriUtil();
+		objUri = new UriUtil();
+		predUtil = new PredicateUtil();
+		valueFactory = new ValueFactoryImpl();
+		model = new LinkedHashModel();
 		try {
 			repo.initialize();
 		} catch(RepositoryException e) {
@@ -94,8 +101,8 @@ public class RepoUtil {
 	 * and type.
 	 */
 	public void setSubjNsAndType(String ns, String type) {
-		subjUtil.setNameSpace(ns);
-		subjUtil.setType(type);
+		subjUri.setNameSpace(ns);
+		subjUri.setType(type);
 	}
 	
 	public void setNameSpace(String ns) {
@@ -103,13 +110,13 @@ public class RepoUtil {
 	}
 	
 	public void setNameSpace(String subjNs, String predNs, String objNs) {
-		subjUtil.setNameSpace(subjNs);
-		predUtil.setNameSpace(predNs);
-		objUtil.setNameSpace(objNs);
+		subjUri.setNameSpace(subjNs);
+		predUri.setNameSpace(predNs);
+		objUri.setNameSpace(objNs);
 	}
 	
 	public void setSubjType(String type) {
-		subjUtil.setType(type);
+		subjUri.setType(type);
 	}
 	
 	/*
@@ -117,12 +124,12 @@ public class RepoUtil {
 	 * and type.
 	 */
 	public void setPredNsAndType(String ns, String type) {
-		predUtil.setNameSpace(ns);
-		predUtil.setType(type);
+		predUri.setNameSpace(ns);
+		predUri.setType(type);
 	}
 	
 	public void setPredType(String type) {
-		predUtil.setType(type);
+		predUri.setType(type);
 	}
 	
 	/*
@@ -130,12 +137,12 @@ public class RepoUtil {
 	 * and type.
 	 */
 	public void setObjNsAndType(String ns, String type) {
-		objUtil.setNameSpace(ns);
-		objUtil.setType(type);
+		objUri.setNameSpace(ns);
+		objUri.setType(type);
 	}
 	
 	public void setObjType(String type) {
-		objUtil.setType(type);
+		objUri.setType(type);
 	}
 	
 	/*
@@ -170,23 +177,26 @@ public class RepoUtil {
 	public void addRecord(String subjStr, String predStr, String objStr, boolean uriFlag) {
 		URI subj;
 		URI pred;
-		URI objUri;
-		Literal objLit;
+		URI obj;
+		Literal lit;
 		try {
 			repoConn = repo.getConnection();
 //			repoConn.isActive()
-			subj = subjUtil.getUri(subjStr);
-			pred = predUtil.getPredUri(predStr);
-			if(uriFlag) {
-				objUri = objUtil.getObjUri(objStr);
-				objLit = null;
-				repoConn.add(subj,pred,objUri);
-				model.add(valueFactory.createStatement(subj, pred, objUri));
+			subj = subjUri.getUri(subjStr);
+			if(predUtil.isDefUri(predStr)) {
+				pred = predUtil.getDefUri(predStr);
 			} else {
-				objUri = null;
-				objLit = objUtil.getLiteral(objStr);
-				repoConn.add(subj, pred,objLit);
-				model.add(valueFactory.createStatement(subj, pred, objLit));
+				pred = predUri.getUri(predStr);
+			}
+			
+			if(uriFlag) {
+				obj = objUri.getUri(objStr);
+				repoConn.add(subj,pred,obj);
+				model.add(valueFactory.createStatement(subj, pred, obj));
+			} else {
+				lit = valueFactory.createLiteral(objStr);
+				repoConn.add(subj, pred,lit);
+				model.add(valueFactory.createStatement(subj, pred, lit));
 			}
 			repoConn.close();
 		} catch (RepositoryException e) {
@@ -313,9 +323,23 @@ public class RepoUtil {
 	/*
 	 * To save the triples in RDF turtle format
 	 * directly from the Sesame database. 
+	 * The third parameter is "self".
 	 */
-	public void saveRDFTurtle() {
-		//TODO
+	public void saveRDFTurtle(String filePath, RDFFormat rdfFormat, String self) {
+		try {
+			FileOutputStream out = new FileOutputStream(filePath);
+			RDFWriter writer = Rio.createWriter(rdfFormat, out);
+			repoConn = repo.getConnection();
+			repoConn.export(writer);
+			repoConn.close();
+		} catch (RepositoryException e) {
+			e.printStackTrace();
+		} catch (FileNotFoundException e) {
+			e.printStackTrace();
+		} catch (RDFHandlerException e) {
+			e.printStackTrace();
+		}
+		
 		
 	}
 	

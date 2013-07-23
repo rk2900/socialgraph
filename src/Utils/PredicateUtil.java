@@ -4,9 +4,11 @@ import java.util.ArrayList;
 import java.util.HashMap;
 
 import org.openrdf.model.URI;
+import org.openrdf.model.ValueFactory;
+import org.openrdf.model.impl.ValueFactoryImpl;
 import org.openrdf.model.vocabulary.RDFS;
 
-public class PredicateUtil extends UriUtil {
+public class PredicateUtil{
 	private HashMap<String,URI> defaultUri;
 	private ArrayList<String> propertyPred;
 	
@@ -40,8 +42,10 @@ public class PredicateUtil extends UriUtil {
 	 * To insert one default URI record.
 	 */
 	public void insertDefaultUri(String key, URI uri) {
-		String uriKey = new String(key.toUpperCase());
-		URI defUri = super.getUri(uri);
+//		String uriKey = new String(key.toUpperCase());
+		String uriKey = new String(key);
+		ValueFactory valueFactory = new ValueFactoryImpl();
+		URI defUri = valueFactory.createURI(uri.toString());
 		defaultUri.put(uriKey, defUri);
 	}
 	
@@ -49,20 +53,28 @@ public class PredicateUtil extends UriUtil {
 		propertyPred.add(uri.toString());
 	}
 	
-	public URI getPredUri(String predStr) {
-		if(defaultUri.containsKey(predStr)) {
-			URI rtn = defaultUri.get(predStr);
-			return rtn;
-		} else {
-			return getUri(predStr);
-		}
-	}
+//	public URI getPredUri(String predStr) {
+//		if(defaultUri.containsKey(predStr)) {
+//			URI rtn = defaultUri.get(predStr);
+//			return rtn;
+//		} else {
+//			return getUri(predStr);
+//		}
+//	}
 	
 	/*
 	 * To judge if the object should be an URI.
 	 */
-	public boolean isObjUri(String predStr) {
-		return propertyPred.contains(predStr);
+//	public boolean isObjUri(String predStr) {
+//		return propertyPred.contains(predStr);
+//	}
+	
+	public boolean isDefUri(String predStr) {
+		return defaultUri.containsKey(predStr);
+	}
+	
+	public URI getDefUri (String predStr) {
+		return defaultUri.get(predStr);
 	}
 
 }

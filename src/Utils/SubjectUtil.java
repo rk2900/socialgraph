@@ -1,10 +1,6 @@
 package Utils;
 
-
-public class SubjectUtil extends UriUtil {
-	
-	public SubjectUtil() {
-		super();
-	}
-	
+public class SubjectUtil {
+	//TODO
+	//Blank Node
 }

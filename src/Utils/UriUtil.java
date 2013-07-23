@@ -31,12 +31,12 @@ public class UriUtil {
 	}
 	
 	public void setValueFactory(ValueFactory vf) {
-		this.valueFactory = vf;
+		valueFactory = vf;
 	}
 	
 	public void setNameSpace(String ns) {
-		this.namespace.setLength(0);
-		this.namespace.append(ns);
+		namespace.setLength(0);
+		namespace.append(ns);
 	}
 	
 	public void setType(String type) {

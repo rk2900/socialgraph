@@ -5,6 +5,8 @@ import java.text.SimpleDateFormat;
 import org.openrdf.query.MalformedQueryException;
 import org.openrdf.query.QueryEvaluationException;
 import org.openrdf.repository.RepositoryException;
+import org.openrdf.rio.RDFFormat;
+
 import Utils.*;
 import weibo4j.Comments;
 import weibo4j.Friendships;
@@ -33,7 +35,8 @@ public class weibo{
 		uid = id;
 		access_token = session;
 		
-		repo = new RepoUtil();	
+//		repo = new RepoUtil("http://localhost:8080/openrdf-sesame/", "my_repo");
+		repo = new RepoUtil();
 		
 		um = new Users();
 		um.client.setToken(access_token);
@@ -105,7 +108,6 @@ public class weibo{
 				}
 			}
 		} catch (WeiboException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 	}
@@ -128,7 +130,6 @@ public class weibo{
 				}
 			}
 		} catch (WeiboException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 	}
@@ -158,7 +159,6 @@ public class weibo{
 					repo.addRecord(s.getId(), "weiboDate", sdf.format(s.getCreatedAt()), false);
 				}
 			} catch (WeiboException e) {
-				// TODO Auto-generated catch block
 				e.printStackTrace();
 			}
 		}
@@ -184,7 +184,6 @@ public class weibo{
 					repo.addRecord(s.getId(), "weiboDate", sdf.format(s.getCreatedAt()), false);
 				}
 			} catch (WeiboException e) {
-				// TODO Auto-generated catch block
 				e.printStackTrace();
 			}
 		}
@@ -210,7 +209,6 @@ public class weibo{
 					repo.addRecord(s.getId(), "weiboDate", sdf.format(s.getCreatedAt()), false);
 				}
 			} catch (WeiboException e) {
-				// TODO Auto-generated catch block
 				e.printStackTrace();
 			}
 		}
@@ -241,7 +239,6 @@ public class weibo{
 					repo.addRecord(c.getIdstr(), "commentDate", sdf.format(c.getCreatedAt()), false);
 				}
 			} catch (WeiboException e) {
-				// TODO Auto-generated catch block
 				e.printStackTrace();
 			}
 		}
@@ -267,7 +264,6 @@ public class weibo{
 					repo.addRecord(c.getIdstr(), "commentDate", sdf.format(c.getCreatedAt()), false);
 				}
 			} catch (WeiboException e) {
-				// TODO Auto-generated catch block
 				e.printStackTrace();
 			}	
 		}
@@ -284,6 +280,8 @@ public class weibo{
 		getCommentByme(2,100);
 		getCommentTome(2,100);
 
+		repo.saveRDFTurtle("./rkTest.n3", RDFFormat.N3, "");
+		
 		System.out.println("----------output ends-------------");
 		System.out.println("----------Program exit------------");
 	}
