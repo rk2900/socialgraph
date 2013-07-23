@@ -8,7 +8,9 @@ import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
+
 import org.openrdf.model.Literal;
+import org.openrdf.model.Resource;
 import org.openrdf.model.Statement;
 import org.openrdf.model.URI;
 import org.openrdf.model.Value;
@@ -40,12 +42,10 @@ public class RepoUtil {
 	private UriUtil subjUri;
 	private UriUtil predUri;
 	private UriUtil objUri;
-	private Value objLit;
 	private PredicateUtil predUtil;
 	private ValueFactory valueFactory;
-	private LinkedHashModel model;
 	
-	/*
+	/**
 	 * To get the repository within memory.
 	 */
 	public RepoUtil() {
@@ -55,8 +55,9 @@ public class RepoUtil {
 		initialize();
 	}
 	
-	/*
+	/**
 	 * To get the repository on the disk.
+	 * @param repoPath the repository file path
 	 */
 	public RepoUtil(String repoPath) {
 		repoFile = new File(repoPath);
@@ -65,8 +66,13 @@ public class RepoUtil {
 		initialize();
 	}
 	
-	/*
+	/**
 	 * To get the repository on the Http server.
+	 * @param server the server address
+	 * @param repoId the repository ID
+	 */
+	/*
+	 * 
 	 */
 	public RepoUtil(String server, String repoId) {
 		repo = new HTTPRepository(server, repoId);
@@ -79,7 +85,6 @@ public class RepoUtil {
 		objUri = new UriUtil();
 		predUtil = new PredicateUtil();
 		valueFactory = new ValueFactoryImpl();
-		model = new LinkedHashModel();
 		try {
 			repo.initialize();
 		} catch(RepositoryException e) {
@@ -96,9 +101,11 @@ public class RepoUtil {
 		}
 	}
 	
-	/*
+	/**
 	 * To set the subject namespace
 	 * and type.
+	 * @param ns
+	 * @param type
 	 */
 	public void setSubjNsAndType(String ns, String type) {
 		subjUri.setNameSpace(ns);
@@ -119,15 +126,21 @@ public class RepoUtil {
 		subjUri.setType(type);
 	}
 	
-	/*
+	/**
 	 * To set the predicate namespace
 	 * and type.
+	 * @param ns
+	 * @param type
 	 */
 	public void setPredNsAndType(String ns, String type) {
 		predUri.setNameSpace(ns);
 		predUri.setType(type);
 	}
 	
+	/**
+	 * set the predicate type
+	 * @param type
+	 */
 	public void setPredType(String type) {
 		predUri.setType(type);
 	}
@@ -175,14 +188,18 @@ public class RepoUtil {
 	 * The Str-Str-Str format SPO record.
 	 */
 	public void addRecord(String subjStr, String predStr, String objStr, boolean uriFlag) {
-		URI subj;
+		Resource subj;
 		URI pred;
-		URI obj;
-		Literal lit;
+		Value obj;
+		Statement statement;
 		try {
 			repoConn = repo.getConnection();
-//			repoConn.isActive()
-			subj = subjUri.getUri(subjStr);
+			if(subjStr.length() > 0) {
+				subj = subjUri.getUri(subjStr);
+			} else {
+				subj = valueFactory.createBNode();
+			}
+			
 			if(predUtil.isDefUri(predStr)) {
 				pred = predUtil.getDefUri(predStr);
 			} else {
@@ -191,13 +208,12 @@ public class RepoUtil {
 			
 			if(uriFlag) {
 				obj = objUri.getUri(objStr);
-				repoConn.add(subj,pred,obj);
-				model.add(valueFactory.createStatement(subj, pred, obj));
+				
 			} else {
-				lit = valueFactory.createLiteral(objStr);
-				repoConn.add(subj, pred,lit);
-				model.add(valueFactory.createStatement(subj, pred, lit));
+				obj = valueFactory.createLiteral(objStr);
 			}
+			statement = valueFactory.createStatement(subj, pred, obj);
+			repoConn.add(statement);
 			repoConn.close();
 		} catch (RepositoryException e) {
 			e.printStackTrace();
@@ -281,9 +297,15 @@ public class RepoUtil {
 		}
 	}
 	
-	/*
+	/**
 	 * Save triples into RDF files 
 	 * with the specific RDF format.
+	 * @param model the model including statements of SPO
+	 * @param filePath the file path to save the records
+	 * @param rdfFormat the rdf file format like RDFFormat.N3
+	 */
+	/*
+	 * 
 	 */
 	public void saveRDFTurtle(LinkedHashModel model, String filePath, RDFFormat rdfFormat) {
 		try {
@@ -303,27 +325,13 @@ public class RepoUtil {
 		
 	}
 	
-	public void saveRDFTurtle(String filePath, RDFFormat rdfFormat) {
-		try {
-			FileOutputStream out = new FileOutputStream(filePath);
-			RDFWriter writer = null;
-			writer = Rio.createWriter(rdfFormat, out);
-			writer.startRDF();
-			for(Statement stat: model) {
-				writer.handleStatement(stat);
-			}
-			writer.endRDF();
-		} catch (FileNotFoundException e) {
-			e.printStackTrace();
-		} catch (RDFHandlerException e) {
-			e.printStackTrace();
-		}
-	}
-	
-	/*
+	/**
 	 * To save the triples in RDF turtle format
 	 * directly from the Sesame database. 
 	 * The third parameter is "self".
+	 * @param filePath the file path to save the records
+	 * @param rdfFormat the rdf file format like RDFFormat.N3
+	 * @param self any string would be ok
 	 */
 	public void saveRDFTurtle(String filePath, RDFFormat rdfFormat, String self) {
 		try {
@@ -339,9 +347,5 @@ public class RepoUtil {
 		} catch (RDFHandlerException e) {
 			e.printStackTrace();
 		}
-		
-		
 	}
-	
-	
 }

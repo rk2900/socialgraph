@@ -18,8 +18,7 @@ public class PredicateUtil{
 		propertyPred = new ArrayList<String>();
 		initialize();
 	}
-	
-	/*
+	/**
 	 * Read the default RDF file
 	 * and create default RDF set.
 	 */
@@ -28,18 +27,20 @@ public class PredicateUtil{
 		defaultUri.put("name", RDFS.LABEL);
 		defaultUri.put("weiboText", RDFS.LITERAL);
 		defaultUri.put("commentContext", RDFS.COMMENT);
-		
-		//TODO
-		propertyPred.add("name");
-		propertyPred.add("friend");
-		propertyPred.add("follower");
-		propertyPred.add("createWeibo");
-		propertyPred.add("createComment");
-		propertyPred.add("commentTo");
+//		
+//		//TODO
+//		propertyPred.add("name");
+//		propertyPred.add("friend");
+//		propertyPred.add("follower");
+//		propertyPred.add("createWeibo");
+//		propertyPred.add("createComment");
+//		propertyPred.add("commentTo");
 	}
 	
-	/*
+	/**
 	 * To insert one default URI record.
+	 * @param key the name of the default URI
+	 * @param uri the true URI of the default URI
 	 */
 	public void insertDefaultUri(String key, URI uri) {
 //		String uriKey = new String(key.toUpperCase());
@@ -52,22 +53,6 @@ public class PredicateUtil{
 	public void insertPropertyPred(URI uri) {
 		propertyPred.add(uri.toString());
 	}
-	
-//	public URI getPredUri(String predStr) {
-//		if(defaultUri.containsKey(predStr)) {
-//			URI rtn = defaultUri.get(predStr);
-//			return rtn;
-//		} else {
-//			return getUri(predStr);
-//		}
-//	}
-	
-	/*
-	 * To judge if the object should be an URI.
-	 */
-//	public boolean isObjUri(String predStr) {
-//		return propertyPred.contains(predStr);
-//	}
 	
 	public boolean isDefUri(String predStr) {
 		return defaultUri.containsKey(predStr);

@@ -46,13 +46,6 @@ public class UriUtil {
 		uriBuilder.append("/");
 	}
 	
-	/*
-	 * To get the namespace and type value
-	 * ex:
-	 * namespace: http://test.org/
-	 * type: person{null}
-	 * result: http://test.org/person{null}
-	 */
 	public String getNsAndType() {
 		return uriBuilder.toString();
 	}
@@ -71,10 +64,12 @@ public class UriUtil {
 		return valueFactory.createURI(uri.toString());
 	}
 	
-	/*
+	/**
 	 * To get the URI of the specific string value
 	 * 1. if it is already a URI, then return;
 	 * 2. else translate it to URI format and return.
+	 * @param iden
+	 * @return the true URI
 	 */
 	public URI getUri(String iden) {
 		URI rtn = null;
@@ -107,9 +102,11 @@ public class UriUtil {
 		
 	}
 	
-	/*
+	/**
 	 * To justify if the input string is 
 	 * in the format of URI.
+	 * @param obj
+	 * @return
 	 */
 	public boolean isUri(String obj) {
 //		return obj.matches("(([a-zA-Z][0-9a-zA-Z+\\\\-\\\\.]*:)?/{0,2}[0-9a-zA-Z;/?:@&=+$\\\\.\\\\-_!~*'()%]+)?(#[0-9a-zA-Z;/?:@&=+$\\\\.\\\\-_!~*'()%]+)?");
