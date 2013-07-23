@@ -55,8 +55,16 @@ public class weibo{
 	}
 	
 	public static void main(String[] args) throws QueryEvaluationException, RepositoryException, MalformedQueryException {
-		weibo test = new weibo("1979814003","2.00vDGzJC0OM2YC4ffc0d56f70hPqLU");
-		test.getWeiboData();
+		String haohaoid = "1979814003";
+		String haohaokey = "2.00vDGzJC0OM2YC4ffc0d56f70hPqLU";
+		String kankanid = "2128564862";
+		String kankankey = "2.001xOD1C0OM2YC6d102a5533yk1qLC";
+		
+		weibo testKankan = new weibo(kankanid,kankankey);
+		weibo testHaohao = new weibo(haohaoid,haohaokey);
+		
+		testHaohao.getWeiboData();
+		testKankan.getWeiboData();
 	}
 	
 	/*
