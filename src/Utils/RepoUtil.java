@@ -17,6 +17,7 @@ import org.openrdf.model.impl.ValueFactoryImpl;
 import org.openrdf.repository.Repository;
 import org.openrdf.repository.RepositoryConnection;
 import org.openrdf.repository.RepositoryException;
+import org.openrdf.repository.http.HTTPRepository;
 import org.openrdf.repository.sail.SailRepository;
 import org.openrdf.rio.RDFFormat;
 import org.openrdf.rio.RDFHandlerException;
@@ -32,7 +33,6 @@ import Const.Const;
 public class RepoUtil {
 	private Repository repo;
 	private NativeStore natStore;
-	private MemoryStore memStore;
 	private File repoFile;
 	private RepositoryConnection repoConn;
 	private SubjectUtil subjUtil;
@@ -46,8 +46,6 @@ public class RepoUtil {
 		repoFile = new File(Const.repoPath);
 		natStore = new NativeStore(repoFile);
 		repo = new SailRepository(natStore);
-//		memStore = new MemoryStore();
-//		repo = new SailRepository(memStore);
 		subjUtil = new SubjectUtil();
 		predUtil = new PredicateUtil();
 		objUtil = new ObjectUtil();
@@ -64,6 +62,12 @@ public class RepoUtil {
 		predUtil = new PredicateUtil();
 		objUtil = new ObjectUtil();
 		valueFactory = new ValueFactoryImpl();
+		model = new LinkedHashModel();
+		repoInitialize();
+	}
+	
+	public RepoUtil(String server, String repoId) {
+		repo = new HTTPRepository(server, repoId);
 		model = new LinkedHashModel();
 		repoInitialize();
 	}
