@@ -33,7 +33,7 @@ public class weibo{
 	private Timeline tm;
 	private Comments cm;
 	private DateFormat sdf;
-	private FileOutputManager manager;
+//	private FileOutputManager manager;
 	
 	public weibo(String id, String session){
 		uid = id;
@@ -60,7 +60,8 @@ public class weibo{
 	
 	public static void main(String[] args) throws QueryEvaluationException, RepositoryException, MalformedQueryException {
 		
-		repo = new RepoUtil();
+//		repo = new RepoUtil();
+		repo = new RepoUtil("http://172.16.9.174:8080/openrdf-sesame/", "my_repo");
 		
 		String haohaoID = "1979814003";
 		String haohaoKey = "2.00vDGzJC0OM2YC4ffc0d56f70hPqLU";
@@ -308,7 +309,7 @@ public class weibo{
 		repo.addRecord(c.getIdstr(), "commentTo", c.getStatus().getId(), true);
 		repo.addRecord(c.getIdstr(), "commentContext", c.getText(), false);
 		repo.addRecord(c.getIdstr(), "commentDate", sdf.format(c.getCreatedAt()), false);
-		manager.write(c.getText() + "\t" + c.getStatus().getText() + "\n");
+//		manager.write(c.getText() + "\t" + c.getStatus().getText() + "\n");
 	}
 	
 	public void addComment(Comment c){
