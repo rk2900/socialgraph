@@ -362,9 +362,9 @@ public class weibo{
 		getUserData();
 		getAllFollowerData();
 		getAllFriendData();
-		getUserTimeline(1,100);
-		getFriendTimeline(1,100);
-		getBilateralTimeline(1,100);
+		getUserTimeline(6,100);
+		getFriendTimeline(6,100);
+		getBilateralTimeline(6,100);
 		getCommentByme(2,100);
 		getCommentTome(2,100);
 
