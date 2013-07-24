@@ -72,9 +72,6 @@ public class RepoUtil {
 	 * @param server the server address
 	 * @param repoId the repository ID
 	 */
-	/*
-	 * 
-	 */
 	public RepoUtil(String server, String repoId) {
 		repo = new HTTPRepository(server, repoId);
 		initialize();
