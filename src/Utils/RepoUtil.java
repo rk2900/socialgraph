@@ -8,6 +8,7 @@ import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
+import java.util.Date;
 
 import org.openrdf.model.Literal;
 import org.openrdf.model.Resource;
@@ -185,7 +186,12 @@ public class RepoUtil {
 	}
 	
 	/**
+	 * /**
 	 * The Str-Str-Str format SPO record.
+	 * @param subjStr
+	 * @param predStr
+	 * @param objStr
+	 * @param uriFlag
 	 */
 	public void addRecord(String subjStr, String predStr, String objStr, boolean uriFlag) {
 		Resource subj;
@@ -212,6 +218,77 @@ public class RepoUtil {
 			} else {
 				obj = valueFactory.createLiteral(objStr);
 			}
+			statement = valueFactory.createStatement(subj, pred, obj);
+			repoConn.add(statement);
+			repoConn.close();
+		} catch (RepositoryException e) {
+			e.printStackTrace();
+		}
+	}
+	
+	
+	/**
+	 * The Str-Str-Date format SPO record.
+	 * @param subjStr
+	 * @param predStr
+	 * @param objDate
+	 */
+	public void addRecord(String subjStr, String predStr, Date objDate, boolean uriFlag) {
+		Resource subj;
+		URI pred;
+		Value obj;
+		Statement statement;
+		try {
+			repoConn = repo.getConnection();
+			if(subjStr.length() > 0) {
+				subj = subjUri.getUri(subjStr);
+			} else {
+				subj = valueFactory.createBNode();
+			}
+			
+			if(predUtil.isDefUri(predStr)) {
+				pred = predUtil.getDefUri(predStr);
+			} else {
+				pred = predUri.getUri(predStr);
+			}
+			
+			obj = valueFactory.createLiteral(objDate);
+
+			statement = valueFactory.createStatement(subj, pred, obj);
+			repoConn.add(statement);
+			repoConn.close();
+		} catch (RepositoryException e) {
+			e.printStackTrace();
+		}
+	}
+	
+	/**
+	 * The Str-Str-Boolean format SPO record.
+	 * @param subjStr
+	 * @param predStr
+	 * @param objBool
+	 */
+	public void addRecord(String subjStr, String predStr, boolean objBool, boolean uriFlag) {
+		Resource subj;
+		URI pred;
+		Value obj;
+		Statement statement;
+		try {
+			repoConn = repo.getConnection();
+			if(subjStr.length() > 0) {
+				subj = subjUri.getUri(subjStr);
+			} else {
+				subj = valueFactory.createBNode();
+			}
+			
+			if(predUtil.isDefUri(predStr)) {
+				pred = predUtil.getDefUri(predStr);
+			} else {
+				pred = predUri.getUri(predStr);
+			}
+			
+			obj = valueFactory.createLiteral(objBool);
+
 			statement = valueFactory.createStatement(subj, pred, obj);
 			repoConn.add(statement);
 			repoConn.close();
