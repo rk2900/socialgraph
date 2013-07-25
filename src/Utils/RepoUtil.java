@@ -53,7 +53,7 @@ public class RepoUtil {
 		repoFile = new File(Const.repoPath);
 		memStore = new MemoryStore();
 		repo = new SailRepository(memStore);
-		initialize();
+//		initialize();
 	}
 	
 	/**
@@ -64,7 +64,7 @@ public class RepoUtil {
 		repoFile = new File(repoPath);
 		natStore = new NativeStore(repoFile);
 		repo = new SailRepository(natStore);
-		initialize();
+//		initialize();
 	}
 	
 	/**
@@ -74,10 +74,10 @@ public class RepoUtil {
 	 */
 	public RepoUtil(String server, String repoId) {
 		repo = new HTTPRepository(server, repoId);
-		initialize();
+//		initialize();
 	}
 	
-	private void initialize() {
+	public void initialize() {
 		subjUri = new UriUtil();
 		predUri = new UriUtil();
 		objUri = new UriUtil();
@@ -85,14 +85,20 @@ public class RepoUtil {
 		valueFactory = new ValueFactoryImpl();
 		try {
 			repo.initialize();
+			repoConn = repo.getConnection();
+//			repoConn.setAutoCommit(false);//??????
 		} catch(RepositoryException e) {
-			
+			e.printStackTrace();
 		}
 	}
 
 	public RepositoryConnection getConnection() {
 		try {
-			return repo.getConnection();
+			if(repoConn.isActive()) {
+				return repoConn;
+			} else {
+				return repo.getConnection();
+			}
 		} catch (RepositoryException e) {
 			e.printStackTrace();
 			return null;
@@ -161,9 +167,9 @@ public class RepoUtil {
 	 */
 	public void addRecord(URI subj, URI pred, Literal obj) {
 		try {
-			repoConn = repo.getConnection();
+//			repoConn = repo.getConnection();
 			repoConn.add(subj, pred, obj);
-			repoConn.close();
+//			repoConn.close();
 		} catch (RepositoryException e) {
 			e.printStackTrace();
 		} 
@@ -174,12 +180,16 @@ public class RepoUtil {
 	 */
 	public void addRecord(URI subj, URI pred, URI obj) {
 		try {
-			repoConn = repo.getConnection();
+//			repoConn = repo.getConnection();
 			repoConn.add(subj, pred, obj);
-			repoConn.close();
+//			repoConn.close();
 		} catch (RepositoryException e) {
 			e.printStackTrace();
 		}
+	}
+	
+	public <T> void addRecord (T a, String b) {
+		System.out.println(b+" "+a);
 	}
 	
 	/**
@@ -190,37 +200,46 @@ public class RepoUtil {
 	 * @param objStr
 	 * @param uriFlag
 	 */
-	public void addRecord(String subjStr, String predStr, String objStr, boolean uriFlag) {
+	//TODO
+	public <T> void addRecord(String subjStr, String predStr, String objStr, boolean uriFlag) {
 		Resource subj;
 		URI pred;
 		Value obj;
 		Statement statement;
+		if(subjStr.length() > 0) {
+			subj = subjUri.getUri(subjStr);
+		} else {
+			subj = valueFactory.createBNode();
+		}
+		
+		if(predUtil.isDefUri(predStr)) {
+			pred = predUtil.getDefUri(predStr);
+		} else {
+			pred = predUri.getUri(predStr);
+		}
+		
+		if(uriFlag) {
+			obj = objUri.getUri(objStr);
+			
+		} else {
+			obj = valueFactory.createLiteral(objStr);
+		}
+		statement = valueFactory.createStatement(subj, pred, obj);
+		
 		try {
 			repoConn = repo.getConnection();
-			if(subjStr.length() > 0) {
-				subj = subjUri.getUri(subjStr);
-			} else {
-				subj = valueFactory.createBNode();
-			}
-			
-			if(predUtil.isDefUri(predStr)) {
-				pred = predUtil.getDefUri(predStr);
-			} else {
-				pred = predUri.getUri(predStr);
-			}
-			
-			if(uriFlag) {
-				obj = objUri.getUri(objStr);
-				
-			} else {
-				obj = valueFactory.createLiteral(objStr);
-			}
-			statement = valueFactory.createStatement(subj, pred, obj);
 			repoConn.add(statement);
-			repoConn.close();
 		} catch (RepositoryException e) {
 			e.printStackTrace();
+		} finally {
+			try {
+				repoConn.close();
+			} catch (RepositoryException e) {
+				e.printStackTrace();
+			}
 		}
+		
+		
 	}
 	
 	
@@ -303,13 +322,20 @@ public class RepoUtil {
 		BufferedReader reader;
 		try {
 			reader = new BufferedReader(new InputStreamReader(new FileInputStream(rdfFile)));
-			repoConn = repo.getConnection();
+			repoConn.begin();
+//			repoConn = repo.getConnection();
 			repoConn.add(reader, baseURI, format);
-			repoConn.close();
+//			repoConn.close();
+			repoConn.commit();
 		} catch (FileNotFoundException e1) {
 			e1.printStackTrace();
 		} catch (RepositoryException e) {
-			e.printStackTrace();
+			try {
+				repoConn.rollback();
+			} catch (RepositoryException e1) {
+				// TODO Auto-generated catch block
+				e1.printStackTrace();
+			}
 		} catch (RDFParseException e) {
 			e.printStackTrace();
 		} catch (IOException e) {
@@ -317,7 +343,7 @@ public class RepoUtil {
 		}
 	}
 	
-	/**
+	/**@deprecated
 	 * Read the RDF file with SPO format in stream.
 	 */
 	public void addRecords(String spoFilePath) {
@@ -411,15 +437,39 @@ public class RepoUtil {
 		try {
 			FileOutputStream out = new FileOutputStream(filePath);
 			RDFWriter writer = Rio.createWriter(rdfFormat, out);
-			repoConn = repo.getConnection();
-			repoConn.export(writer);
-			repoConn.close();
+			RepositoryConnection newConn = repo.getConnection();
+			newConn.export(writer);
+			newConn.close();
 		} catch (RepositoryException e) {
 			e.printStackTrace();
 		} catch (FileNotFoundException e) {
 			e.printStackTrace();
 		} catch (RDFHandlerException e) {
 			e.printStackTrace();
+		}
+	}
+	
+	public void begin() {
+		try {
+			repoConn.begin();
+		} catch (RepositoryException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+	}
+	
+	public void commit() {
+		try {
+			repoConn.commit();
+		} catch (RepositoryException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+			try {
+				repoConn.rollback();
+			} catch (RepositoryException e1) {
+				// TODO Auto-generated catch block
+				e1.printStackTrace();
+			}
 		}
 	}
 }
