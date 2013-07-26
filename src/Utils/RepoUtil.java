@@ -77,6 +77,9 @@ public class RepoUtil {
 //		initialize();
 	}
 	
+	/**
+	 * To initialize the repository and the connection.
+	 */
 	public void initialize() {
 		subjUri = new UriUtil();
 		predUri = new UriUtil();
@@ -86,12 +89,41 @@ public class RepoUtil {
 		try {
 			repo.initialize();
 			repoConn = repo.getConnection();
-//			repoConn.setAutoCommit(false);//??????
+			repoConn.setAutoCommit(false);//??????
 		} catch(RepositoryException e) {
 			e.printStackTrace();
 		}
 	}
 
+	/**
+	 * Begin the add methods.
+	 */
+	public void begin() {
+		try {
+			repoConn.begin();
+		} catch (RepositoryException e) {
+			e.printStackTrace();
+		}
+	}
+	
+	/**
+	 * Commit all the transactions.
+	 */
+	public void commit() {
+		try {
+			repoConn.commit();
+		} catch (RepositoryException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+			try {
+				repoConn.rollback();
+			} catch (RepositoryException e1) {
+				// TODO Auto-generated catch block
+				e1.printStackTrace();
+			}
+		}
+	}
+	
 	public RepositoryConnection getConnection() {
 		try {
 			if(repoConn.isActive()) {
@@ -200,8 +232,8 @@ public class RepoUtil {
 	 * @param objStr
 	 * @param uriFlag
 	 */
-	//TODO
-	public <T> void addRecord(String subjStr, String predStr, String objStr, boolean uriFlag) {
+	//TODO The template method
+	public void addRecord(String subjStr, String predStr, String objStr, boolean uriFlag) {
 		Resource subj;
 		URI pred;
 		Value obj;
@@ -227,19 +259,18 @@ public class RepoUtil {
 		statement = valueFactory.createStatement(subj, pred, obj);
 		
 		try {
-			repoConn = repo.getConnection();
+//			repoConn = repo.getConnection();
 			repoConn.add(statement);
 		} catch (RepositoryException e) {
 			e.printStackTrace();
-		} finally {
-			try {
-				repoConn.close();
-			} catch (RepositoryException e) {
-				e.printStackTrace();
-			}
-		}
-		
-		
+		} 
+//		finally {
+//			try {
+//				repoConn.close();
+//			} catch (RepositoryException e) {
+//				e.printStackTrace();
+//			}
+//		}
 	}
 	
 	
@@ -446,30 +477,6 @@ public class RepoUtil {
 			e.printStackTrace();
 		} catch (RDFHandlerException e) {
 			e.printStackTrace();
-		}
-	}
-	
-	public void begin() {
-		try {
-			repoConn.begin();
-		} catch (RepositoryException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
-	}
-	
-	public void commit() {
-		try {
-			repoConn.commit();
-		} catch (RepositoryException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-			try {
-				repoConn.rollback();
-			} catch (RepositoryException e1) {
-				// TODO Auto-generated catch block
-				e1.printStackTrace();
-			}
 		}
 	}
 }

@@ -60,12 +60,11 @@ public class weibo{
 	
 	public static void main(String[] args) throws QueryEvaluationException, RepositoryException, MalformedQueryException {
 		
-//		repo = new RepoUtil();
-		repo = new RepoUtil("http://172.16.9.174:8080/openrdf-sesame/", "my_repo");
-		
-		
-		
-		
+		repo = new RepoUtil();
+//		repo = new RepoUtil("http://172.16.9.174:8080/openrdf-sesame/", "my_repo");
+		repo.initialize();
+
+		repo.begin();
 		/***************************************/
 		String haohaoID = "1979814003";
 		String haohaoKey = "2.00vDGzJC0OM2YC4ffc0d56f70hPqLU";
@@ -84,16 +83,10 @@ public class weibo{
 		
 		weibo dingdingTest = new weibo(dingdingID,dingdingKey);
 		dingdingTest.getWeiboData();
+		/*************************************/
+		repo.commit();
 		
 		repo.saveRDFTurtle("./rkTest.n3", RDFFormat.N3, "");
-		/****************************************/
-		String b = "test";
-		boolean bool = true;
-		String a = "string type";
-		long temp = 1024;
-		repo.addRecord(bool, b);
-		repo.addRecord(a, b);
-		repo.addRecord(temp, b);
 //		String query = "PREFIX test:<http://weibo.com/userID/>" +
 //				"PREFIX prop:<http://weibo.com/property/>" +
 //				"SELECT ?comment ?weibo " +
